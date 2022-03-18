@@ -1,0 +1,2875 @@
+c UniGen SHA revision 
+c UniGen version 2.5.0
+c UniGen compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wlogical-op -Wdouble-promotion -Wshadow -Wformat=2 -pedantic | COMPILE_DEFINES =  | STATICCOMPILE = ON | Boost_FOUND = 1 | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Mar 30 2021 16:52:37
+c UniGen compiled with gcc version 5.4.0 20160609
+c ApproxMC SHA revision 
+c ApproxMC version 2.5.0
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wlogical-op -Wdouble-promotion -Wshadow -Wformat=2 -pedantic | COMPILE_DEFINES =  | STATICCOMPILE = ON | Boost_FOUND = 1 | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Mar 30 2021 16:52:37
+c ApproxMC compiled with gcc version 5.4.0 20160609
+c CryptoMiniSat version 5.8.0
+c CMS Copyright Mate Soos (soos.mate@gmail.com)
+c CMS SHA revision 
+c CMS is GPL licensed due to M4RI being linked. Build without M4RI to get MIT version
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wdouble-promotion -Wshadow -Wformat=2 -pedantic | COMPILE_DEFINES =  -DEXTENDED_FEATURES -DUSE_GAUSS -DUSE_ZLIB -DYALSAT_FPU -DUSE_M4RI | STATICCOMPILE = ON | ONLY_SIMPLE = OFF | Boost_FOUND = 1 | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND = TRUE | NOM4RI = OFF | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE = PYTHON_EXECUTABLE-NOTFOUND | PYTHON_LIBRARY = PYTHON_LIBRARY-NOTFOUND | PYTHON_INCLUDE_DIRS =  | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Mar 30 2021 16:50:29
+c CMS compiled with gcc version 5.4.0 20160609
+c executed with command line: /usr/local/bin/unigen --samples 2000
+c Reading from standard input... Use '-h' or '--help' for help.
+c -- header says num vars:             60
+c -- header says num clauses:         146
+c -- clauses added: 146
+c -- xor clauses added: 0
+c -- vars added 60
+c [appmc] Sampling set size: 21
+c [appmc] Sampling set: 24, 26, 28, 3, 30, 32, 34, 36, 38, 4, 40, 42, 44, 46, 48, 50, 52, 54, 58, 59, 6, 
+c [sparse] Using match: 0 sampling set size: 21 prev end inclusive is: -1 this end inclusive is: 50 next end inclusive is: 100 sampl size: 21
+c [appmc] threshold set to 72 sparse: 0
+c [appmc] Starting up, initial measurement
+c [appmc] Checking if there are at least threshold+1 solutions...
+c [appmc] simplifying
+c [appmc] [    0.00 ] bounded_sol_count looking for   73 solutions -- hashes active: 0
+c WHAAAAT Detach issue. All below must be 1 to work ---
+c -- can_detach: 0
+c -- mfinder.no_irred_nonxor_contains_clash_vars(): 0
+c -- !conf.gaussconf.autodisable: 1
+c -- conf.xor_detach_reattach: 1
+c [appmc] Starting at hash count: 1
+c [appmc] [    0.00 ] round:  0 hashes:      1
+c [appmc] [    0.00 ] bounded_sol_count looking for   73 solutions -- hashes active: 1
+c WHAAAAT Detach issue. All below must be 1 to work ---
+c -- can_detach: 0
+c -- mfinder.no_irred_nonxor_contains_clash_vars(): 0
+c -- !conf.gaussconf.autodisable: 1
+c -- conf.xor_detach_reattach: 1
+c [appmc] [    0.00 ] round:  0 hashes:      2
+c [appmc] [    0.00 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [gauss] XOR-encoding clauses detached: 76 deleted: 41 T: 0.00
+c [appmc] [    0.00 ] round:  0 hashes:      4
+c [appmc] [    0.00 ] bounded_sol_count looking for   73 solutions -- hashes active: 4
+c [gauss] XOR-encoding clauses detached: 60 deleted: 0 T: 0.00
+c [appmc] [    0.00 ] round:  0 hashes:      8
+c [appmc] [    0.00 ] bounded_sol_count looking for   73 solutions -- hashes active: 8
+c [gauss] XOR-encoding clauses detached: 128 deleted: 0 T: 0.00
+c [appmc] [    0.01 ] round:  0 hashes:     16
+c [appmc] [    0.01 ] bounded_sol_count looking for   73 solutions -- hashes active: 16
+c [gauss] XOR-encoding clauses detached: 268 deleted: 0 T: 0.00
+c [appmc] [    0.01 ] round:  0 hashes:     12
+c [appmc] [    0.01 ] bounded_sol_count looking for   73 solutions -- hashes active: 12
+c [appmc] [    0.01 ] round:  0 hashes:     10
+c [appmc] [    0.01 ] bounded_sol_count looking for   73 solutions -- hashes active: 10
+c [appmc] [    0.01 ] round:  0 hashes:     11
+c [appmc] [    0.01 ] bounded_sol_count looking for   73 solutions -- hashes active: 11
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 532 T: 0.00
+c [appmc] [    0.01 ] round:  1 hashes:     12
+c [appmc] [    0.01 ] bounded_sol_count looking for   73 solutions -- hashes active: 12
+c [gauss] XOR-encoding clauses detached: 404 deleted: 0 T: 0.00
+c [appmc] [    0.01 ] round:  1 hashes:     11
+c [appmc] [    0.01 ] bounded_sol_count looking for   73 solutions -- hashes active: 11
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 404 T: 0.00
+c [appmc] [    0.01 ] round:  2 hashes:     12
+c [appmc] [    0.01 ] bounded_sol_count looking for   73 solutions -- hashes active: 12
+c [gauss] XOR-encoding clauses detached: 392 deleted: 0 T: 0.00
+c [appmc] [    0.02 ] round:  2 hashes:     11
+c [appmc] [    0.02 ] bounded_sol_count looking for   73 solutions -- hashes active: 11
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 392 T: 0.00
+c [appmc] [    0.02 ] round:  3 hashes:     12
+c [appmc] [    0.02 ] bounded_sol_count looking for   73 solutions -- hashes active: 12
+c [gauss] XOR-encoding clauses detached: 388 deleted: 0 T: 0.00
+c [appmc] [    0.02 ] round:  3 hashes:     11
+c [appmc] [    0.02 ] bounded_sol_count looking for   73 solutions -- hashes active: 11
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 388 T: 0.00
+c [appmc] [    0.02 ] round:  4 hashes:     12
+c [appmc] [    0.02 ] bounded_sol_count looking for   73 solutions -- hashes active: 12
+c [gauss] XOR-encoding clauses detached: 412 deleted: 0 T: 0.00
+c [appmc] [    0.03 ] round:  4 hashes:     11
+c [appmc] [    0.03 ] bounded_sol_count looking for   73 solutions -- hashes active: 11
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 412 T: 0.00
+c [appmc] [    0.03 ] round:  5 hashes:     12
+c [appmc] [    0.03 ] bounded_sol_count looking for   73 solutions -- hashes active: 12
+c [gauss] XOR-encoding clauses detached: 416 deleted: 0 T: 0.00
+c [appmc] [    0.03 ] round:  5 hashes:     11
+c [appmc] [    0.03 ] bounded_sol_count looking for   73 solutions -- hashes active: 11
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 416 T: 0.00
+c [appmc] [    0.03 ] round:  6 hashes:     12
+c [appmc] [    0.03 ] bounded_sol_count looking for   73 solutions -- hashes active: 12
+c [gauss] XOR-encoding clauses detached: 412 deleted: 0 T: 0.00
+c [appmc] [    0.04 ] round:  6 hashes:     11
+c [appmc] [    0.04 ] bounded_sol_count looking for   73 solutions -- hashes active: 11
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 412 T: 0.00
+c [appmc] [    0.04 ] round:  7 hashes:     12
+c [appmc] [    0.04 ] bounded_sol_count looking for   73 solutions -- hashes active: 12
+c [gauss] XOR-encoding clauses detached: 384 deleted: 0 T: 0.00
+c [appmc] [    0.04 ] round:  7 hashes:     11
+c [appmc] [    0.04 ] bounded_sol_count looking for   73 solutions -- hashes active: 11
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 384 T: 0.00
+c [appmc] [    0.05 ] round:  8 hashes:     12
+c [appmc] [    0.05 ] bounded_sol_count looking for   73 solutions -- hashes active: 12
+c [gauss] XOR-encoding clauses detached: 392 deleted: 0 T: 0.00
+c [appmc] [    0.05 ] round:  8 hashes:     11
+c [appmc] [    0.05 ] bounded_sol_count looking for   73 solutions -- hashes active: 11
+c [appmc] FINISHED ApproxMC T: 0.05 s
+c [unig] Samples requested: 2000
+c [unig] samples per XOR set:11
+c [unig] starting sample generation. loThresh: 11, hiThresh: 64, startiter: 12
+c [unig] [    0.00 ] bounded_sol_count looking for   64 solutions -- hashes active: 12
+c [gauss] XOR-encoding clauses detached: 396 deleted: 0 T: 0.00
+c [unig] [    0.00 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 36 deleted: 0 T: 0.00
+24 -26 28 3 -30 32 34 -36 -38 4 40 42 -44 46 48 50 52 -54 58 -59 6 0
+-24 26 -28 3 30 -32 34 -36 -38 4 -40 42 44 46 -48 50 52 -54 58 -59 6 0
+-24 -26 28 -3 -30 32 -34 -36 -38 4 40 -42 44 46 -48 -50 52 54 -58 -59 -6 0
+-24 -26 -28 -3 -30 32 34 36 -38 4 40 42 44 -46 48 50 -52 54 58 -59 6 0
+-24 26 28 -3 30 32 34 36 38 4 40 42 44 -46 48 -50 52 -54 -58 -59 -6 0
+-24 26 -28 -3 30 32 -34 -36 38 4 40 -42 44 46 -48 50 -52 -54 58 -59 6 0
+-24 26 -28 3 30 -32 34 -36 -38 4 40 42 44 46 -48 50 -52 54 58 -59 6 0
+24 -26 28 -3 -30 -32 -34 -36 38 4 -40 -42 -44 46 48 50 -52 -54 58 -59 6 0
+24 -26 28 -3 -30 -32 -34 -36 38 4 40 -42 -44 46 48 50 52 54 58 -59 6 0
+-24 -26 28 -3 -30 32 -34 -36 -38 4 -40 -42 44 46 -48 -50 -52 -54 -58 -59 -6 0
+24 -26 -28 -3 -30 -32 34 36 38 4 40 42 -44 -46 -48 -50 -52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 824 T: 0.00
+c [unig] [    0.01 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 464 deleted: 0 T: 0.00
+24 26 28 -3 30 32 34 -36 -38 4 -40 42 44 -46 -48 -50 52 54 58 -59 6 0
+24 -26 28 -3 -30 32 -34 36 38 4 -40 42 44 -46 48 -50 52 54 -58 -59 -6 0
+-24 -26 28 3 30 -32 -34 -36 38 4 40 42 -44 -46 -48 50 52 -54 -58 -59 6 0
+24 26 28 3 -30 32 -34 -36 38 4 -40 -42 44 46 48 -50 52 -54 -58 -59 6 0
+24 26 28 -3 -30 32 -34 36 -38 4 40 -42 44 46 48 -50 52 54 -58 -59 -6 0
+24 -26 -28 3 30 -32 34 -36 38 4 40 -42 44 -46 48 50 52 54 58 -59 6 0
+-24 -26 -28 3 -30 32 34 -36 -38 4 40 -42 -44 -46 -48 -50 52 54 58 -59 6 0
+24 26 -28 -3 30 -32 -34 -36 38 4 -40 -42 44 -46 48 -50 -52 54 -58 -59 -6 0
+-24 26 -28 -3 30 32 34 36 -38 4 40 42 -44 46 48 50 -52 54 58 -59 6 0
+24 26 28 3 -30 32 34 36 38 4 40 42 44 -46 48 50 -52 54 58 -59 6 0
+24 -26 -28 3 30 -32 -34 36 38 4 -40 42 44 46 48 -50 -52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 464 T: 0.00
+c [unig] [    0.01 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 388 deleted: 0 T: 0.00
+24 -26 -28 3 30 -32 -34 36 38 4 40 42 44 46 48 50 52 54 -58 -59 6 0
+24 26 -28 3 -30 32 34 -36 -38 4 40 42 -44 46 48 -50 -52 54 58 -59 6 0
+-24 -26 28 3 30 -32 34 36 -38 4 40 42 44 -46 -48 50 52 54 58 -59 6 0
+-24 26 -28 -3 30 -32 -34 -36 -38 4 -40 42 -44 -46 -48 -50 -52 54 58 -59 6 0
+24 -26 28 -3 30 -32 -34 -36 -38 4 40 -42 -44 46 -48 50 52 -54 58 -59 6 0
+24 -26 28 -3 -30 32 -34 36 38 4 -40 -42 44 46 -48 50 52 54 -58 -59 -6 0
+24 -26 28 -3 -30 32 -34 36 -38 4 -40 42 44 46 48 50 52 54 58 -59 6 0
+-24 26 -28 -3 30 -32 -34 -36 38 4 -40 -42 -44 -46 48 -50 -52 54 -58 -59 -6 0
+24 -26 -28 -3 30 32 34 -36 38 4 -40 -42 -44 -46 48 -50 52 54 -58 -59 -6 0
+-24 26 28 3 30 -32 -34 36 38 4 -40 -42 44 -46 48 -50 -52 -54 -58 -59 6 0
+-24 26 -28 3 -30 -32 34 -36 38 4 -40 -42 -44 46 -48 50 -52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 388 T: 0.00
+c [unig] [    0.01 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 500 deleted: 0 T: 0.00
+24 -26 -28 -3 -30 32 34 36 -38 4 40 42 -44 -46 -48 -50 -52 54 58 -59 6 0
+-24 -26 28 3 -30 32 -34 -36 -38 4 -40 42 44 -46 48 50 52 54 -58 -59 6 0
+-24 -26 28 3 -30 32 -34 36 38 4 -40 42 -44 -46 48 -50 52 -54 58 -59 6 0
+-24 -26 28 -3 30 -32 -34 -36 38 4 40 -42 -44 46 -48 50 -52 -54 58 -59 6 0
+-24 -26 28 -3 -30 32 34 -36 -38 4 -40 -42 44 46 -48 -50 -52 -54 -58 -59 -6 0
+24 -26 -28 -3 30 -32 -34 36 38 4 -40 42 44 -46 -48 50 -52 54 -58 -59 -6 0
+-24 26 -28 3 30 -32 34 -36 38 4 -40 42 -44 -46 -48 50 52 54 58 -59 6 0
+24 -26 28 3 -30 -32 -34 36 -38 4 -40 -42 44 46 -48 50 52 54 58 -59 6 0
+-24 -26 -28 3 30 32 34 -36 38 4 -40 42 44 -46 -48 -50 52 -54 58 -59 6 0
+-24 26 28 -3 -30 -32 34 -36 -38 4 -40 -42 -44 46 -48 50 -52 54 -58 -59 -6 0
+24 26 28 3 -30 32 -34 -36 38 4 -40 -42 44 46 -48 50 52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 500 T: 0.00
+c [unig] [    0.01 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 408 deleted: 0 T: 0.00
+24 -26 28 3 30 -32 34 -36 -38 4 -40 -42 44 -46 48 -50 -52 -54 58 -59 6 0
+24 -26 28 3 -30 32 34 36 -38 4 40 -42 -44 -46 48 50 52 54 -58 -59 6 0
+24 -26 -28 3 30 32 34 -36 38 4 40 -42 -44 -46 -48 50 -52 -54 -58 -59 6 0
+24 26 28 -3 -30 -32 34 -36 -38 4 40 -42 -44 46 -48 -50 -52 54 58 -59 6 0
+-24 26 28 -3 -30 32 -34 36 -38 4 40 42 -44 46 -48 50 -52 -54 -58 -59 -6 0
+-24 26 28 3 30 -32 -34 36 38 4 40 -42 44 46 48 -50 -52 -54 -58 -59 6 0
+24 26 -28 -3 30 -32 34 36 38 4 40 -42 -44 46 48 -50 52 -54 58 -59 6 0
+24 -26 -28 -3 -30 -32 34 -36 -38 4 40 42 44 -46 48 -50 -52 -54 -58 -59 -6 0
+24 -26 28 -3 30 -32 34 36 38 4 40 42 44 -46 -48 -50 52 54 -58 -59 -6 0
+-24 -26 -28 -3 -30 32 -34 36 -38 4 40 -42 44 -46 48 50 -52 54 58 -59 6 0
+24 -26 28 3 30 32 34 36 38 4 -40 -42 44 46 48 50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 408 T: 0.00
+c [unig] [    0.01 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 468 deleted: 0 T: 0.00
+-24 26 28 3 30 -32 34 36 -38 4 40 42 -44 -46 -48 -50 -52 54 -58 -59 6 0
+24 26 -28 -3 -30 -32 34 36 38 4 -40 42 44 -46 -48 50 -52 -54 -58 -59 -6 0
+-24 26 -28 3 30 -32 -34 36 38 4 40 42 -44 46 48 -50 -52 -54 58 -59 6 0
+24 -26 28 -3 30 32 34 36 -38 4 -40 -42 44 -46 -48 -50 52 -54 -58 -59 -6 0
+-24 26 -28 -3 -30 32 -34 -36 -38 4 40 42 44 46 -48 -50 -52 -54 58 -59 6 0
+24 26 28 3 30 -32 -34 36 38 4 -40 -42 -44 46 -48 -50 -52 -54 -58 -59 6 0
+-24 -26 28 -3 -30 32 34 -36 -38 4 40 42 44 46 -48 -50 -52 54 58 -59 6 0
+-24 -26 28 -3 30 -32 -34 -36 38 4 40 -42 44 46 -48 50 52 -54 58 -59 6 0
+-24 -26 28 3 -30 32 -34 36 -38 4 40 -42 -44 46 48 50 52 -54 58 -59 6 0
+-24 -26 28 -3 30 32 -34 36 38 4 40 42 44 46 -48 -50 52 54 -58 -59 -6 0
+24 26 28 3 -30 32 34 36 -38 4 -40 42 -44 46 -48 50 52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 468 T: 0.00
+c [unig] [    0.02 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 420 deleted: 0 T: 0.00
+24 -26 28 3 30 -32 -34 -36 38 4 -40 42 -44 46 48 -50 52 -54 58 -59 6 0
+-24 -26 28 3 30 32 34 -36 38 4 40 42 -44 46 -48 50 -52 54 58 -59 6 0
+-24 26 28 3 30 -32 34 36 38 4 -40 -42 44 -46 48 -50 -52 -54 -58 -59 6 0
+24 26 -28 3 30 32 34 36 -38 4 -40 42 44 -46 -48 -50 -52 -54 -58 -59 6 0
+-24 26 -28 3 30 32 -34 -36 38 4 40 42 44 -46 -48 -50 52 54 58 -59 6 0
+24 26 28 3 30 32 -34 36 38 4 40 -42 44 -46 -48 50 52 54 -58 -59 6 0
+-24 26 28 -3 30 32 -34 36 38 4 -40 -42 44 46 48 -50 52 -54 58 -59 6 0
+24 -26 28 3 30 32 -34 36 -38 4 -40 42 -44 46 -48 50 52 -54 -58 -59 6 0
+24 26 -28 -3 30 -32 -34 36 -38 4 -40 42 44 46 -48 -50 52 -54 58 -59 6 0
+24 -26 -28 -3 30 -32 -34 36 38 4 40 -42 -44 -46 -48 -50 52 54 58 -59 6 0
+-24 -26 28 -3 -30 32 -34 -36 -38 4 40 42 -44 -46 -48 50 52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 420 T: 0.00
+c [unig] [    0.02 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 424 deleted: 0 T: 0.00
+-24 26 -28 -3 -30 32 -34 36 38 4 40 42 -44 -46 -48 50 -52 -54 58 -59 6 0
+24 26 -28 -3 30 32 -34 36 38 4 -40 -42 -44 46 48 50 -52 54 58 -59 6 0
+24 26 -28 -3 -30 32 34 -36 -38 4 -40 -42 -44 -46 48 50 52 54 58 -59 6 0
+24 -26 28 -3 -30 -32 -34 -36 -38 4 40 42 44 46 48 -50 52 54 58 -59 6 0
+-24 -26 28 -3 30 32 34 -36 38 4 40 42 44 46 48 50 52 54 58 -59 6 0
+-24 26 -28 -3 30 -32 -34 -36 38 4 -40 -42 -44 -46 48 -50 52 54 58 -59 6 0
+24 -26 28 -3 -30 32 34 -36 38 4 -40 -42 44 -46 -48 50 52 -54 58 -59 6 0
+-24 26 -28 -3 -30 -32 34 36 -38 4 -40 -42 -44 46 48 -50 -52 54 58 -59 6 0
+-24 -26 28 -3 30 -32 -34 -36 -38 4 -40 -42 44 -46 -48 -50 52 -54 58 -59 6 0
+24 -26 28 -3 30 32 -34 36 -38 4 -40 -42 44 46 -48 50 -52 -54 58 -59 6 0
+24 26 -28 -3 -30 -32 -34 -36 38 4 40 42 -44 46 -48 -50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 424 T: 0.00
+c [unig] [    0.02 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 408 deleted: 0 T: 0.00
+24 26 -28 -3 30 32 -34 -36 -38 4 40 -42 -44 46 -48 50 52 -54 -58 -59 -6 0
+24 -26 28 3 30 32 34 36 38 4 40 -42 -44 -46 48 -50 52 54 -58 -59 6 0
+24 26 -28 -3 -30 32 -34 36 -38 4 -40 -42 44 -46 48 50 52 54 58 -59 6 0
+-24 -26 28 3 -30 32 -34 -36 -38 4 -40 -42 44 -46 48 -50 -52 54 58 -59 6 0
+24 26 -28 3 30 32 -34 36 -38 4 40 42 -44 46 48 -50 52 54 58 -59 6 0
+-24 26 -28 -3 30 32 34 36 -38 4 40 -42 44 46 -48 -50 52 -54 -58 -59 -6 0
+-24 26 -28 3 30 -32 -34 36 -38 4 -40 -42 44 -46 48 -50 -52 54 -58 -59 6 0
+24 26 -28 -3 30 -32 34 -36 38 4 -40 42 44 46 48 50 52 54 58 -59 6 0
+24 -26 28 3 -30 32 34 36 -38 4 -40 -42 -44 -46 48 50 -52 54 58 -59 6 0
+24 -26 28 -3 -30 -32 -34 -36 38 4 40 -42 44 -46 48 -50 -52 54 58 -59 6 0
+24 26 -28 3 30 -32 34 -36 -38 4 -40 -42 -44 -46 48 50 -52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 408 T: 0.00
+c [unig] [    0.02 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 484 deleted: 0 T: 0.00
+24 26 28 3 -30 32 -34 36 38 4 -40 -42 -44 46 -48 50 52 54 -58 -59 6 0
+24 -26 -28 3 30 32 34 36 -38 4 40 42 -44 -46 -48 50 52 54 -58 -59 6 0
+24 -26 28 -3 -30 -32 -34 -36 -38 4 40 42 44 -46 48 50 -52 -54 -58 -59 -6 0
+24 26 28 3 -30 -32 34 -36 -38 4 -40 -42 44 46 48 50 -52 -54 58 -59 6 0
+24 26 28 3 30 -32 34 -36 -38 4 40 -42 44 -46 48 50 -52 54 -58 -59 6 0
+24 26 28 -3 -30 32 34 -36 38 4 40 42 44 46 -48 50 -52 54 58 -59 6 0
+-24 26 -28 3 30 32 34 -36 38 4 -40 42 -44 -46 48 -50 52 -54 58 -59 6 0
+-24 -26 -28 -3 -30 -32 34 36 -38 4 -40 -42 44 -46 -48 -50 -52 -54 -58 -59 -6 0
+-24 -26 28 -3 -30 -32 -34 -36 38 4 -40 42 -44 46 -48 -50 52 54 58 -59 6 0
+-24 -26 28 3 30 -32 34 36 38 4 -40 -42 44 -46 -48 -50 -52 -54 58 -59 6 0
+-24 -26 28 3 -30 32 -34 -36 -38 4 40 -42 -44 46 48 -50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 484 T: 0.00
+c [unig] [    0.02 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 356 deleted: 0 T: 0.00
+24 -26 28 -3 -30 -32 34 -36 38 4 40 42 -44 -46 48 -50 52 -54 -58 -59 -6 0
+-24 -26 28 -3 30 -32 -34 36 -38 4 40 -42 -44 -46 -48 -50 52 -54 -58 -59 -6 0
+24 26 28 -3 30 -32 -34 36 -38 4 -40 -42 44 46 48 50 -52 54 -58 -59 -6 0
+-24 -26 -28 3 -30 32 34 -36 38 4 -40 42 -44 -46 -48 50 52 -54 -58 -59 6 0
+-24 -26 28 -3 30 32 -34 -36 -38 4 40 42 44 -46 -48 -50 -52 -54 -58 -59 -6 0
+24 26 28 3 30 -32 -34 -36 -38 4 40 -42 44 46 48 50 -52 -54 58 -59 6 0
+24 26 28 -3 -30 32 34 36 38 4 -40 42 44 46 48 50 52 -54 58 -59 6 0
+-24 26 28 -3 -30 32 34 36 38 4 -40 -42 -44 46 -48 50 52 54 -58 -59 -6 0
+24 26 -28 3 -30 -32 34 36 38 4 40 -42 -44 46 48 -50 52 54 -58 -59 6 0
+24 -26 -28 3 30 32 -34 36 -38 4 -40 -42 -44 -46 48 50 52 -54 -58 -59 6 0
+24 26 28 -3 30 32 -34 -36 -38 4 -40 42 -44 46 48 50 52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 356 T: 0.00
+c [unig] [    0.03 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 444 deleted: 0 T: 0.00
+24 -26 28 3 -30 32 34 36 38 4 40 42 44 46 -48 -50 -52 -54 58 -59 6 0
+24 -26 28 3 30 32 -34 -36 -38 4 -40 42 -44 -46 -48 -50 -52 54 58 -59 6 0
+24 26 28 -3 30 -32 -34 36 -38 4 40 -42 44 -46 -48 -50 -52 54 58 -59 6 0
+24 26 28 -3 30 -32 34 -36 38 4 40 42 -44 -46 -48 -50 -52 -54 -58 -59 -6 0
+24 -26 28 3 30 -32 34 -36 38 4 40 42 -44 46 -48 50 52 -54 58 -59 6 0
+24 -26 28 3 -30 -32 -34 36 -38 4 -40 42 44 -46 -48 50 52 54 58 -59 6 0
+24 26 28 3 -30 32 34 36 -38 4 40 -42 44 -46 -48 50 -52 -54 58 -59 6 0
+24 -26 28 -3 -30 32 34 36 -38 4 40 -42 44 46 -48 -50 52 -54 -58 -59 -6 0
+-24 -26 28 3 -30 32 34 -36 38 4 40 -42 -44 46 -48 50 -52 54 -58 -59 6 0
+24 26 28 3 -30 -32 -34 36 38 4 -40 -42 44 46 -48 -50 52 54 58 -59 6 0
+24 -26 28 -3 30 32 -34 -36 38 4 -40 -42 -44 -46 -48 -50 52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 444 T: 0.00
+c [unig] [    0.03 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 412 deleted: 0 T: 0.00
+24 26 28 -3 30 32 34 36 -38 4 -40 -42 -44 46 48 -50 52 54 -58 -59 -6 0
+24 -26 28 3 -30 -32 -34 -36 -38 4 40 42 44 46 48 -50 52 -54 58 -59 6 0
+24 -26 28 3 -30 32 34 36 -38 4 -40 42 -44 -46 -48 -50 -52 -54 -58 -59 6 0
+-24 -26 28 3 -30 32 34 -36 38 4 40 42 -44 -46 48 50 52 54 58 -59 6 0
+24 26 28 -3 -30 32 34 -36 -38 4 40 42 44 46 48 -50 52 -54 58 -59 6 0
+24 26 28 3 30 -32 -34 36 -38 4 40 -42 -44 46 -48 50 52 -54 -58 -59 6 0
+24 26 28 -3 30 -32 34 -36 -38 4 40 42 -44 46 -48 50 52 -54 -58 -59 -6 0
+24 26 28 3 30 -32 34 36 -38 4 40 42 44 -46 -48 -50 -52 54 58 -59 6 0
+-24 26 28 3 30 32 -34 36 38 4 40 42 -44 46 -48 50 -52 -54 58 -59 6 0
+24 26 28 -3 -30 -32 34 36 -38 4 -40 -42 44 46 -48 50 52 54 58 -59 6 0
+-24 26 28 -3 30 -32 -34 36 38 4 -40 -42 44 -46 48 50 52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 412 T: 0.00
+c [unig] [    0.03 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 468 deleted: 0 T: 0.00
+24 -26 -28 3 -30 32 -34 36 -38 4 40 42 -44 -46 -48 -50 -52 -54 -58 -59 6 0
+24 -26 -28 3 -30 -32 -34 36 38 4 -40 42 -44 46 -48 50 -52 54 -58 -59 6 0
+-24 -26 28 3 -30 32 34 -36 38 4 -40 -42 44 46 -48 50 -52 -54 -58 -59 6 0
+24 -26 -28 3 30 -32 34 36 38 4 -40 -42 -44 -46 -48 -50 -52 -54 -58 -59 6 0
+-24 -26 28 3 30 -32 -34 -36 -38 4 40 42 44 46 -48 50 -52 -54 -58 -59 6 0
+-24 -26 28 3 30 32 -34 -36 38 4 -40 42 44 -46 -48 -50 -52 54 -58 -59 6 0
+-24 -26 -28 3 30 -32 34 36 38 4 40 -42 44 -46 48 50 52 -54 -58 -59 6 0
+-24 -26 -28 3 -30 32 -34 36 -38 4 -40 42 44 -46 48 50 52 -54 -58 -59 6 0
+-24 -26 -28 3 30 32 34 36 -38 4 -40 -42 44 46 48 -50 52 54 -58 -59 6 0
+-24 -26 -28 3 -30 -32 -34 36 38 4 40 42 44 46 48 -50 52 54 -58 -59 6 0
+24 -26 -28 3 30 32 34 36 -38 4 40 -42 -44 46 -48 50 -52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 468 T: 0.00
+c [unig] [    0.03 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 384 deleted: 0 T: 0.00
+24 -26 -28 3 30 32 34 -36 38 4 -40 42 -44 -46 48 -50 52 -54 -58 -59 6 0
+24 26 28 -3 -30 32 -34 -36 38 4 40 42 -44 -46 48 50 -52 -54 58 -59 6 0
+-24 26 -28 3 30 32 -34 36 -38 4 -40 42 44 -46 48 50 -52 54 -58 -59 6 0
+-24 -26 28 3 -30 32 -34 -36 -38 4 40 42 -44 46 -48 50 -52 54 -58 -59 6 0
+-24 26 -28 -3 30 32 34 -36 -38 4 -40 42 -44 46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 3 30 -32 -34 -36 38 4 -40 -42 44 46 48 50 -52 54 -58 -59 6 0
+24 -26 -28 -3 30 -32 -34 -36 -38 4 -40 -42 44 -46 -48 50 -52 -54 58 -59 6 0
+-24 -26 28 3 30 32 -34 36 -38 4 -40 -42 -44 46 -48 50 52 54 -58 -59 6 0
+24 26 28 -3 -30 -32 -34 36 -38 4 40 -42 -44 46 48 50 -52 -54 58 -59 6 0
+24 -26 -28 3 -30 -32 34 -36 -38 4 40 42 -44 46 48 -50 -52 -54 -58 -59 6 0
+-24 26 -28 3 -30 -32 -34 36 38 4 40 42 44 46 48 50 52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 384 T: 0.00
+c [unig] [    0.03 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 456 deleted: 0 T: 0.00
+-24 26 -28 3 -30 32 34 -36 -38 4 40 42 44 -46 48 50 52 -54 -58 -59 6 0
+-24 26 28 -3 30 32 -34 36 38 4 40 42 -44 -46 48 50 52 54 58 -59 6 0
+-24 -26 -28 -3 30 32 -34 -36 38 4 40 -42 44 46 -48 50 -52 54 -58 -59 -6 0
+24 26 -28 3 -30 -32 -34 -36 38 4 -40 42 44 46 -48 50 -52 54 58 -59 6 0
+-24 -26 -28 3 -30 -32 -34 -36 -38 4 40 -42 44 -46 -48 -50 52 -54 58 -59 6 0
+-24 -26 28 -3 30 -32 -34 36 -38 4 40 -42 44 -46 -48 50 -52 54 58 -59 6 0
+-24 26 28 -3 -30 -32 34 -36 -38 4 40 -42 44 46 -48 50 52 54 58 -59 6 0
+24 -26 -28 3 30 -32 -34 36 -38 4 -40 42 -44 -46 -48 -50 -52 54 -58 -59 6 0
+-24 26 -28 3 -30 32 -34 -36 38 4 40 42 -44 -46 48 -50 -52 -54 58 -59 6 0
+24 26 -28 3 30 32 -34 36 38 4 -40 -42 44 -46 48 -50 52 54 -58 -59 6 0
+24 26 -28 -3 -30 -32 34 36 38 4 -40 -42 -44 46 48 -50 52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 456 T: 0.00
+c [unig] [    0.04 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 444 deleted: 0 T: 0.00
+-24 -26 -28 3 -30 -32 34 -36 -38 4 -40 -42 44 46 48 50 52 -54 58 -59 6 0
+-24 26 28 -3 30 -32 34 -36 -38 4 -40 -42 44 -46 48 -50 -52 54 -58 -59 -6 0
+24 -26 -28 3 -30 -32 34 -36 -38 4 -40 -42 44 46 -48 -50 -52 54 -58 -59 6 0
+24 26 -28 3 30 32 -34 36 38 4 40 42 -44 46 48 50 52 -54 58 -59 6 0
+-24 26 -28 -3 -30 -32 34 -36 38 4 -40 -42 44 -46 48 -50 52 54 -58 -59 -6 0
+24 26 -28 -3 30 -32 34 36 38 4 40 42 -44 -46 -48 -50 -52 -54 58 -59 6 0
+24 -26 28 3 30 32 34 36 -38 4 40 -42 44 -46 48 -50 52 54 -58 -59 6 0
+24 26 -28 3 30 -32 -34 -36 -38 4 -40 42 -44 -46 -48 50 52 -54 58 -59 6 0
+-24 -26 -28 3 -30 32 34 36 38 4 40 -42 44 -46 -48 50 52 -54 58 -59 6 0
+24 -26 28 3 30 -32 34 -36 38 4 -40 -42 44 46 -48 -50 52 54 -58 -59 6 0
+-24 26 28 3 -30 32 -34 36 -38 4 40 42 -44 46 -48 -50 52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 444 T: 0.00
+c [unig] [    0.04 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 440 deleted: 0 T: 0.00
+24 -26 -28 -3 30 -32 -34 -36 -38 4 40 -42 -44 46 48 50 -52 54 -58 -59 -6 0
+24 26 28 -3 -30 -32 -34 36 -38 4 40 -42 -44 46 48 -50 52 -54 58 -59 6 0
+-24 26 28 3 -30 -32 -34 -36 38 4 40 42 44 46 -48 -50 -52 54 58 -59 6 0
+-24 -26 -28 -3 30 32 -34 -36 -38 4 -40 -42 -44 46 -48 50 52 -54 58 -59 6 0
+-24 26 -28 3 -30 -32 -34 36 -38 4 -40 42 -44 -46 48 -50 52 54 58 -59 6 0
+24 -26 -28 3 30 32 -34 36 38 4 -40 42 44 46 48 50 -52 54 58 -59 6 0
+24 -26 28 -3 -30 -32 -34 -36 -38 4 40 42 44 46 -48 50 52 -54 58 -59 6 0
+-24 26 28 3 -30 -32 34 -36 38 4 40 -42 44 -46 48 -50 52 54 -58 -59 6 0
+-24 26 28 -3 -30 32 -34 36 -38 4 -40 -42 -44 46 -48 -50 -52 54 -58 -59 -6 0
+-24 -26 28 -3 30 32 -34 36 38 4 40 -42 44 -46 48 50 -52 -54 58 -59 6 0
+24 26 -28 3 30 32 34 -36 38 4 -40 42 -44 -46 48 -50 52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 440 T: 0.00
+c [unig] [    0.04 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 444 deleted: 0 T: 0.00
+24 26 -28 3 -30 32 34 36 38 4 -40 42 -44 -46 48 -50 52 54 -58 -59 6 0
+24 26 -28 3 30 -32 34 -36 38 4 40 42 44 46 -48 -50 -52 -54 -58 -59 6 0
+-24 -26 28 3 30 32 34 -36 -38 4 40 42 44 46 48 50 -52 54 -58 -59 6 0
+-24 -26 28 3 -30 -32 34 36 -38 4 -40 42 -44 -46 -48 50 52 -54 -58 -59 6 0
+-24 26 28 3 -30 -32 34 36 38 4 40 -42 44 -46 -48 -50 -52 54 -58 -59 6 0
+24 -26 -28 3 30 -32 34 -36 -38 4 -40 -42 -44 46 -48 50 52 54 -58 -59 6 0
+24 26 -28 3 -30 -32 -34 36 -38 4 -40 -42 44 -46 48 50 52 -54 -58 -59 6 0
+24 -26 -28 3 -30 -32 -34 36 38 4 40 42 -44 -46 48 -50 -52 54 -58 -59 6 0
+24 26 -28 3 30 32 -34 -36 -38 4 40 -42 -44 46 -48 50 -52 54 -58 -59 6 0
+-24 26 28 3 30 32 34 -36 38 4 -40 -42 -44 46 48 -50 52 -54 -58 -59 6 0
+-24 -26 28 3 30 -32 -34 -36 38 4 40 -42 -44 46 48 -50 -52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 444 T: 0.00
+c [unig] [    0.04 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 444 deleted: 0 T: 0.00
+-24 -26 28 -3 30 -32 -34 36 38 4 -40 -42 44 -46 -48 50 -52 54 58 -59 6 0
+24 26 28 -3 30 32 -34 36 -38 4 40 -42 44 46 48 -50 52 -54 -58 -59 -6 0
+-24 -26 -28 -3 -30 32 -34 36 38 4 -40 42 44 46 -48 50 52 -54 58 -59 6 0
+-24 26 -28 -3 30 32 -34 36 -38 4 40 42 -44 -46 -48 -50 -52 54 -58 -59 -6 0
+24 26 28 3 -30 32 34 -36 38 4 40 42 44 -46 -48 50 -52 54 -58 -59 6 0
+-24 -26 28 3 -30 -32 34 36 -38 4 -40 42 -44 -46 48 -50 -52 54 58 -59 6 0
+-24 -26 -28 -3 30 -32 -34 36 38 4 -40 42 -44 -46 -48 50 -52 54 -58 -59 -6 0
+-24 -26 28 -3 -30 32 -34 36 38 4 -40 -42 -44 46 -48 50 52 -54 -58 -59 -6 0
+24 -26 -28 -3 30 -32 -34 36 38 4 -40 42 -44 46 48 50 52 -54 58 -59 6 0
+-24 -26 -28 3 -30 -32 34 -36 -38 4 -40 -42 -44 46 48 -50 52 -54 -58 -59 6 0
+24 26 28 3 30 -32 34 36 38 4 40 42 44 -46 -48 50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 444 T: 0.00
+c [unig] [    0.04 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 464 deleted: 0 T: 0.00
+24 26 28 3 -30 -32 -34 36 38 4 40 42 -44 -46 -48 -50 -52 54 58 -59 6 0
+-24 -26 -28 3 30 32 34 -36 38 4 40 42 -44 -46 48 -50 52 54 -58 -59 6 0
+24 -26 -28 -3 -30 -32 34 36 38 4 40 42 -44 46 -48 50 -52 -54 -58 -59 -6 0
+24 26 -28 -3 30 32 -34 36 -38 4 40 -42 44 46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 3 30 32 -34 36 38 4 -40 42 44 46 -48 50 -52 -54 -58 -59 6 0
+24 -26 28 -3 30 -32 -34 36 -38 4 -40 -42 44 46 48 50 52 -54 58 -59 6 0
+24 26 28 -3 -30 32 34 36 38 4 -40 42 -44 46 48 -50 -52 54 -58 -59 -6 0
+24 -26 -28 3 -30 -32 -34 36 38 4 -40 -42 44 -46 -48 -50 -52 -54 -58 -59 6 0
+-24 -26 -28 -3 30 32 -34 -36 38 4 -40 -42 44 46 48 50 52 54 -58 -59 -6 0
+-24 26 -28 -3 -30 -32 34 -36 -38 4 -40 42 -44 46 48 -50 -52 -54 58 -59 6 0
+24 -26 -28 -3 30 32 34 -36 -38 4 -40 -42 -44 -46 48 50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 464 T: 0.00
+c [unig] [    0.05 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 448 deleted: 0 T: 0.00
+-24 26 28 3 -30 -32 -34 -36 -38 4 40 42 -44 -46 48 -50 -52 -54 58 -59 6 0
+24 -26 28 3 -30 -32 -34 -36 38 4 40 42 44 46 -48 50 -52 54 58 -59 6 0
+-24 -26 -28 3 -30 -32 -34 36 38 4 -40 -42 44 -46 -48 -50 52 54 58 -59 6 0
+24 -26 -28 3 30 -32 34 36 38 4 -40 42 44 -46 48 -50 -52 54 58 -59 6 0
+-24 -26 28 3 -30 32 34 -36 -38 4 40 -42 44 46 -48 50 -52 54 58 -59 6 0
+24 -26 -28 3 -30 32 34 36 -38 4 -40 42 44 -46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 3 -30 32 34 36 38 4 -40 42 -44 46 48 50 52 -54 58 -59 6 0
+-24 -26 -28 3 30 32 -34 36 -38 4 -40 -42 44 -46 48 -50 -52 54 58 -59 6 0
+24 26 -28 3 -30 -32 -34 36 -38 4 -40 -42 -44 46 48 50 52 -54 58 -59 6 0
+24 26 -28 3 30 32 -34 36 38 4 -40 -42 -44 46 -48 50 -52 -54 58 -59 6 0
+-24 26 -28 3 30 -32 34 36 -38 4 -40 42 -44 46 -48 50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 448 T: 0.00
+c [unig] [    0.05 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 476 deleted: 0 T: 0.00
+-24 -26 28 -3 30 32 34 36 38 4 -40 42 44 46 48 50 52 54 -58 -59 -6 0
+-24 26 28 -3 30 -32 -34 36 38 4 40 -42 44 -46 -48 50 52 -54 -58 -59 -6 0
+-24 -26 -28 3 -30 32 -34 36 38 4 -40 -42 -44 -46 -48 50 52 54 -58 -59 6 0
+24 -26 28 -3 30 32 -34 36 38 4 40 -42 -44 46 48 50 -52 -54 58 -59 6 0
+24 26 -28 -3 30 32 34 -36 -38 4 -40 -42 44 46 48 50 -52 -54 -58 -59 -6 0
+24 26 -28 3 30 -32 -34 -36 38 4 40 42 44 46 48 50 -52 54 58 -59 6 0
+24 -26 -28 3 30 32 34 -36 38 4 -40 -42 44 -46 -48 50 -52 -54 58 -59 6 0
+24 -26 -28 -3 30 -32 -34 -36 -38 4 40 42 44 -46 -48 50 -52 54 -58 -59 -6 0
+24 -26 28 3 -30 -32 34 -36 -38 4 40 -42 -44 46 48 50 -52 54 -58 -59 6 0
+-24 -26 28 3 -30 32 -34 36 38 4 40 42 -44 46 48 50 52 -54 58 -59 6 0
+24 26 -28 -3 -30 -32 34 -36 38 4 -40 42 -44 46 48 50 -52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 476 T: 0.00
+c [unig] [    0.05 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 464 deleted: 0 T: 0.00
+24 26 28 3 30 -32 34 36 38 4 40 42 44 -46 -48 50 52 54 -58 -59 6 0
+-24 -26 -28 3 -30 -32 -34 36 38 4 40 42 -44 46 48 -50 52 54 -58 -59 6 0
+-24 -26 -28 3 -30 -32 34 -36 -38 4 40 42 -44 -46 -48 50 52 -54 -58 -59 6 0
+-24 -26 -28 -3 30 -32 34 36 -38 4 -40 -42 44 46 48 -50 -52 54 58 -59 6 0
+24 -26 -28 -3 30 32 -34 36 38 4 40 -42 44 -46 -48 -50 52 -54 58 -59 6 0
+24 -26 28 -3 30 -32 34 36 38 4 40 -42 44 -46 48 50 -52 54 -58 -59 -6 0
+-24 26 28 -3 -30 32 -34 -36 -38 4 40 -42 -44 -46 -48 -50 52 54 58 -59 6 0
+24 -26 -28 3 -30 32 34 36 -38 4 -40 42 -44 -46 -48 -50 -52 -54 -58 -59 6 0
+-24 26 -28 -3 -30 -32 34 -36 -38 4 40 -42 -44 -46 48 50 -52 -54 -58 -59 -6 0
+24 26 28 -3 -30 -32 -34 36 -38 4 -40 -42 -44 -46 -48 50 -52 54 58 -59 6 0
+24 26 -28 3 -30 32 34 36 -38 4 40 -42 44 46 48 50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 464 T: 0.00
+c [unig] [    0.05 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 384 deleted: 0 T: 0.00
+-24 26 28 -3 30 -32 34 -36 38 4 40 42 44 46 -48 50 52 54 -58 -59 -6 0
+-24 -26 28 3 30 32 -34 36 -38 4 40 -42 -44 46 -48 50 -52 -54 -58 -59 6 0
+-24 -26 -28 -3 30 -32 34 36 38 4 -40 42 44 -46 -48 50 -52 54 58 -59 6 0
+-24 -26 28 3 30 -32 -34 36 -38 4 -40 -42 44 46 48 -50 52 -54 58 -59 6 0
+24 26 28 3 30 32 -34 36 38 4 40 -42 -44 -46 -48 50 -52 -54 58 -59 6 0
+24 -26 28 3 -30 -32 -34 36 38 4 40 -42 44 46 48 50 52 -54 58 -59 6 0
+24 26 -28 3 -30 -32 34 -36 38 4 -40 -42 44 -46 -48 50 52 -54 -58 -59 6 0
+24 -26 -28 3 30 -32 34 -36 38 4 40 -42 44 46 -48 -50 52 -54 58 -59 6 0
+24 26 28 -3 -30 32 -34 -36 -38 4 40 42 -44 46 -48 50 52 54 58 -59 6 0
+-24 -26 -28 -3 30 32 -34 36 38 4 40 42 -44 -46 -48 -50 -52 54 -58 -59 -6 0
+-24 -26 28 -3 -30 32 34 -36 38 4 40 42 -44 -46 48 50 -52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 384 T: 0.00
+c [unig] [    0.06 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 420 deleted: 0 T: 0.00
+-24 -26 -28 3 -30 -32 -34 36 -38 4 -40 -42 -44 46 -48 -50 -52 54 -58 -59 6 0
+-24 -26 28 -3 30 -32 34 -36 -38 4 40 -42 44 46 48 -50 -52 54 58 -59 6 0
+-24 26 28 -3 -30 -32 -34 36 -38 4 40 42 44 46 48 50 52 -54 58 -59 6 0
+-24 -26 -28 3 -30 32 34 36 38 4 -40 -42 -44 46 -48 50 -52 -54 -58 -59 6 0
+-24 26 28 -3 -30 32 34 36 38 4 40 42 44 46 48 -50 52 54 58 -59 6 0
+-24 26 -28 3 30 -32 34 -36 -38 4 -40 42 -44 46 -48 50 52 -54 -58 -59 6 0
+-24 26 -28 3 -30 32 -34 36 -38 4 -40 42 -44 46 -48 -50 52 -54 58 -59 6 0
+24 26 -28 -3 30 32 34 -36 -38 4 -40 -42 -44 46 48 -50 -52 -54 58 -59 6 0
+-24 -26 28 -3 -30 32 34 -36 38 4 40 -42 44 -46 48 -50 -52 -54 -58 -59 -6 0
+24 26 -28 -3 30 -32 -34 -36 38 4 -40 -42 -44 46 48 50 -52 54 58 -59 6 0
+-24 26 28 -3 30 -32 34 36 -38 4 40 42 44 -46 48 -50 52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 420 T: 0.00
+c [unig] [    0.06 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 468 deleted: 0 T: 0.00
+24 26 -28 -3 -30 32 34 -36 38 4 -40 -42 -44 -46 -48 50 52 54 58 -59 6 0
+24 -26 28 -3 30 32 34 -36 38 4 40 42 44 46 -48 50 52 54 58 -59 6 0
+-24 -26 -28 -3 30 32 -34 -36 38 4 -40 -42 44 -46 -48 -50 -52 54 -58 -59 -6 0
+24 -26 -28 3 -30 32 34 -36 38 4 -40 -42 44 46 -48 50 -52 -54 58 -59 6 0
+24 -26 28 3 -30 32 34 36 -38 4 40 42 -44 -46 -48 -50 52 54 -58 -59 6 0
+-24 26 28 3 30 32 34 -36 -38 4 40 42 -44 46 -48 -50 -52 -54 58 -59 6 0
+-24 -26 -28 3 -30 32 34 -36 -38 4 -40 -42 44 -46 -48 -50 -52 -54 58 -59 6 0
+-24 -26 28 -3 30 32 -34 36 -38 4 40 -42 -44 -46 48 50 -52 -54 58 -59 6 0
+-24 26 -28 3 30 32 34 36 38 4 -40 -42 44 -46 -48 50 52 54 -58 -59 6 0
+24 26 -28 3 30 32 34 36 -38 4 -40 -42 44 46 -48 -50 52 54 -58 -59 6 0
+24 -26 28 3 -30 32 -34 -36 -38 4 40 -42 44 -46 48 50 -52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 468 T: 0.00
+c [unig] [    0.06 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 488 deleted: 0 T: 0.00
+-24 26 -28 -3 -30 -32 -34 -36 -38 4 40 42 -44 -46 -48 -50 52 54 58 -59 6 0
+-24 -26 28 -3 -30 -32 -34 -36 -38 4 40 42 -44 -46 48 -50 -52 -54 58 -59 6 0
+-24 26 28 3 30 32 34 -36 -38 4 40 -42 44 46 48 -50 52 -54 58 -59 6 0
+24 26 28 3 30 32 -34 36 -38 4 -40 -42 44 -46 48 -50 52 -54 -58 -59 6 0
+-24 -26 28 -3 -30 -32 -34 36 -38 4 40 -42 -44 -46 -48 50 52 54 -58 -59 -6 0
+24 26 28 3 30 32 -34 -36 38 4 40 42 -44 -46 -48 -50 -52 54 58 -59 6 0
+24 -26 28 -3 -30 -32 34 36 38 4 40 42 44 46 48 50 -52 -54 -58 -59 -6 0
+24 -26 -28 3 30 32 -34 -36 38 4 40 42 -44 -46 48 -50 52 -54 58 -59 6 0
+24 -26 28 3 30 -32 -34 -36 -38 4 40 -42 44 -46 48 50 -52 -54 58 -59 6 0
+24 -26 28 3 30 -32 -34 36 38 4 -40 42 -44 -46 -48 50 52 54 -58 -59 6 0
+-24 -26 -28 3 30 32 34 -36 -38 4 40 -42 44 46 -48 -50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 488 T: 0.00
+c [unig] [    0.06 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 440 deleted: 0 T: 0.00
+24 26 28 3 30 -32 34 -36 38 4 40 -42 44 46 48 50 52 -54 -58 -59 6 0
+24 26 -28 3 -30 -32 -34 36 -38 4 40 -42 44 46 48 -50 52 54 -58 -59 6 0
+24 -26 -28 3 -30 32 -34 36 38 4 -40 -42 44 -46 -48 -50 -52 54 58 -59 6 0
+-24 26 -28 -3 -30 -32 -34 36 -38 4 -40 42 44 -46 -48 -50 -52 54 -58 -59 -6 0
+24 -26 -28 -3 -30 -32 -34 36 38 4 -40 42 44 46 48 50 52 -54 58 -59 6 0
+24 26 28 3 -30 -32 -34 -36 -38 4 40 -42 44 46 -48 -50 -52 -54 58 -59 6 0
+-24 26 28 -3 30 -32 34 36 -38 4 40 -42 44 46 -48 50 -52 -54 58 -59 6 0
+24 26 28 -3 -30 32 -34 36 38 4 -40 -42 44 46 48 50 52 54 -58 -59 -6 0
+-24 -26 -28 -3 30 32 34 36 -38 4 40 42 44 46 -48 50 -52 54 -58 -59 -6 0
+-24 26 28 3 30 32 34 36 -38 4 40 42 44 -46 48 -50 52 54 58 -59 6 0
+-24 -26 -28 -3 30 32 34 -36 38 4 -40 -42 44 -46 -48 50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 440 T: 0.00
+c [unig] [    0.07 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 436 deleted: 0 T: 0.00
+-24 -26 -28 -3 -30 -32 34 36 38 4 40 -42 -44 46 48 -50 -52 -54 -58 -59 -6 0
+24 26 -28 -3 -30 -32 34 36 -38 4 40 -42 44 -46 -48 50 52 54 58 -59 6 0
+24 -26 -28 -3 30 32 -34 -36 -38 4 40 42 44 46 48 50 52 54 -58 -59 -6 0
+24 26 28 -3 -30 32 34 36 38 4 40 -42 -44 -46 -48 50 52 54 -58 -59 -6 0
+-24 -26 28 3 30 32 34 -36 -38 4 -40 42 -44 46 -48 -50 -52 -54 58 -59 6 0
+-24 26 -28 -3 30 -32 -34 36 -38 4 -40 -42 44 -46 48 50 52 -54 -58 -59 -6 0
+24 -26 -28 3 30 32 -34 -36 38 4 -40 42 44 -46 -48 -50 -52 54 -58 -59 6 0
+-24 26 28 -3 30 -32 -34 -36 -38 4 40 42 44 -46 -48 -50 -52 -54 -58 -59 -6 0
+-24 -26 28 -3 -30 -32 34 -36 38 4 -40 42 -44 46 -48 50 52 -54 -58 -59 -6 0
+24 26 28 3 -30 32 34 36 -38 4 -40 -42 -44 46 48 -50 -52 54 -58 -59 6 0
+-24 26 28 -3 30 32 -34 36 38 4 -40 -42 -44 -46 48 50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 436 T: 0.00
+c [unig] [    0.07 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 416 deleted: 0 T: 0.00
+-24 -26 -28 -3 -30 -32 34 -36 38 4 -40 42 44 -46 -48 50 -52 -54 -58 -59 -6 0
+-24 26 28 3 30 -32 34 -36 38 4 -40 42 -44 -46 48 50 52 54 -58 -59 6 0
+24 26 -28 -3 30 32 34 -36 -38 4 -40 -42 44 46 48 -50 52 -54 58 -59 6 0
+-24 26 28 3 -30 -32 -34 36 -38 4 -40 42 -44 46 -48 -50 52 -54 -58 -59 6 0
+24 -26 28 3 30 32 34 36 38 4 40 -42 -44 46 -48 -50 52 54 58 -59 6 0
+-24 26 28 -3 30 -32 -34 -36 38 4 -40 42 -44 -46 -48 50 -52 -54 -58 -59 -6 0
+24 26 -28 3 -30 32 -34 36 38 4 40 -42 44 46 -48 -50 52 54 58 -59 6 0
+-24 -26 28 -3 30 32 -34 36 38 4 40 -42 -44 46 48 -50 52 54 58 -59 6 0
+-24 -26 28 -3 -30 32 34 -36 -38 4 40 -42 -44 -46 -48 50 52 -54 58 -59 6 0
+24 -26 -28 3 -30 -32 34 -36 38 4 40 42 44 46 -48 -50 52 54 -58 -59 6 0
+-24 -26 28 3 30 32 -34 36 38 4 -40 -42 -44 -46 48 50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 416 T: 0.00
+c [unig] [    0.07 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 444 deleted: 0 T: 0.00
+-24 -26 28 -3 -30 32 34 -36 -38 4 40 -42 -44 46 48 -50 52 -54 -58 -59 -6 0
+-24 26 -28 3 -30 -32 -34 36 38 4 40 42 44 -46 48 50 -52 -54 -58 -59 6 0
+-24 -26 -28 3 30 -32 34 36 -38 4 40 42 44 46 -48 50 52 54 -58 -59 6 0
+24 26 28 -3 30 32 -34 -36 38 4 -40 -42 44 46 48 50 52 54 58 -59 6 0
+24 -26 -28 3 -30 32 34 -36 38 4 -40 -42 44 -46 -48 -50 -52 54 -58 -59 6 0
+-24 -26 28 3 30 -32 34 -36 38 4 40 42 44 46 48 50 -52 -54 58 -59 6 0
+-24 -26 28 3 30 32 -34 36 38 4 -40 -42 -44 46 48 50 52 -54 58 -59 6 0
+-24 26 28 -3 30 -32 34 36 38 4 -40 42 44 -46 -48 -50 52 54 -58 -59 -6 0
+24 26 28 -3 -30 -32 -34 36 -38 4 -40 42 -44 46 -48 50 52 54 -58 -59 -6 0
+24 26 -28 3 30 -32 34 36 -38 4 40 42 -44 46 48 -50 -52 -54 -58 -59 6 0
+-24 -26 28 -3 30 -32 34 36 38 4 40 42 44 46 -48 -50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 444 T: 0.00
+c [unig] [    0.08 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 396 deleted: 0 T: 0.00
+-24 26 28 3 30 -32 -34 -36 38 4 -40 -42 44 46 -48 50 52 54 -58 -59 6 0
+24 26 28 3 30 -32 -34 36 -38 4 40 -42 -44 46 -48 50 52 -54 58 -59 6 0
+24 26 -28 3 30 -32 34 36 -38 4 -40 42 -44 -46 48 -50 -52 54 -58 -59 6 0
+24 -26 -28 -3 -30 32 -34 36 -38 4 -40 -42 44 -46 48 -50 -52 -54 58 -59 6 0
+24 26 -28 -3 30 -32 34 36 -38 4 40 -42 44 -46 48 -50 52 54 -58 -59 -6 0
+-24 -26 28 -3 -30 32 -34 -36 -38 4 -40 42 -44 46 -48 -50 -52 -54 58 -59 6 0
+-24 26 -28 3 30 -32 -34 -36 -38 4 40 42 44 -46 48 50 52 -54 58 -59 6 0
+24 26 -28 -3 -30 -32 34 36 -38 4 -40 42 -44 46 48 50 -52 54 58 -59 6 0
+24 -26 -28 -3 30 32 34 36 38 4 40 42 -44 46 48 -50 -52 -54 -58 -59 -6 0
+24 -26 -28 3 30 32 34 36 38 4 -40 -42 44 46 48 -50 52 -54 -58 -59 6 0
+24 26 -28 -3 30 -32 -34 36 38 4 40 -42 44 -46 48 50 -52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 396 T: 0.00
+c [unig] [    0.08 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 448 deleted: 0 T: 0.00
+24 -26 28 3 30 32 -34 -36 -38 4 40 -42 44 46 48 -50 -52 54 58 -59 6 0
+-24 -26 28 -3 -30 -32 34 -36 38 4 40 -42 -44 46 -48 -50 -52 54 58 -59 6 0
+-24 26 -28 3 -30 -32 -34 36 -38 4 -40 -42 44 46 -48 50 -52 54 58 -59 6 0
+-24 26 28 -3 30 32 34 -36 -38 4 40 -42 -44 -46 -48 -50 52 -54 58 -59 6 0
+24 -26 -28 -3 -30 -32 34 36 -38 4 -40 -42 -44 -46 48 50 52 -54 58 -59 6 0
+24 26 -28 -3 30 32 34 36 38 4 -40 -42 -44 46 48 50 -52 54 58 -59 6 0
+-24 26 28 3 -30 -32 -34 36 38 4 40 42 -44 -46 -48 50 52 -54 -58 -59 6 0
+24 -26 28 3 30 32 34 36 38 4 40 42 44 46 -48 -50 -52 -54 -58 -59 6 0
+24 -26 28 -3 -30 -32 -34 36 38 4 40 -42 44 46 48 -50 52 54 -58 -59 -6 0
+-24 26 -28 -3 30 32 -34 36 -38 4 -40 -42 44 46 48 -50 -52 -54 58 -59 6 0
+-24 -26 -28 -3 -30 -32 -34 -36 -38 4 -40 -42 44 -46 -48 50 -52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 448 T: 0.00
+c [unig] [    0.08 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 404 deleted: 0 T: 0.00
+-24 -26 -28 -3 -30 32 -34 -36 -38 4 40 42 44 -46 48 -50 -52 -54 58 -59 6 0
+-24 26 -28 3 -30 32 -34 36 38 4 -40 42 -44 -46 -48 50 -52 -54 -58 -59 6 0
+-24 26 -28 -3 -30 32 -34 36 38 4 40 -42 44 -46 48 -50 52 -54 -58 -59 -6 0
+-24 -26 -28 3 30 32 -34 -36 38 4 -40 42 44 46 -48 50 -52 54 58 -59 6 0
+-24 26 28 3 -30 -32 -34 -36 38 4 -40 42 -44 -46 48 -50 -52 -54 58 -59 6 0
+24 -26 -28 3 -30 32 -34 36 -38 4 -40 42 -44 46 -48 -50 -52 54 58 -59 6 0
+24 26 28 3 -30 32 -34 -36 38 4 40 42 -44 -46 -48 -50 52 54 -58 -59 6 0
+24 26 28 -3 -30 -32 -34 36 38 4 40 42 44 46 -48 -50 -52 54 58 -59 6 0
+24 26 28 -3 -30 32 -34 -36 38 4 -40 -42 44 -46 48 50 -52 54 -58 -59 -6 0
+-24 -26 -28 3 -30 -32 -34 36 -38 4 40 42 -44 46 48 -50 52 -54 -58 -59 6 0
+24 26 28 3 30 -32 -34 36 -38 4 -40 42 44 -46 48 50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 404 T: 0.00
+c [unig] [    0.08 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 416 deleted: 0 T: 0.00
+c [unig] [    0.08 ] bounded_sol_count looking for   64 solutions -- hashes active: 12
+c [unig] [    0.08 ] bounded_sol_count looking for   64 solutions -- hashes active: 14
+c [gauss] XOR-encoding clauses detached: 28 deleted: 0 T: 0.00
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 444 T: 0.00
+c [unig] [    0.09 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 396 deleted: 0 T: 0.00
+24 26 -28 -3 30 -32 -34 -36 -38 4 40 42 44 -46 48 50 52 -54 58 -59 6 0
+24 -26 28 -3 30 32 -34 -36 -38 4 -40 42 44 -46 -48 50 -52 -54 -58 -59 -6 0
+-24 -26 28 -3 30 32 -34 36 38 4 40 -42 44 46 48 50 52 -54 58 -59 6 0
+-24 -26 28 3 30 32 -34 36 38 4 -40 -42 44 -46 -48 -50 52 54 58 -59 6 0
+-24 -26 28 3 30 -32 34 -36 -38 4 -40 42 44 46 -48 -50 -52 -54 -58 -59 6 0
+24 -26 -28 3 30 32 -34 36 -38 4 -40 42 -44 -46 -48 50 -52 54 -58 -59 6 0
+-24 26 28 -3 30 32 34 36 -38 4 40 42 -44 46 48 -50 52 54 58 -59 6 0
+24 26 28 3 30 -32 34 36 -38 4 40 42 -44 -46 -48 -50 -52 54 -58 -59 6 0
+24 -26 28 3 30 -32 -34 36 38 4 40 -42 44 -46 -48 50 -52 -54 -58 -59 6 0
+24 -26 28 -3 30 32 34 -36 -38 4 -40 42 44 -46 48 -50 52 -54 58 -59 6 0
+-24 -26 -28 -3 30 -32 -34 36 -38 4 -40 42 -44 46 48 50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 396 T: 0.00
+c [unig] [    0.09 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 420 deleted: 0 T: 0.00
+24 26 -28 3 -30 -32 34 36 38 4 -40 -42 -44 46 -48 -50 52 54 58 -59 6 0
+24 -26 28 -3 -30 -32 -34 -36 -38 4 40 42 44 46 48 -50 52 54 58 -59 6 0
+-24 -26 28 -3 30 32 -34 36 -38 4 40 42 44 -46 -48 50 52 -54 -58 -59 -6 0
+24 -26 -28 3 -30 -32 34 36 38 4 -40 42 44 -46 48 -50 52 -54 58 -59 6 0
+24 -26 -28 -3 30 -32 -34 36 38 4 40 42 -44 46 -48 -50 -52 54 -58 -59 -6 0
+-24 -26 -28 -3 -30 32 34 -36 -38 4 40 -42 44 -46 -48 -50 -52 54 -58 -59 -6 0
+24 -26 28 3 30 -32 34 36 -38 4 40 -42 44 -46 48 50 52 -54 -58 -59 6 0
+24 26 -28 -3 30 -32 34 36 -38 4 40 42 -44 -46 -48 50 -52 54 58 -59 6 0
+24 26 -28 -3 30 -32 -34 36 38 4 40 -42 44 -46 48 -50 -52 -54 -58 -59 -6 0
+-24 26 28 3 -30 32 34 36 -38 4 -40 -42 44 -46 -48 50 -52 -54 58 -59 6 0
+-24 -26 -28 -3 -30 32 -34 -36 38 4 40 42 -44 -46 48 50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 420 T: 0.00
+c [unig] [    0.09 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 396 deleted: 0 T: 0.00
+24 -26 28 -3 30 -32 34 -36 -38 4 40 -42 -44 46 48 -50 52 -54 58 -59 6 0
+24 -26 -28 -3 -30 32 -34 -36 38 4 -40 42 44 -46 -48 50 -52 54 58 -59 6 0
+24 -26 28 3 -30 32 34 -36 38 4 40 -42 44 46 48 50 -52 54 58 -59 6 0
+24 -26 -28 -3 30 -32 34 36 -38 4 40 -42 -44 -46 -48 -50 52 54 58 -59 6 0
+24 -26 28 3 30 -32 -34 36 -38 4 -40 42 -44 46 48 -50 52 54 58 -59 6 0
+24 26 28 3 30 -32 -34 -36 -38 4 -40 -42 44 -46 48 -50 -52 54 -58 -59 6 0
+24 -26 28 3 30 -32 -34 36 -38 4 40 42 -44 46 48 50 -52 54 58 -59 6 0
+24 26 -28 3 30 -32 -34 36 -38 4 40 -42 44 46 -48 50 52 -54 -58 -59 6 0
+24 -26 28 -3 -30 -32 34 -36 38 4 -40 42 -44 46 -48 50 52 -54 -58 -59 -6 0
+24 -26 -28 -3 30 32 -34 -36 -38 4 40 -42 44 -46 48 -50 -52 54 -58 -59 -6 0
+24 26 -28 3 -30 32 34 -36 38 4 40 42 -44 46 -48 50 52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 396 T: 0.00
+c [unig] [    0.09 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 432 deleted: 0 T: 0.00
+-24 26 -28 3 30 32 34 36 38 4 40 42 44 46 -48 -50 -52 -54 58 -59 6 0
+24 26 -28 -3 -30 -32 -34 -36 -38 4 40 -42 44 46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 3 30 -32 -34 -36 38 4 -40 42 44 -46 48 -50 52 -54 -58 -59 6 0
+-24 26 28 -3 -30 -32 -34 36 38 4 40 42 -44 46 48 50 52 -54 58 -59 6 0
+-24 -26 28 3 30 -32 -34 36 -38 4 -40 42 44 46 48 50 52 54 -58 -59 6 0
+24 26 -28 3 30 -32 -34 36 38 4 -40 -42 -44 -46 48 50 -52 -54 -58 -59 6 0
+-24 -26 28 -3 -30 32 -34 -36 -38 4 -40 42 -44 46 48 -50 52 -54 -58 -59 -6 0
+24 -26 28 3 30 -32 -34 -36 -38 4 -40 -42 -44 46 48 -50 -52 54 -58 -59 6 0
+24 -26 28 -3 -30 -32 -34 36 38 4 40 -42 44 -46 -48 50 52 -54 58 -59 6 0
+24 26 28 3 30 32 34 -36 -38 4 40 -42 -44 46 48 50 -52 54 58 -59 6 0
+24 26 -28 3 30 32 34 -36 38 4 40 -42 -44 46 -48 50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 432 T: 0.00
+c [unig] [    0.10 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 480 deleted: 0 T: 0.00
+24 -26 -28 -3 30 32 34 36 38 4 40 -42 -44 -46 -48 -50 52 54 -58 -59 -6 0
+24 26 -28 3 30 -32 -34 -36 -38 4 -40 42 -44 -46 48 -50 -52 54 58 -59 6 0
+24 26 -28 3 -30 32 34 36 38 4 -40 42 -44 46 48 -50 52 -54 -58 -59 6 0
+24 26 -28 -3 -30 -32 34 36 -38 4 -40 -42 -44 -46 48 50 52 54 58 -59 6 0
+24 26 -28 -3 -30 32 34 -36 -38 4 40 -42 -44 46 48 -50 52 -54 -58 -59 -6 0
+-24 -26 28 -3 -30 -32 34 36 -38 4 -40 42 -44 -46 -48 -50 -52 -54 -58 -59 -6 0
+24 -26 28 -3 30 32 -34 -36 -38 4 -40 42 44 46 -48 -50 -52 54 -58 -59 -6 0
+24 -26 28 -3 30 -32 -34 36 -38 4 40 42 44 -46 -48 50 -52 -54 58 -59 6 0
+-24 26 -28 -3 30 -32 -34 36 -38 4 40 -42 44 -46 48 -50 52 54 -58 -59 -6 0
+-24 -26 28 3 30 32 -34 36 -38 4 40 -42 -44 46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 3 30 -32 -34 -36 38 4 -40 42 44 -46 48 -50 52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 480 T: 0.00
+c [unig] [    0.10 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 480 deleted: 0 T: 0.00
+24 26 28 -3 -30 -32 -34 36 -38 4 40 42 -44 -46 48 -50 52 -54 -58 -59 -6 0
+24 26 -28 -3 30 -32 34 36 38 4 -40 42 -44 -46 48 -50 52 54 -58 -59 -6 0
+-24 -26 -28 3 30 32 34 -36 38 4 40 -42 -44 -46 48 -50 52 54 -58 -59 6 0
+-24 -26 28 3 -30 32 -34 -36 -38 4 -40 -42 -44 -46 48 -50 52 -54 -58 -59 6 0
+-24 -26 28 3 30 32 34 -36 -38 4 40 42 44 -46 -48 50 -52 54 -58 -59 6 0
+24 26 28 3 -30 -32 34 -36 38 4 -40 -42 -44 -46 -48 -50 52 54 -58 -59 6 0
+24 26 28 -3 30 -32 34 36 -38 4 -40 -42 44 -46 -48 50 -52 54 -58 -59 -6 0
+-24 -26 -28 -3 30 -32 34 36 -38 4 -40 42 -44 -46 48 -50 52 -54 58 -59 6 0
+24 26 -28 -3 -30 32 34 36 38 4 40 -42 44 -46 48 50 -52 -54 58 -59 6 0
+-24 -26 -28 3 -30 32 -34 -36 38 4 -40 42 44 -46 -48 50 -52 -54 -58 -59 6 0
+24 26 -28 -3 -30 -32 -34 36 38 4 40 -42 44 -46 -48 50 -52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 480 T: 0.00
+c [unig] [    0.10 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 484 deleted: 0 T: 0.00
+24 26 28 3 -30 -32 -34 -36 38 4 40 -42 -44 46 -48 50 -52 54 58 -59 6 0
+-24 26 -28 -3 -30 -32 34 -36 38 4 40 42 44 -46 -48 50 -52 54 -58 -59 -6 0
+24 -26 -28 -3 -30 -32 -34 -36 38 4 -40 42 -44 -46 48 50 52 54 -58 -59 -6 0
+24 -26 28 3 30 -32 34 36 38 4 -40 42 44 46 -48 50 -52 54 -58 -59 6 0
+-24 -26 28 -3 -30 32 34 -36 38 4 -40 42 -44 -46 48 -50 -52 -54 -58 -59 -6 0
+-24 -26 28 3 -30 -32 34 -36 38 4 -40 -42 44 46 48 50 52 54 58 -59 6 0
+24 26 -28 3 30 32 34 36 38 4 40 42 -44 46 48 -50 -52 -54 -58 -59 6 0
+24 -26 -28 3 -30 -32 34 -36 -38 4 -40 -42 -44 -46 -48 50 52 -54 -58 -59 6 0
+24 26 -28 3 30 -32 -34 36 -38 4 40 42 44 -46 -48 50 52 -54 58 -59 6 0
+24 -26 28 -3 30 -32 -34 36 -38 4 -40 -42 44 46 48 50 -52 -54 -58 -59 -6 0
+-24 26 28 3 30 32 34 36 -38 4 40 42 44 -46 -48 -50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 484 T: 0.00
+c [unig] [    0.11 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 404 deleted: 0 T: 0.00
+24 -26 28 -3 30 -32 34 -36 -38 4 40 42 44 -46 48 50 -52 -54 58 -59 6 0
+24 26 -28 3 30 32 -34 -36 -38 4 -40 -42 44 46 -48 -50 52 -54 -58 -59 6 0
+-24 -26 28 -3 30 32 34 36 38 4 -40 42 44 -46 48 50 -52 54 58 -59 6 0
+-24 -26 28 -3 -30 -32 -34 -36 -38 4 40 42 -44 46 48 50 52 -54 58 -59 6 0
+24 -26 -28 3 -30 32 -34 -36 38 4 -40 -42 -44 -46 -48 50 52 -54 -58 -59 6 0
+-24 -26 28 -3 -30 -32 34 -36 -38 4 40 -42 44 46 48 -50 52 54 -58 -59 -6 0
+-24 26 -28 3 -30 32 34 36 -38 4 -40 42 -44 46 48 -50 52 -54 58 -59 6 0
+-24 26 -28 3 30 -32 -34 36 38 4 40 -42 44 46 -48 -50 52 54 -58 -59 6 0
+-24 26 28 -3 30 -32 34 -36 38 4 40 -42 -44 -46 48 50 52 54 -58 -59 -6 0
+24 -26 -28 3 30 -32 34 36 -38 4 40 -42 44 46 -48 50 -52 54 -58 -59 6 0
+24 -26 -28 3 30 -32 34 -36 -38 4 40 42 44 -46 48 50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 404 T: 0.00
+c [unig] [    0.11 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 448 deleted: 0 T: 0.00
+24 -26 -28 3 -30 -32 -34 36 38 4 -40 -42 44 46 -48 50 -52 -54 58 -59 6 0
+24 26 28 3 30 32 34 -36 -38 4 40 42 -44 -46 48 50 -52 54 58 -59 6 0
+-24 -26 28 -3 -30 32 34 36 38 4 40 -42 -44 -46 48 50 -52 -54 58 -59 6 0
+-24 -26 -28 3 -30 32 34 36 -38 4 -40 42 -44 46 -48 50 52 -54 -58 -59 6 0
+-24 -26 -28 -3 30 -32 34 -36 -38 4 40 42 -44 46 48 -50 52 -54 58 -59 6 0
+24 -26 28 -3 -30 -32 -34 -36 38 4 40 -42 44 -46 48 -50 -52 54 -58 -59 -6 0
+24 -26 -28 3 -30 32 34 -36 38 4 40 -42 44 -46 -48 -50 -52 54 -58 -59 6 0
+24 26 28 -3 -30 -32 34 -36 38 4 -40 -42 -44 -46 -48 50 52 -54 -58 -59 -6 0
+24 -26 28 3 30 32 -34 -36 -38 4 -40 42 44 -46 -48 -50 52 -54 58 -59 6 0
+-24 26 -28 3 -30 32 -34 36 -38 4 40 42 44 46 48 -50 -52 54 -58 -59 6 0
+-24 -26 -28 -3 30 32 -34 -36 38 4 -40 -42 -44 -46 48 -50 -52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 448 T: 0.00
+c [unig] [    0.11 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 448 deleted: 0 T: 0.00
+-24 -26 28 -3 30 32 34 -36 38 4 -40 -42 -44 46 -48 50 -52 -54 -58 -59 -6 0
+24 -26 -28 3 30 32 34 -36 -38 4 40 -42 -44 -46 48 -50 52 -54 -58 -59 6 0
+24 26 28 -3 -30 32 -34 -36 38 4 -40 -42 -44 46 48 -50 52 -54 -58 -59 -6 0
+24 26 -28 3 30 -32 34 36 -38 4 40 -42 44 -46 48 50 52 -54 58 -59 6 0
+-24 26 28 3 -30 32 34 -36 -38 4 -40 -42 -44 -46 48 -50 -52 54 58 -59 6 0
+24 26 -28 -3 30 32 34 -36 -38 4 40 -42 -44 -46 48 -50 52 -54 58 -59 6 0
+-24 -26 28 3 -30 -32 34 36 -38 4 -40 -42 44 -46 48 50 -52 54 -58 -59 6 0
+-24 -26 28 -3 30 32 -34 36 38 4 -40 -42 44 -46 48 -50 -52 54 58 -59 6 0
+-24 26 28 3 30 32 -34 36 38 4 -40 -42 44 -46 48 -50 -52 54 -58 -59 6 0
+-24 -26 -28 3 30 -32 34 -36 38 4 40 -42 -44 -46 -48 -50 -52 -54 -58 -59 6 0
+-24 26 28 -3 -30 -32 -34 -36 -38 4 -40 -42 -44 46 -48 -50 -52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 448 T: 0.00
+c [unig] [    0.11 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 424 deleted: 0 T: 0.00
+-24 -26 -28 -3 -30 -32 34 36 38 4 40 -42 44 -46 48 50 -52 -54 -58 -59 -6 0
+-24 26 -28 -3 -30 32 -34 36 38 4 40 -42 -44 -46 -48 -50 52 -54 -58 -59 -6 0
+-24 -26 -28 -3 30 32 34 36 38 4 -40 -42 -44 46 48 -50 -52 54 -58 -59 -6 0
+-24 26 -28 -3 -30 -32 34 -36 -38 4 -40 42 -44 -46 -48 50 52 54 58 -59 6 0
+-24 26 -28 -3 30 32 34 -36 -38 4 40 42 44 46 -48 -50 52 -54 58 -59 6 0
+24 26 28 3 -30 -32 34 -36 -38 4 -40 -42 44 -46 -48 50 52 -54 58 -59 6 0
+-24 -26 -28 -3 -30 32 -34 -36 -38 4 -40 42 44 -46 48 -50 -52 54 58 -59 6 0
+24 -26 28 -3 -30 -32 -34 -36 -38 4 -40 -42 -44 -46 -48 -50 -52 -54 58 -59 6 0
+24 -26 -28 3 -30 32 34 36 -38 4 -40 -42 -44 46 -48 -50 -52 54 -58 -59 6 0
+24 26 -28 3 30 32 -34 36 -38 4 40 -42 -44 -46 48 -50 52 -54 -58 -59 6 0
+24 -26 -28 3 30 -32 34 36 -38 4 40 -42 44 -46 -48 50 -52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 424 T: 0.00
+c [unig] [    0.12 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 488 deleted: 0 T: 0.00
+-24 -26 -28 3 -30 -32 34 -36 -38 4 -40 -42 44 46 -48 50 52 -54 -58 -59 6 0
+-24 26 -28 3 -30 32 -34 -36 38 4 40 -42 -44 46 48 -50 52 54 -58 -59 6 0
+24 26 28 3 30 32 34 -36 38 4 40 42 -44 -46 -48 -50 -52 -54 58 -59 6 0
+-24 -26 28 3 30 -32 -34 -36 38 4 40 -42 -44 46 -48 -50 -52 -54 -58 -59 6 0
+-24 -26 28 -3 30 32 -34 36 -38 4 40 -42 -44 46 -48 50 -52 -54 58 -59 6 0
+24 26 28 -3 30 32 -34 -36 38 4 40 -42 -44 -46 -48 50 52 -54 58 -59 6 0
+-24 26 -28 3 -30 -32 34 36 -38 4 40 42 -44 46 48 -50 -52 54 58 -59 6 0
+-24 -26 -28 3 -30 32 -34 36 38 4 -40 42 44 46 -48 50 -52 -54 58 -59 6 0
+-24 -26 -28 -3 30 32 34 36 38 4 -40 42 -44 46 -48 50 -52 54 -58 -59 -6 0
+24 26 28 3 30 -32 -34 36 -38 4 40 -42 -44 -46 -48 -50 52 -54 -58 -59 6 0
+-24 26 28 -3 30 -32 34 36 38 4 -40 -42 44 46 48 -50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 488 T: 0.00
+c [unig] [    0.12 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 448 deleted: 0 T: 0.00
+-24 26 -28 -3 30 -32 -34 36 -38 4 -40 -42 -44 46 -48 -50 52 -54 -58 -59 -6 0
+24 26 28 -3 -30 32 -34 -36 -38 4 40 -42 -44 -46 -48 -50 52 -54 58 -59 6 0
+-24 -26 28 3 30 32 -34 -36 -38 4 40 -42 44 46 -48 50 -52 54 58 -59 6 0
+24 -26 -28 3 -30 32 34 36 -38 4 -40 42 44 -46 -48 -50 -52 54 -58 -59 6 0
+24 -26 -28 -3 -30 32 -34 -36 38 4 -40 -42 -44 -46 48 50 -52 -54 -58 -59 -6 0
+-24 26 28 -3 -30 32 34 36 -38 4 -40 -42 -44 46 48 -50 -52 -54 -58 -59 -6 0
+-24 -26 28 3 -30 32 34 -36 38 4 -40 -42 44 46 48 -50 52 -54 58 -59 6 0
+24 -26 -28 3 30 32 -34 36 38 4 40 42 44 -46 48 50 52 -54 -58 -59 6 0
+-24 -26 -28 -3 -30 32 34 36 38 4 40 -42 -44 46 -48 50 52 -54 58 -59 6 0
+-24 -26 -28 -3 30 32 -34 36 -38 4 -40 -42 -44 46 48 -50 -52 54 58 -59 6 0
+24 -26 -28 -3 30 32 34 -36 -38 4 40 -42 -44 -46 -48 -50 52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 448 T: 0.00
+c [unig] [    0.12 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 456 deleted: 0 T: 0.00
+24 26 28 -3 -30 -32 34 -36 -38 4 -40 42 -44 46 48 50 -52 -54 58 -59 6 0
+-24 26 -28 -3 -30 -32 -34 -36 -38 4 -40 -42 44 46 48 50 -52 -54 -58 -59 -6 0
+-24 26 28 3 -30 -32 -34 36 -38 4 -40 -42 44 46 -48 -50 -52 -54 -58 -59 6 0
+24 -26 28 3 -30 -32 -34 36 -38 4 40 -42 -44 46 48 -50 -52 -54 -58 -59 6 0
+-24 -26 -28 -3 30 32 34 36 -38 4 40 -42 -44 -46 -48 50 -52 54 -58 -59 -6 0
+-24 26 -28 3 30 -32 -34 36 -38 4 40 -42 44 -46 48 50 52 -54 58 -59 6 0
+24 -26 -28 -3 -30 -32 -34 -36 -38 4 40 -42 -44 46 -48 50 -52 -54 -58 -59 -6 0
+-24 26 28 -3 -30 -32 -34 36 -38 4 40 -42 44 -46 -48 -50 52 54 -58 -59 -6 0
+24 -26 28 3 30 -32 -34 -36 -38 4 40 -42 -44 46 48 -50 -52 54 58 -59 6 0
+-24 26 28 -3 30 32 -34 36 -38 4 -40 42 -44 -46 48 50 -52 54 58 -59 6 0
+-24 -26 28 -3 -30 -32 34 -36 -38 4 40 42 44 46 -48 50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 456 T: 0.00
+c [unig] [    0.13 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 424 deleted: 0 T: 0.00
+-24 26 -28 3 -30 32 -34 36 38 4 -40 42 44 46 48 -50 52 -54 -58 -59 6 0
+-24 -26 28 3 30 -32 -34 -36 -38 4 -40 42 -44 46 -48 -50 52 -54 58 -59 6 0
+24 26 28 3 30 32 34 36 -38 4 -40 -42 -44 46 48 50 52 -54 -58 -59 6 0
+-24 26 28 -3 30 -32 34 -36 -38 4 40 -42 -44 46 -48 50 -52 54 58 -59 6 0
+-24 26 -28 -3 30 32 34 36 38 4 -40 42 44 46 48 -50 52 54 58 -59 6 0
+-24 26 28 -3 -30 32 34 -36 -38 4 40 -42 -44 46 -48 -50 -52 -54 58 -59 6 0
+24 26 28 3 -30 -32 34 36 -38 4 -40 -42 -44 46 48 -50 52 54 -58 -59 6 0
+24 26 -28 -3 30 32 -34 -36 38 4 40 42 44 46 -48 50 -52 -54 58 -59 6 0
+24 -26 28 3 -30 32 34 36 -38 4 40 42 -44 46 48 -50 -52 -54 58 -59 6 0
+24 26 -28 -3 -30 -32 -34 -36 38 4 40 42 44 46 -48 -50 -52 54 58 -59 6 0
+24 26 28 -3 30 -32 -34 36 -38 4 -40 -42 -44 46 48 -50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 424 T: 0.00
+c [unig] [    0.13 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 472 deleted: 0 T: 0.00
+-24 26 -28 3 -30 -32 -34 -36 38 4 40 -42 44 -46 -48 50 -52 54 58 -59 6 0
+24 26 -28 3 -30 -32 -34 36 -38 4 -40 42 -44 46 48 -50 -52 54 58 -59 6 0
+-24 -26 -28 3 -30 32 34 -36 38 4 40 42 44 46 48 50 52 54 58 -59 6 0
+-24 -26 -28 -3 -30 -32 -34 36 38 4 -40 42 44 -46 -48 50 -52 -54 -58 -59 -6 0
+24 -26 28 -3 30 32 34 36 -38 4 40 -42 44 -46 -48 -50 52 54 -58 -59 -6 0
+24 26 -28 3 -30 32 -34 36 38 4 -40 42 -44 -46 48 50 -52 -54 -58 -59 6 0
+24 -26 -28 -3 -30 -32 -34 -36 -38 4 40 -42 -44 46 48 -50 -52 -54 -58 -59 -6 0
+-24 26 28 3 30 32 34 36 38 4 40 -42 -44 46 48 50 52 -54 58 -59 6 0
+-24 -26 28 3 30 -32 -34 36 38 4 40 42 -44 -46 -48 50 -52 -54 58 -59 6 0
+-24 26 28 -3 30 -32 -34 -36 38 4 -40 -42 -44 -46 -48 50 -52 54 -58 -59 -6 0
+24 26 -28 -3 -30 32 34 -36 -38 4 40 42 -44 -46 -48 -50 52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 472 T: 0.00
+c [unig] [    0.13 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 428 deleted: 0 T: 0.00
+-24 -26 28 3 -30 32 34 36 -38 4 -40 42 -44 46 48 50 52 54 -58 -59 6 0
+24 26 -28 3 -30 -32 -34 -36 38 4 -40 42 44 46 48 50 52 -54 58 -59 6 0
+-24 -26 28 3 30 32 34 -36 -38 4 -40 42 44 -46 -48 -50 52 -54 58 -59 6 0
+24 -26 -28 3 -30 32 34 36 38 4 -40 -42 -44 46 48 -50 -52 54 58 -59 6 0
+-24 26 28 3 30 -32 -34 36 -38 4 -40 -42 -44 -46 -48 50 -52 54 58 -59 6 0
+24 26 -28 -3 30 32 -34 36 38 4 40 -42 -44 46 -48 -50 52 -54 58 -59 6 0
+24 -26 28 -3 -30 -32 -34 36 -38 4 -40 -42 44 -46 -48 -50 -52 54 58 -59 6 0
+24 26 -28 -3 30 32 34 36 -38 4 40 42 -44 -46 48 -50 -52 -54 58 -59 6 0
+-24 -26 -28 3 -30 32 34 36 -38 4 40 42 44 -46 48 50 -52 -54 58 -59 6 0
+24 -26 28 -3 -30 -32 34 36 38 4 -40 42 44 46 48 -50 52 54 58 -59 6 0
+-24 26 28 -3 -30 32 34 -36 38 4 40 -42 44 46 -48 -50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 428 T: 0.00
+c [unig] [    0.13 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 416 deleted: 0 T: 0.00
+-24 26 28 3 -30 -32 34 36 -38 4 -40 -42 44 46 -48 50 52 -54 -58 -59 6 0
+24 26 28 3 -30 -32 34 36 38 4 -40 42 44 -46 48 50 52 -54 -58 -59 6 0
+24 26 -28 -3 30 -32 -34 -36 -38 4 -40 42 -44 46 48 50 52 -54 58 -59 6 0
+-24 26 28 -3 30 32 34 36 -38 4 -40 -42 44 -46 -48 50 52 -54 58 -59 6 0
+-24 26 28 -3 30 -32 -34 -36 38 4 -40 42 -44 46 48 50 -52 54 -58 -59 -6 0
+24 26 28 -3 30 32 -34 36 38 4 -40 42 44 -46 48 50 52 -54 -58 -59 -6 0
+24 26 -28 3 -30 32 -34 -36 -38 4 -40 42 -44 -46 48 50 52 -54 -58 -59 6 0
+-24 26 28 -3 30 32 -34 36 -38 4 -40 -42 44 46 -48 50 52 -54 -58 -59 -6 0
+24 26 28 -3 30 -32 -34 -36 -38 4 -40 -42 -44 -46 -48 50 -52 54 -58 -59 -6 0
+24 26 28 -3 30 32 34 36 38 4 -40 42 44 46 48 50 52 -54 58 -59 6 0
+-24 26 28 3 -30 32 34 -36 38 4 -40 42 -44 46 48 50 -52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 416 T: 0.00
+c [unig] [    0.14 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 504 deleted: 0 T: 0.00
+24 26 -28 -3 -30 32 34 -36 -38 4 -40 -42 -44 46 -48 50 -52 -54 -58 -59 -6 0
+24 26 -28 3 -30 -32 -34 -36 38 4 40 -42 44 -46 -48 50 -52 54 58 -59 6 0
+-24 26 -28 -3 -30 32 34 36 -38 4 40 -42 44 -46 48 -50 52 54 58 -59 6 0
+24 26 -28 3 -30 32 -34 36 38 4 -40 -42 44 46 -48 -50 -52 54 58 -59 6 0
+-24 26 -28 -3 30 -32 34 -36 38 4 -40 -42 44 46 -48 -50 -52 -54 -58 -59 -6 0
+-24 26 -28 -3 30 32 34 36 -38 4 40 -42 -44 46 -48 50 -52 54 58 -59 6 0
+-24 26 -28 3 -30 32 -34 -36 -38 4 40 -42 44 46 48 50 52 54 58 -59 6 0
+24 26 -28 -3 -30 -32 34 36 38 4 40 -42 44 46 -48 -50 -52 54 58 -59 6 0
+-24 26 -28 -3 -30 32 34 36 38 4 40 -42 -44 46 48 -50 52 -54 -58 -59 -6 0
+24 26 -28 3 30 32 -34 36 38 4 -40 -42 -44 -46 48 50 52 54 58 -59 6 0
+24 -26 28 3 -30 -32 34 36 38 4 40 -42 44 46 -48 50 -52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 504 T: 0.00
+c [unig] [    0.14 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 460 deleted: 0 T: 0.00
+24 -26 28 3 30 -32 34 -36 38 4 -40 42 44 46 -48 -50 -52 -54 58 -59 6 0
+24 26 28 3 30 32 -34 -36 38 4 -40 42 -44 -46 -48 -50 -52 54 -58 -59 6 0
+-24 -26 -28 3 30 32 -34 36 38 4 40 42 44 46 48 50 52 -54 58 -59 6 0
+-24 -26 28 3 30 -32 -34 36 38 4 40 -42 44 -46 48 50 -52 54 58 -59 6 0
+24 26 28 3 -30 -32 -34 36 -38 4 -40 -42 -44 -46 -48 50 -52 -54 58 -59 6 0
+-24 26 28 3 30 32 34 36 38 4 40 -42 -44 46 48 50 -52 -54 -58 -59 6 0
+24 26 -28 3 30 -32 -34 -36 38 4 -40 -42 -44 46 -48 -50 52 -54 -58 -59 6 0
+24 -26 28 3 -30 -32 34 36 38 4 40 -42 -44 -46 48 50 -52 54 58 -59 6 0
+-24 26 -28 3 -30 32 34 -36 -38 4 40 -42 -44 -46 48 -50 52 -54 58 -59 6 0
+24 26 -28 3 -30 -32 -34 36 38 4 40 42 44 -46 48 50 52 54 -58 -59 6 0
+-24 -26 -28 3 30 -32 -34 36 -38 4 -40 42 -44 -46 -48 50 52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 460 T: 0.00
+c [unig] [    0.14 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 432 deleted: 0 T: 0.00
+-24 -26 28 -3 30 -32 34 -36 38 4 40 42 -44 46 48 50 -52 -54 -58 -59 -6 0
+24 -26 -28 -3 30 32 34 36 -38 4 40 -42 -44 46 -48 -50 52 -54 58 -59 6 0
+-24 -26 28 3 -30 32 34 -36 38 4 40 -42 44 46 48 -50 -52 54 -58 -59 6 0
+24 -26 28 -3 -30 32 34 -36 -38 4 -40 42 44 -46 -48 50 -52 -54 58 -59 6 0
+-24 -26 -28 3 30 32 34 36 38 4 -40 42 -44 -46 48 50 52 54 -58 -59 6 0
+24 -26 -28 3 -30 32 -34 -36 38 4 40 -42 44 -46 -48 50 -52 54 58 -59 6 0
+24 26 -28 3 30 32 -34 36 38 4 40 -42 44 46 -48 -50 52 -54 -58 -59 6 0
+24 -26 28 3 30 32 -34 36 38 4 -40 42 -44 46 -48 -50 52 54 58 -59 6 0
+24 -26 -28 -3 30 -32 -34 -36 -38 4 -40 42 44 -46 48 -50 52 -54 58 -59 6 0
+-24 -26 -28 3 30 -32 -34 -36 38 4 40 -42 44 46 -48 50 52 54 -58 -59 6 0
+24 -26 28 -3 -30 -32 -34 36 -38 4 40 -42 -44 46 48 50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 432 T: 0.00
+c [unig] [    0.14 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 448 deleted: 0 T: 0.00
+-24 26 28 3 30 -32 -34 -36 -38 4 40 42 -44 -46 -48 -50 -52 -54 58 -59 6 0
+24 26 -28 -3 -30 32 34 36 -38 4 40 42 -44 -46 -48 -50 -52 54 -58 -59 -6 0
+-24 -26 -28 3 -30 -32 -34 -36 38 4 -40 -42 44 46 48 -50 -52 54 58 -59 6 0
+24 26 -28 -3 30 -32 34 -36 -38 4 40 -42 44 46 48 -50 52 -54 58 -59 6 0
+-24 26 28 3 30 32 34 -36 -38 4 -40 42 44 46 -48 50 -52 54 -58 -59 6 0
+24 -26 28 3 30 -32 -34 -36 38 4 40 -42 -44 46 48 -50 52 -54 -58 -59 6 0
+24 -26 28 -3 30 32 34 36 38 4 -40 -42 44 46 48 -50 -52 -54 -58 -59 -6 0
+24 26 -28 3 -30 -32 34 -36 -38 4 40 42 44 -46 -48 -50 52 -54 -58 -59 6 0
+-24 26 28 -3 30 -32 34 36 -38 4 -40 42 -44 46 -48 50 52 -54 -58 -59 -6 0
+-24 -26 -28 -3 30 32 -34 -36 38 4 -40 42 -44 46 -48 50 -52 54 58 -59 6 0
+-24 -26 -28 -3 -30 -32 -34 36 38 4 -40 -42 44 -46 48 50 52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 448 T: 0.00
+c [unig] [    0.15 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 420 deleted: 0 T: 0.00
+24 26 28 3 30 32 -34 36 38 4 40 -42 44 46 -48 50 -52 54 -58 -59 6 0
+-24 -26 -28 3 30 -32 34 36 38 4 -40 -42 44 -46 48 -50 -52 -54 58 -59 6 0
+-24 26 28 -3 30 -32 34 36 -38 4 40 -42 44 -46 -48 -50 -52 54 -58 -59 -6 0
+24 26 28 -3 30 32 34 -36 -38 4 -40 -42 -44 46 48 50 -52 -54 -58 -59 -6 0
+24 -26 -28 3 30 32 34 -36 38 4 40 -42 -44 46 -48 50 -52 54 58 -59 6 0
+-24 -26 28 -3 30 -32 -34 36 38 4 40 42 44 46 48 -50 52 -54 58 -59 6 0
+24 26 -28 3 30 32 -34 36 -38 4 40 -42 -44 -46 48 50 -52 54 58 -59 6 0
+24 -26 28 3 30 32 34 -36 -38 4 40 -42 44 -46 48 50 -52 54 -58 -59 6 0
+24 26 28 -3 30 -32 34 -36 -38 4 -40 -42 -44 46 48 -50 -52 54 -58 -59 -6 0
+-24 -26 28 -3 30 32 -34 -36 38 4 40 -42 44 46 48 50 -52 -54 -58 -59 -6 0
+-24 26 -28 3 30 32 -34 -36 -38 4 -40 -42 44 46 -48 50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 420 T: 0.00
+c [unig] [    0.15 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 464 deleted: 0 T: 0.00
+24 -26 28 3 30 32 34 -36 38 4 40 -42 -44 46 48 -50 52 54 58 -59 6 0
+-24 -26 -28 3 -30 32 34 36 -38 4 40 -42 44 46 48 50 52 -54 58 -59 6 0
+24 26 28 -3 -30 32 -34 -36 -38 4 -40 -42 -44 46 -48 50 -52 54 58 -59 6 0
+-24 -26 28 -3 30 32 34 -36 -38 4 -40 42 44 -46 48 -50 52 54 58 -59 6 0
+-24 -26 28 3 -30 32 34 -36 -38 4 40 -42 44 -46 -48 50 52 54 58 -59 6 0
+24 -26 28 3 -30 32 -34 36 38 4 40 -42 -44 46 48 50 -52 -54 -58 -59 6 0
+-24 -26 28 3 30 32 -34 36 -38 4 40 -42 44 -46 -48 -50 -52 -54 -58 -59 6 0
+-24 -26 -28 3 30 32 -34 -36 -38 4 40 -42 44 46 48 -50 -52 54 -58 -59 6 0
+24 26 -28 -3 -30 32 -34 36 -38 4 40 42 -44 46 48 50 -52 -54 -58 -59 -6 0
+-24 26 -28 3 30 32 34 -36 38 4 40 42 44 46 48 -50 52 54 -58 -59 6 0
+24 26 28 -3 -30 32 -34 -36 -38 4 40 42 -44 -46 -48 50 -52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 464 T: 0.00
+c [unig] [    0.15 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 444 deleted: 0 T: 0.00
+-24 26 28 3 30 32 34 -36 -38 4 -40 -42 -44 46 -48 50 52 -54 -58 -59 6 0
+24 26 28 -3 -30 -32 -34 36 -38 4 -40 42 44 46 48 50 -52 -54 -58 -59 -6 0
+24 -26 28 3 30 32 34 36 -38 4 -40 42 -44 46 48 50 -52 -54 58 -59 6 0
+24 -26 28 -3 -30 32 34 36 -38 4 40 -42 -44 46 48 50 52 54 -58 -59 -6 0
+24 26 -28 3 -30 -32 34 -36 38 4 40 42 44 46 -48 -50 -52 54 -58 -59 6 0
+-24 26 -28 -3 30 -32 34 -36 -38 4 40 -42 -44 46 48 -50 52 -54 58 -59 6 0
+24 26 28 -3 -30 -32 -34 -36 38 4 -40 -42 -44 46 48 -50 -52 54 -58 -59 -6 0
+-24 -26 28 3 30 -32 -34 36 38 4 40 -42 -44 46 -48 -50 -52 -54 -58 -59 6 0
+24 -26 -28 3 -30 32 -34 -36 38 4 -40 -42 -44 46 -48 -50 52 -54 -58 -59 6 0
+24 -26 28 -3 -30 32 34 -36 38 4 40 42 44 46 48 -50 52 -54 -58 -59 -6 0
+24 26 -28 3 -30 -32 34 36 -38 4 40 -42 -44 46 -48 50 -52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 444 T: 0.00
+c [unig] [    0.16 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 436 deleted: 0 T: 0.00
+-24 -26 -28 3 30 32 34 36 -38 4 -40 -42 -44 -46 -48 50 -52 54 -58 -59 6 0
+-24 -26 -28 3 30 32 -34 -36 -38 4 40 -42 -44 -46 48 -50 52 -54 -58 -59 6 0
+24 26 -28 -3 -30 -32 34 -36 -38 4 40 -42 44 46 -48 50 52 54 -58 -59 -6 0
+24 26 -28 3 -30 32 -34 -36 38 4 40 -42 44 -46 -48 50 52 -54 58 -59 6 0
+24 26 28 3 -30 -32 34 -36 38 4 -40 42 -44 46 48 -50 52 54 -58 -59 6 0
+-24 -26 28 -3 30 32 34 36 38 4 40 42 44 -46 48 -50 -52 54 -58 -59 -6 0
+-24 26 -28 3 30 32 34 36 -38 4 40 -42 44 46 48 -50 52 54 58 -59 6 0
+24 -26 28 -3 30 -32 -34 36 -38 4 -40 42 44 -46 48 -50 -52 54 58 -59 6 0
+-24 -26 28 -3 -30 -32 -34 36 38 4 40 42 44 46 48 -50 52 54 58 -59 6 0
+-24 26 -28 -3 -30 32 34 36 38 4 40 -42 44 46 48 -50 -52 -54 58 -59 6 0
+-24 -26 28 -3 30 32 -34 -36 38 4 -40 42 44 -46 -48 50 52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 436 T: 0.00
+c [unig] [    0.16 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 392 deleted: 0 T: 0.00
+24 26 28 -3 30 -32 34 36 -38 4 40 -42 44 -46 48 50 52 -54 -58 -59 -6 0
+24 26 -28 3 -30 32 -34 36 -38 4 -40 -42 -44 46 -48 -50 -52 -54 -58 -59 6 0
+-24 26 -28 3 -30 32 -34 -36 -38 4 -40 -42 -44 46 48 -50 -52 54 58 -59 6 0
+24 26 -28 3 30 32 -34 -36 38 4 40 -42 44 46 48 50 -52 -54 -58 -59 6 0
+24 26 -28 3 -30 -32 34 36 -38 4 40 42 -44 46 -48 -50 -52 54 58 -59 6 0
+24 26 28 3 -30 -32 34 36 -38 4 40 42 44 46 48 50 -52 54 -58 -59 6 0
+24 26 28 -3 30 32 -34 -36 38 4 -40 42 -44 -46 -48 50 52 -54 58 -59 6 0
+-24 26 28 3 30 -32 34 36 38 4 -40 42 -44 46 48 -50 -52 -54 58 -59 6 0
+-24 26 -28 -3 -30 -32 34 36 38 4 -40 -42 44 -46 -48 50 52 54 -58 -59 -6 0
+-24 26 -28 3 -30 -32 34 -36 -38 4 40 42 -44 46 48 -50 -52 -54 -58 -59 6 0
+24 26 28 3 30 32 -34 -36 38 4 40 -42 -44 46 -48 -50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 392 T: 0.00
+c [unig] [    0.16 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 424 deleted: 0 T: 0.00
+-24 26 -28 -3 30 -32 -34 -36 -38 4 40 -42 -44 46 -48 50 -52 -54 58 -59 6 0
+-24 26 28 -3 30 32 -34 -36 38 4 40 -42 44 -46 -48 50 -52 54 -58 -59 -6 0
+-24 26 28 3 30 32 34 36 -38 4 40 42 44 46 -48 50 52 -54 -58 -59 6 0
+24 26 28 -3 30 -32 -34 36 -38 4 40 -42 44 46 -48 50 -52 -54 -58 -59 -6 0
+-24 -26 28 3 30 -32 -34 -36 38 4 -40 -42 -44 46 -48 -50 -52 54 -58 -59 6 0
+24 26 -28 -3 30 -32 -34 36 -38 4 40 42 -44 -46 48 -50 52 -54 -58 -59 -6 0
+-24 -26 -28 3 30 -32 -34 -36 38 4 -40 42 44 -46 48 50 52 54 -58 -59 6 0
+-24 26 28 -3 30 -32 -34 -36 -38 4 40 42 44 -46 48 -50 52 -54 58 -59 6 0
+24 26 28 3 30 -32 -34 36 38 4 40 -42 44 46 -48 -50 -52 -54 58 -59 6 0
+-24 26 28 3 30 32 -34 -36 -38 4 40 -42 44 -46 -48 -50 -52 54 58 -59 6 0
+-24 -26 -28 -3 30 32 34 36 38 4 -40 42 44 46 -48 -50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 424 T: 0.00
+c [unig] [    0.17 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 472 deleted: 0 T: 0.00
+-24 26 -28 -3 -30 32 -34 36 38 4 -40 42 44 46 48 -50 -52 -54 58 -59 6 0
+-24 26 28 -3 30 32 34 -36 -38 4 -40 42 44 -46 -48 -50 52 -54 -58 -59 -6 0
+-24 -26 -28 3 30 32 34 -36 -38 4 -40 -42 -44 46 48 -50 52 54 -58 -59 6 0
+-24 26 -28 3 30 32 34 -36 38 4 -40 42 -44 46 48 50 -52 54 58 -59 6 0
+24 -26 28 3 30 -32 34 36 -38 4 -40 -42 44 -46 -48 50 -52 54 -58 -59 6 0
+-24 -26 -28 3 -30 -32 34 -36 -38 4 -40 42 -44 46 -48 50 52 54 58 -59 6 0
+24 -26 -28 -3 30 -32 34 36 38 4 -40 -42 44 -46 -48 50 -52 -54 -58 -59 -6 0
+-24 26 -28 3 -30 -32 34 -36 38 4 -40 -42 44 -46 48 50 52 54 58 -59 6 0
+24 26 28 3 30 -32 34 36 38 4 -40 42 -44 46 48 50 -52 54 -58 -59 6 0
+-24 -26 28 -3 30 32 34 -36 38 4 -40 -42 -44 46 48 -50 52 -54 -58 -59 -6 0
+24 -26 28 -3 30 32 -34 -36 -38 4 -40 42 -44 -46 48 50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 472 T: 0.00
+c [unig] [    0.17 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 400 deleted: 0 T: 0.00
+24 -26 -28 3 -30 -32 34 -36 38 4 -40 -42 -44 -46 -48 50 52 -54 -58 -59 6 0
+-24 26 -28 -3 30 -32 34 36 38 4 40 42 -44 46 48 -50 -52 -54 -58 -59 -6 0
+-24 26 28 3 30 -32 34 -36 -38 4 40 42 -44 -46 -48 50 52 -54 58 -59 6 0
+24 26 28 -3 -30 -32 -34 -36 -38 4 40 42 44 -46 48 -50 -52 54 58 -59 6 0
+-24 -26 -28 -3 -30 32 34 36 -38 4 -40 42 -44 46 48 50 -52 -54 58 -59 6 0
+-24 -26 -28 3 30 32 34 -36 38 4 -40 -42 44 -46 -48 50 52 -54 58 -59 6 0
+24 26 -28 3 30 -32 -34 -36 38 4 40 -42 44 -46 -48 50 52 54 -58 -59 6 0
+-24 -26 28 -3 30 -32 -34 36 38 4 -40 -42 -44 46 48 50 -52 54 58 -59 6 0
+24 26 28 -3 -30 32 34 -36 38 4 40 42 -44 -46 48 50 -52 -54 -58 -59 -6 0
+24 26 28 3 -30 32 34 -36 -38 4 40 42 44 -46 -48 50 52 -54 -58 -59 6 0
+24 26 -28 -3 30 -32 -34 -36 -38 4 40 -42 -44 -46 48 50 -52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 400 T: 0.00
+c [unig] [    0.17 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 424 deleted: 0 T: 0.00
+24 -26 28 -3 -30 -32 -34 36 -38 4 -40 42 -44 -46 -48 -50 -52 54 -58 -59 -6 0
+24 -26 -28 -3 -30 -32 -34 36 38 4 40 42 44 46 -48 50 -52 -54 -58 -59 -6 0
+24 26 -28 3 30 -32 -34 36 38 4 40 42 -44 -46 48 -50 -52 -54 -58 -59 6 0
+24 26 28 -3 30 32 -34 36 38 4 -40 42 -44 46 -48 50 -52 54 58 -59 6 0
+24 -26 28 -3 -30 32 -34 36 38 4 40 -42 44 -46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 -3 -30 -32 34 -36 -38 4 -40 42 -44 46 -48 50 -52 54 -58 -59 -6 0
+-24 -26 28 -3 30 32 34 -36 -38 4 40 42 44 46 -48 50 -52 -54 58 -59 6 0
+-24 -26 28 3 30 32 34 36 38 4 -40 -42 -44 -46 48 -50 52 54 58 -59 6 0
+24 -26 28 3 -30 -32 -34 36 -38 4 40 -42 -44 -46 48 -50 52 54 -58 -59 6 0
+-24 -26 28 -3 30 -32 34 -36 38 4 -40 -42 -44 46 -48 50 52 -54 -58 -59 -6 0
+24 26 -28 -3 30 32 -34 36 -38 4 40 42 44 -46 -48 -50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 424 T: 0.00
+c [unig] [    0.17 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 396 deleted: 0 T: 0.00
+-24 -26 -28 -3 -30 32 -34 -36 38 4 40 -42 44 -46 48 50 52 54 58 -59 6 0
+-24 26 28 3 30 -32 -34 -36 -38 4 -40 -42 -44 -46 48 -50 52 54 58 -59 6 0
+-24 26 28 -3 -30 32 -34 -36 -38 4 -40 42 44 -46 48 50 -52 54 -58 -59 -6 0
+24 -26 -28 -3 30 32 34 36 38 4 40 -42 44 46 48 50 52 -54 58 -59 6 0
+24 26 28 3 -30 -32 34 36 -38 4 -40 -42 -44 46 48 -50 52 -54 58 -59 6 0
+24 26 28 3 -30 -32 34 -36 -38 4 40 42 -44 -46 48 50 52 54 58 -59 6 0
+24 26 28 -3 30 32 34 -36 -38 4 40 -42 44 -46 48 -50 -52 54 -58 -59 -6 0
+24 26 -28 -3 30 32 34 -36 38 4 40 42 -44 -46 -48 50 -52 -54 58 -59 6 0
+24 26 -28 3 -30 32 34 36 -38 4 -40 -42 44 -46 -48 -50 -52 54 -58 -59 6 0
+24 26 -28 3 -30 32 34 -36 -38 4 40 42 44 46 -48 50 -52 -54 -58 -59 6 0
+-24 -26 -28 3 30 32 -34 -36 -38 4 40 -42 -44 46 48 50 52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 396 T: 0.00
+c [unig] [    0.18 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 472 deleted: 0 T: 0.00
+24 -26 -28 -3 -30 32 34 -36 -38 4 40 42 -44 46 48 50 -52 -54 -58 -59 -6 0
+-24 -26 -28 3 30 -32 -34 36 -38 4 -40 -42 -44 46 48 50 -52 -54 58 -59 6 0
+24 -26 -28 -3 30 -32 -34 36 38 4 40 -42 -44 46 -48 50 52 54 58 -59 6 0
+24 -26 28 -3 -30 32 -34 -36 -38 4 -40 42 -44 46 -48 -50 -52 54 -58 -59 -6 0
+-24 26 -28 -3 -30 32 34 36 -38 4 -40 42 -44 46 -48 50 -52 -54 -58 -59 -6 0
+24 26 -28 3 30 -32 -34 -36 -38 4 40 -42 -44 46 -48 50 -52 -54 58 -59 6 0
+-24 26 -28 3 -30 32 34 -36 -38 4 40 -42 44 46 48 50 52 -54 58 -59 6 0
+24 26 -28 -3 -30 32 34 -36 38 4 -40 -42 44 46 -48 50 -52 54 58 -59 6 0
+-24 26 -28 3 -30 -32 34 -36 -38 4 40 42 44 46 -48 50 -52 -54 -58 -59 6 0
+24 -26 28 -3 30 -32 34 36 38 4 -40 -42 -44 46 48 -50 52 -54 58 -59 6 0
+-24 -26 28 3 30 32 34 36 -38 4 40 42 -44 46 48 -50 52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 472 T: 0.00
+c [unig] [    0.18 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 424 deleted: 0 T: 0.00
+24 -26 28 3 -30 32 34 -36 38 4 40 42 44 46 -48 50 52 54 -58 -59 6 0
+24 -26 -28 -3 -30 -32 -34 36 -38 4 40 42 44 -46 -48 50 52 -54 58 -59 6 0
+-24 26 28 3 -30 32 34 -36 38 4 -40 42 -44 -46 -48 50 52 54 -58 -59 6 0
+24 -26 28 3 30 -32 -34 36 38 4 -40 42 -44 -46 48 -50 52 -54 -58 -59 6 0
+-24 26 28 -3 30 32 -34 36 -38 4 -40 42 -44 -46 -48 -50 -52 54 58 -59 6 0
+-24 -26 -28 3 30 32 -34 -36 -38 4 40 42 -44 -46 48 -50 52 54 58 -59 6 0
+24 26 -28 -3 30 -32 34 -36 -38 4 40 -42 44 46 48 -50 -52 -54 -58 -59 -6 0
+-24 26 -28 -3 30 32 34 -36 -38 4 40 42 44 -46 48 -50 52 54 58 -59 6 0
+24 26 28 3 30 32 34 36 -38 4 40 42 -44 46 -48 -50 -52 54 58 -59 6 0
+24 26 28 3 -30 -32 -34 -36 -38 4 -40 42 44 -46 48 50 -52 -54 58 -59 6 0
+24 26 -28 3 30 32 -34 -36 -38 4 -40 42 44 46 48 -50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 424 T: 0.00
+c [unig] [    0.18 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 484 deleted: 0 T: 0.00
+-24 26 -28 -3 30 -32 -34 -36 38 4 -40 42 44 -46 -48 -50 -52 54 58 -59 6 0
+24 26 -28 3 30 32 -34 36 38 4 40 -42 -44 46 -48 50 -52 -54 58 -59 6 0
+-24 26 28 3 -30 -32 -34 36 38 4 40 42 -44 46 48 -50 -52 54 58 -59 6 0
+24 -26 28 -3 30 -32 34 -36 -38 4 40 42 44 46 -48 -50 52 54 -58 -59 -6 0
+-24 26 28 3 -30 32 -34 -36 38 4 40 -42 -44 46 -48 -50 -52 54 58 -59 6 0
+-24 -26 -28 3 30 -32 -34 -36 -38 4 -40 -42 -44 -46 -48 -50 52 -54 -58 -59 6 0
+-24 26 -28 -3 30 32 -34 36 38 4 -40 -42 44 -46 48 -50 -52 54 58 -59 6 0
+24 26 28 -3 -30 32 -34 -36 38 4 -40 -42 44 -46 48 50 -52 -54 58 -59 6 0
+24 -26 -28 3 30 32 -34 -36 -38 4 40 42 44 -46 -48 -50 52 -54 58 -59 6 0
+-24 -26 -28 3 30 32 -34 36 -38 4 -40 42 -44 -46 48 -50 52 -54 -58 -59 6 0
+-24 -26 -28 -3 30 -32 -34 36 -38 4 -40 -42 -44 46 -48 50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 484 T: 0.00
+c [unig] [    0.19 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 408 deleted: 0 T: 0.00
+-24 -26 28 -3 -30 -32 34 -36 38 4 40 -42 -44 46 48 50 52 -54 58 -59 6 0
+-24 26 -28 3 30 32 -34 36 38 4 -40 -42 44 46 -48 -50 52 54 58 -59 6 0
+24 26 28 -3 30 32 34 36 -38 4 40 42 44 46 -48 -50 52 -54 -58 -59 -6 0
+24 26 -28 3 -30 32 -34 -36 38 4 -40 -42 44 -46 -48 50 52 54 -58 -59 6 0
+24 26 28 -3 30 -32 -34 -36 -38 4 40 42 -44 46 48 50 -52 -54 58 -59 6 0
+-24 26 28 -3 -30 32 -34 -36 -38 4 -40 -42 -44 46 48 50 -52 -54 58 -59 6 0
+-24 -26 -28 -3 -30 32 34 36 -38 4 -40 42 44 -46 48 -50 52 54 -58 -59 -6 0
+-24 -26 -28 3 30 32 34 -36 -38 4 -40 42 44 -46 -48 50 -52 54 -58 -59 6 0
+24 -26 -28 -3 30 32 -34 -36 -38 4 40 -42 -44 -46 -48 50 -52 54 58 -59 6 0
+24 -26 28 -3 30 -32 -34 36 38 4 -40 42 44 46 -48 -50 -52 -54 -58 -59 -6 0
+-24 26 -28 -3 -30 -32 -34 36 38 4 40 42 44 -46 48 -50 -52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 408 T: 0.00
+c [unig] [    0.19 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 424 deleted: 0 T: 0.00
+-24 26 -28 3 30 -32 -34 -36 -38 4 40 -42 -44 -46 -48 -50 -52 -54 -58 -59 6 0
+-24 26 -28 -3 -30 -32 34 -36 38 4 -40 -42 44 -46 48 50 -52 54 -58 -59 -6 0
+-24 -26 28 -3 30 -32 34 36 -38 4 -40 -42 -44 -46 -48 -50 -52 -54 58 -59 6 0
+-24 26 -28 -3 30 -32 -34 36 38 4 -40 -42 44 -46 48 50 -52 54 58 -59 6 0
+-24 -26 28 3 -30 -32 -34 -36 -38 4 40 42 44 -46 48 -50 52 54 -58 -59 6 0
+24 -26 -28 -3 -30 -32 34 36 38 4 -40 42 44 -46 -48 -50 52 54 58 -59 6 0
+24 26 28 3 -30 -32 -34 -36 38 4 40 42 44 -46 -48 -50 52 54 -58 -59 6 0
+24 -26 -28 -3 30 -32 -34 36 -38 4 -40 -42 44 -46 -48 50 -52 54 58 -59 6 0
+24 26 28 -3 30 -32 34 -36 -38 4 -40 42 -44 -46 48 50 52 -54 -58 -59 -6 0
+24 26 28 -3 -30 -32 -34 36 -38 4 -40 42 -44 -46 48 50 52 -54 58 -59 6 0
+-24 26 -28 -3 30 -32 -34 -36 -38 4 -40 42 44 -46 48 -50 52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 424 T: 0.00
+c [unig] [    0.19 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 412 deleted: 0 T: 0.00
+24 -26 -28 3 -30 32 -34 36 38 4 40 -42 -44 46 48 50 52 -54 -58 -59 6 0
+24 -26 -28 -3 30 -32 34 -36 38 4 -40 -42 44 -46 48 50 -52 54 58 -59 6 0
+24 -26 -28 3 -30 -32 34 36 38 4 -40 -42 -44 46 -48 50 52 54 58 -59 6 0
+-24 -26 28 -3 -30 32 -34 -36 -38 4 40 -42 -44 -46 -48 50 -52 54 58 -59 6 0
+-24 26 -28 3 -30 32 34 -36 -38 4 40 -42 -44 46 48 -50 52 -54 58 -59 6 0
+24 -26 28 -3 30 32 -34 -36 -38 4 40 42 44 46 48 -50 52 54 -58 -59 -6 0
+-24 -26 28 3 30 -32 34 36 -38 4 -40 -42 44 46 -48 50 52 -54 -58 -59 6 0
+-24 -26 28 3 -30 -32 34 -36 38 4 -40 -42 44 46 -48 50 52 -54 58 -59 6 0
+-24 26 -28 3 -30 -32 -34 -36 -38 4 -40 -42 -44 46 -48 -50 52 54 -58 -59 6 0
+24 26 28 3 30 -32 -34 -36 38 4 -40 -42 44 46 -48 -50 52 -54 58 -59 6 0
+-24 26 28 -3 -30 32 34 -36 -38 4 40 42 44 46 48 50 52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 412 T: 0.00
+c [unig] [    0.20 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 400 deleted: 0 T: 0.00
+24 26 -28 3 -30 32 -34 36 -38 4 -40 42 -44 46 -48 50 -52 -54 58 -59 6 0
+-24 26 -28 3 30 -32 34 -36 -38 4 40 42 -44 46 48 -50 52 54 58 -59 6 0
+-24 26 28 -3 30 -32 34 -36 -38 4 40 -42 44 46 -48 50 52 54 -58 -59 -6 0
+-24 -26 -28 -3 -30 -32 -34 -36 38 4 -40 -42 -44 46 48 -50 52 54 -58 -59 -6 0
+24 -26 28 3 30 32 34 36 38 4 40 42 44 46 48 -50 -52 -54 58 -59 6 0
+-24 -26 28 -3 -30 32 34 -36 -38 4 40 -42 44 46 48 50 52 -54 58 -59 6 0
+-24 26 28 3 30 -32 34 36 -38 4 -40 -42 44 -46 48 50 -52 54 58 -59 6 0
+24 26 28 -3 -30 32 -34 36 -38 4 -40 -42 44 46 48 -50 -52 -54 -58 -59 -6 0
+-24 -26 -28 -3 -30 32 34 36 -38 4 -40 42 -44 -46 48 -50 -52 -54 58 -59 6 0
+-24 26 -28 -3 30 32 -34 -36 38 4 -40 -42 -44 46 -48 -50 52 -54 58 -59 6 0
+24 26 -28 3 -30 32 34 36 -38 4 40 -42 44 46 -48 -50 -52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 400 T: 0.00
+c [unig] [    0.20 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 384 deleted: 0 T: 0.00
+24 26 -28 -3 30 -32 34 36 -38 4 -40 42 44 46 -48 50 52 -54 58 -59 6 0
+24 26 28 -3 30 -32 -34 36 38 4 -40 -42 -44 46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 -3 -30 32 34 36 38 4 -40 42 44 46 -48 -50 52 54 -58 -59 -6 0
+-24 -26 28 -3 30 32 34 -36 -38 4 -40 -42 44 -46 48 50 -52 54 58 -59 6 0
+-24 26 28 -3 30 -32 -34 36 -38 4 -40 -42 44 -46 -48 -50 -52 -54 58 -59 6 0
+24 26 -28 -3 -30 32 34 36 -38 4 -40 42 -44 -46 -48 -50 -52 -54 -58 -59 -6 0
+-24 26 28 3 -30 -32 34 -36 -38 4 40 -42 44 46 -48 50 -52 -54 58 -59 6 0
+24 26 -28 3 -30 -32 -34 -36 -38 4 40 42 44 -46 -48 -50 52 -54 58 -59 6 0
+-24 26 -28 3 -30 -32 -34 -36 38 4 40 42 -44 46 -48 -50 -52 54 58 -59 6 0
+-24 26 28 3 -30 32 34 36 38 4 -40 42 44 46 -48 50 -52 -54 -58 -59 6 0
+24 -26 28 -3 30 32 34 -36 38 4 -40 -42 -44 46 48 50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 384 T: 0.00
+c [unig] [    0.20 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 456 deleted: 0 T: 0.00
+24 -26 -28 -3 -30 32 -34 -36 -38 4 -40 42 -44 46 -48 50 -52 -54 -58 -59 -6 0
+-24 26 28 -3 -30 -32 -34 36 -38 4 40 -42 -44 -46 48 -50 52 54 58 -59 6 0
+24 -26 28 -3 -30 -32 -34 36 -38 4 40 42 44 -46 48 50 52 -54 58 -59 6 0
+-24 26 -28 3 -30 32 34 36 38 4 -40 -42 -44 -46 48 -50 -52 -54 58 -59 6 0
+24 -26 28 3 -30 32 -34 36 38 4 -40 42 -44 46 -48 -50 -52 54 58 -59 6 0
+-24 -26 28 3 -30 -32 34 36 -38 4 -40 42 -44 -46 48 50 -52 54 -58 -59 6 0
+-24 26 28 -3 -30 32 34 -36 -38 4 -40 -42 -44 -46 48 50 -52 54 -58 -59 -6 0
+-24 26 28 3 -30 32 -34 36 38 4 -40 -42 44 46 -48 50 -52 -54 58 -59 6 0
+24 26 28 3 30 -32 34 -36 38 4 40 -42 44 -46 48 -50 -52 54 58 -59 6 0
+-24 -26 -28 -3 30 32 -34 -36 -38 4 -40 42 -44 -46 48 50 52 54 58 -59 6 0
+24 26 28 -3 30 -32 -34 36 -38 4 40 -42 -44 46 -48 -50 -52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 456 T: 0.00
+c [unig] [    0.21 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 428 deleted: 0 T: 0.00
+-24 26 28 -3 30 32 34 36 38 4 40 -42 44 -46 -48 -50 -52 -54 58 -59 6 0
+24 -26 28 3 -30 -32 34 -36 -38 4 40 -42 -44 -46 -48 50 52 -54 58 -59 6 0
+-24 -26 28 3 30 -32 34 -36 38 4 -40 -42 -44 -46 -48 -50 52 54 58 -59 6 0
+-24 -26 28 3 -30 -32 34 36 38 4 40 -42 44 -46 48 -50 -52 -54 -58 -59 6 0
+-24 26 28 -3 30 -32 -34 -36 38 4 40 42 -44 46 -48 -50 -52 54 -58 -59 -6 0
+24 26 28 3 30 32 -34 36 38 4 40 42 44 46 48 50 52 -54 -58 -59 6 0
+-24 -26 -28 -3 30 -32 -34 -36 -38 4 40 42 -44 46 -48 50 52 -54 -58 -59 -6 0
+-24 26 -28 -3 30 32 34 -36 38 4 -40 -42 -44 -46 -48 50 -52 54 -58 -59 -6 0
+24 -26 -28 -3 -30 -32 -34 -36 38 4 -40 42 -44 46 -48 -50 52 54 -58 -59 -6 0
+24 -26 -28 -3 -30 32 34 36 38 4 -40 -42 44 -46 -48 -50 52 -54 58 -59 6 0
+24 26 -28 3 -30 -32 34 -36 38 4 40 -42 -44 -46 -48 -50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 428 T: 0.00
+c [unig] [    0.21 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 512 deleted: 0 T: 0.00
+-24 -26 -28 -3 30 32 34 -36 -38 4 -40 42 -44 46 48 50 52 -54 -58 -59 -6 0
+-24 26 28 3 30 32 -34 -36 38 4 -40 -42 -44 46 -48 -50 -52 54 -58 -59 6 0
+-24 -26 -28 3 30 32 34 -36 38 4 40 42 44 46 -48 -50 -52 -54 -58 -59 6 0
+-24 26 28 3 -30 32 -34 36 38 4 40 -42 -44 -46 48 -50 -52 -54 -58 -59 6 0
+24 26 28 3 30 -32 -34 -36 38 4 40 42 44 -46 -48 -50 52 -54 58 -59 6 0
+24 26 -28 -3 30 -32 -34 36 38 4 -40 -42 44 46 48 -50 -52 54 58 -59 6 0
+24 26 -28 3 30 -32 -34 36 38 4 -40 -42 -44 46 48 50 -52 -54 -58 -59 6 0
+-24 -26 -28 -3 -30 32 34 36 38 4 -40 42 -44 -46 48 50 -52 -54 58 -59 6 0
+-24 26 28 -3 -30 32 -34 36 -38 4 -40 -42 44 -46 -48 50 52 -54 -58 -59 -6 0
+-24 26 -28 3 30 32 -34 36 38 4 40 42 44 -46 48 50 52 54 58 -59 6 0
+24 -26 28 3 30 -32 34 36 38 4 40 42 44 46 48 50 -52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 512 T: 0.00
+c [unig] [    0.21 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 480 deleted: 0 T: 0.00
+-24 26 -28 -3 30 -32 -34 36 38 4 -40 -42 -44 46 48 50 52 -54 -58 -59 -6 0
+-24 26 28 -3 -30 -32 -34 -36 38 4 -40 42 44 -46 -48 50 -52 54 -58 -59 -6 0
+24 26 28 -3 -30 -32 -34 -36 -38 4 40 -42 -44 46 -48 50 -52 -54 -58 -59 -6 0
+-24 -26 28 -3 30 32 34 36 -38 4 -40 -42 44 46 48 -50 52 -54 -58 -59 -6 0
+-24 26 -28 3 -30 32 -34 -36 -38 4 40 -42 -44 46 -48 -50 -52 54 58 -59 6 0
+-24 26 28 3 30 32 -34 36 -38 4 40 42 44 -46 48 -50 52 -54 58 -59 6 0
+24 -26 -28 -3 -30 32 34 -36 38 4 40 -42 44 46 -48 -50 -52 -54 -58 -59 -6 0
+-24 -26 28 3 30 32 34 -36 -38 4 40 42 -44 46 -48 50 -52 54 -58 -59 6 0
+-24 -26 28 3 -30 -32 34 -36 38 4 40 -42 44 46 -48 50 -52 54 58 -59 6 0
+-24 -26 -28 3 -30 32 34 36 -38 4 40 -42 44 -46 48 50 52 -54 -58 -59 6 0
+24 -26 -28 -3 -30 32 -34 -36 38 4 40 42 44 -46 48 50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 480 T: 0.00
+c [unig] [    0.22 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 448 deleted: 0 T: 0.00
+-24 -26 28 3 30 32 34 36 38 4 -40 -42 44 -46 48 50 -52 54 58 -59 6 0
+24 26 28 -3 -30 32 -34 36 38 4 40 -42 44 46 -48 -50 52 54 -58 -59 -6 0
+24 26 28 3 30 32 -34 -36 -38 4 40 -42 -44 -46 48 50 -52 54 -58 -59 6 0
+-24 -26 28 3 -30 32 -34 -36 38 4 -40 -42 -44 -46 -48 50 -52 54 58 -59 6 0
+-24 -26 28 -3 30 -32 34 36 38 4 40 42 44 46 48 50 -52 54 58 -59 6 0
+-24 -26 -28 -3 30 -32 -34 36 -38 4 40 -42 44 46 -48 -50 -52 -54 58 -59 6 0
+-24 26 -28 -3 30 -32 34 -36 38 4 -40 -42 44 46 48 50 -52 54 58 -59 6 0
+-24 -26 28 -3 -30 -32 -34 -36 38 4 40 42 -44 46 -48 50 -52 54 58 -59 6 0
+-24 26 28 3 -30 32 34 36 -38 4 40 -42 -44 -46 48 -50 -52 -54 58 -59 6 0
+24 26 28 3 -30 32 34 36 -38 4 40 -42 44 -46 -48 50 -52 54 -58 -59 6 0
+24 26 28 -3 30 32 34 -36 38 4 40 -42 -44 46 48 -50 52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 448 T: 0.00
+c [unig] [    0.22 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 380 deleted: 0 T: 0.00
+-24 26 28 3 30 -32 34 36 38 4 40 42 44 46 -48 50 -52 -54 58 -59 6 0
+24 26 -28 -3 -30 -32 34 -36 38 4 40 42 -44 46 -48 50 -52 54 -58 -59 -6 0
+24 -26 28 -3 -30 -32 34 -36 -38 4 -40 -42 44 46 -48 -50 -52 -54 -58 -59 -6 0
+24 -26 28 3 -30 32 -34 -36 -38 4 -40 -42 -44 46 48 -50 52 54 58 -59 6 0
+-24 -26 28 -3 30 -32 34 36 -38 4 -40 42 44 -46 -48 50 -52 54 -58 -59 -6 0
+24 26 28 3 -30 -32 34 -36 38 4 40 -42 44 -46 -48 -50 -52 54 58 -59 6 0
+-24 -26 -28 3 30 -32 34 36 -38 4 -40 -42 -44 46 -48 -50 -52 54 58 -59 6 0
+-24 26 -28 3 30 32 -34 36 38 4 40 -42 44 -46 48 -50 52 54 58 -59 6 0
+24 -26 28 3 -30 -32 34 36 -38 4 40 42 -44 -46 -48 50 -52 -54 -58 -59 6 0
+-24 26 28 -3 30 -32 -34 36 38 4 40 42 44 -46 48 -50 -52 54 58 -59 6 0
+24 -26 -28 -3 -30 32 -34 -36 -38 4 -40 42 44 -46 48 50 52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 380 T: 0.00
+c [unig] [    0.22 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 444 deleted: 0 T: 0.00
+-24 26 -28 -3 30 -32 34 -36 -38 4 -40 -42 44 -46 48 -50 52 54 -58 -59 -6 0
+-24 -26 -28 -3 -30 32 34 36 38 4 -40 42 44 -46 -48 -50 -52 -54 -58 -59 -6 0
+24 26 28 -3 30 32 -34 36 -38 4 40 -42 -44 46 48 50 52 54 58 -59 6 0
+24 -26 28 -3 30 -32 34 36 -38 4 40 -42 -44 -46 48 -50 52 -54 -58 -59 -6 0
+24 26 28 -3 -30 32 34 -36 38 4 40 42 -44 -46 -48 -50 -52 54 -58 -59 -6 0
+24 26 28 -3 -30 32 -34 -36 38 4 -40 42 44 -46 -48 50 52 -54 -58 -59 -6 0
+-24 26 -28 -3 -30 -32 -34 36 38 4 40 42 44 -46 -48 -50 -52 -54 58 -59 6 0
+-24 26 -28 -3 -30 -32 34 36 38 4 40 42 -44 46 -48 -50 52 -54 58 -59 6 0
+-24 26 -28 -3 30 -32 -34 -36 -38 4 -40 -42 -44 46 48 -50 -52 54 -58 -59 -6 0
+24 -26 28 -3 30 -32 -34 36 -38 4 40 -42 44 46 48 -50 -52 -54 -58 -59 -6 0
+-24 -26 -28 -3 -30 32 -34 36 38 4 -40 42 -44 46 -48 -50 52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 444 T: 0.00
+c [unig] [    0.23 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 392 deleted: 0 T: 0.00
+24 26 28 -3 -30 -32 -34 -36 38 4 40 -42 44 -46 -48 50 52 54 -58 -59 -6 0
+24 26 -28 3 -30 -32 -34 36 38 4 40 -42 -44 46 48 -50 52 -54 58 -59 6 0
+-24 -26 28 3 30 -32 -34 36 -38 4 -40 42 44 46 48 50 52 54 -58 -59 6 0
+-24 -26 -28 -3 30 32 34 -36 38 4 -40 -42 -44 46 -48 -50 52 54 58 -59 6 0
+24 -26 -28 3 30 -32 34 -36 38 4 -40 42 44 46 48 50 52 -54 58 -59 6 0
+24 -26 -28 3 -30 32 -34 -36 -38 4 40 42 44 46 48 -50 52 54 -58 -59 6 0
+-24 -26 -28 3 30 -32 -34 -36 38 4 -40 -42 -44 -46 48 -50 52 -54 58 -59 6 0
+24 -26 -28 -3 30 32 -34 -36 38 4 -40 42 44 -46 -48 50 52 54 58 -59 6 0
+-24 26 -28 -3 -30 32 -34 36 38 4 40 42 44 46 -48 50 52 54 58 -59 6 0
+-24 26 -28 3 30 32 -34 36 -38 4 -40 42 44 -46 48 -50 52 54 -58 -59 6 0
+-24 26 28 -3 30 -32 34 -36 38 4 -40 -42 -44 -46 -48 50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 392 T: 0.00
+c [unig] [    0.23 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 464 deleted: 0 T: 0.00
+-24 -26 28 3 30 -32 34 36 38 4 -40 42 -44 46 -48 -50 52 -54 58 -59 6 0
+24 26 28 3 30 -32 34 36 -38 4 40 42 -44 46 -48 50 52 54 58 -59 6 0
+24 26 -28 3 -30 -32 -34 -36 38 4 40 -42 44 -46 48 -50 52 54 58 -59 6 0
+24 26 -28 -3 -30 32 -34 -36 -38 4 40 -42 44 -46 -48 -50 52 -54 -58 -59 -6 0
+-24 26 28 -3 -30 -32 34 36 -38 4 -40 -42 44 -46 48 -50 52 -54 58 -59 6 0
+-24 26 -28 3 -30 -32 -34 -36 -38 4 -40 -42 -44 46 48 50 52 54 -58 -59 6 0
+24 26 28 3 30 -32 -34 36 38 4 40 -42 44 -46 48 50 -52 54 -58 -59 6 0
+-24 26 28 3 30 -32 -34 36 -38 4 -40 -42 -44 46 48 -50 -52 54 58 -59 6 0
+-24 -26 -28 -3 30 -32 34 -36 -38 4 -40 -42 -44 46 48 50 -52 54 58 -59 6 0
+24 -26 -28 3 -30 -32 34 -36 -38 4 40 42 44 -46 -48 -50 -52 -54 58 -59 6 0
+-24 -26 28 -3 30 32 34 36 -38 4 -40 42 -44 46 48 -50 52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 464 T: 0.00
+c [unig] [    0.23 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 452 deleted: 0 T: 0.00
+24 26 28 -3 -30 32 34 -36 38 4 -40 -42 44 46 -48 -50 -52 54 58 -59 6 0
+-24 -26 -28 -3 30 -32 34 36 -38 4 -40 42 -44 46 -48 -50 52 54 -58 -59 -6 0
+-24 26 -28 3 -30 -32 34 36 38 4 40 42 44 -46 48 -50 52 54 58 -59 6 0
+24 -26 28 -3 -30 32 34 -36 38 4 -40 -42 -44 46 48 50 -52 54 -58 -59 -6 0
+-24 26 28 3 -30 32 34 36 38 4 40 42 44 -46 -48 -50 -52 -54 58 -59 6 0
+-24 26 -28 3 -30 -32 34 36 38 4 40 42 -44 46 -48 50 52 54 58 -59 6 0
+-24 -26 28 3 -30 32 -34 -36 -38 4 -40 -42 44 46 -48 -50 -52 54 -58 -59 6 0
+-24 -26 -28 -3 30 -32 34 36 -38 4 -40 42 44 -46 48 50 52 54 -58 -59 -6 0
+24 26 -28 3 30 -32 34 -36 -38 4 40 -42 -44 46 -48 -50 52 -54 58 -59 6 0
+-24 26 28 -3 30 32 34 36 -38 4 -40 42 -44 -46 48 -50 -52 -54 58 -59 6 0
+24 -26 28 3 30 32 -34 36 38 4 -40 42 44 46 -48 50 -52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 452 T: 0.00
+c [unig] [    0.23 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 424 deleted: 0 T: 0.00
+24 -26 28 -3 -30 32 34 -36 -38 4 40 42 -44 -46 48 50 -52 54 58 -59 6 0
+24 26 -28 -3 -30 -32 34 -36 -38 4 40 42 44 46 -48 50 -52 -54 58 -59 6 0
+-24 26 -28 3 30 32 -34 -36 38 4 -40 -42 44 -46 48 50 52 -54 -58 -59 6 0
+-24 26 -28 -3 -30 -32 34 -36 -38 4 -40 42 44 -46 -48 -50 52 -54 58 -59 6 0
+-24 -26 28 3 -30 32 -34 -36 -38 4 40 -42 -44 -46 -48 -50 52 -54 58 -59 6 0
+-24 26 28 3 -30 32 -34 36 38 4 40 42 44 -46 48 50 52 54 -58 -59 6 0
+-24 -26 28 -3 -30 32 34 -36 -38 4 -40 42 -44 46 48 -50 52 54 58 -59 6 0
+24 -26 28 3 30 -32 -34 -36 38 4 40 -42 -44 -46 -48 -50 -52 54 -58 -59 6 0
+24 -26 -28 -3 30 32 34 36 -38 4 -40 -42 -44 -46 48 50 -52 -54 58 -59 6 0
+24 -26 -28 -3 30 32 34 36 38 4 -40 -42 44 46 -48 -50 -52 54 -58 -59 -6 0
+-24 26 28 3 30 -32 -34 36 -38 4 -40 42 44 46 48 -50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 424 T: 0.00
+c [unig] [    0.24 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 376 deleted: 0 T: 0.00
+24 -26 -28 -3 30 32 34 36 -38 4 -40 -42 -44 46 -48 50 -52 -54 -58 -59 -6 0
+-24 -26 -28 -3 -30 -32 34 -36 38 4 -40 42 -44 46 -48 50 52 -54 -58 -59 -6 0
+24 26 28 -3 30 -32 -34 36 38 4 40 -42 44 -46 -48 -50 -52 54 58 -59 6 0
+24 26 28 3 -30 32 34 -36 -38 4 -40 42 44 -46 48 50 -52 -54 -58 -59 6 0
+-24 -26 28 -3 30 -32 -34 36 -38 4 40 42 44 46 48 -50 52 -54 58 -59 6 0
+-24 -26 28 3 -30 -32 -34 36 38 4 -40 42 44 -46 48 -50 -52 54 58 -59 6 0
+-24 26 -28 3 30 -32 -34 36 38 4 -40 -42 44 46 -48 50 52 54 -58 -59 6 0
+24 26 -28 3 -30 32 -34 -36 -38 4 -40 42 44 46 -48 50 -52 54 -58 -59 6 0
+-24 26 28 3 30 -32 34 36 38 4 -40 -42 44 -46 48 50 52 -54 -58 -59 6 0
+24 26 -28 -3 30 -32 34 36 38 4 40 -42 44 46 48 -50 -52 -54 58 -59 6 0
+24 -26 -28 -3 -30 32 34 -36 38 4 40 -42 44 -46 -48 -50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 376 T: 0.00
+c [unig] [    0.24 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 432 deleted: 0 T: 0.00
+-24 -26 28 3 30 -32 -34 36 -38 4 -40 -42 -44 46 48 50 -52 54 -58 -59 6 0
+24 26 28 3 -30 32 34 36 -38 4 40 42 -44 -46 -48 50 52 -54 58 -59 6 0
+24 -26 28 3 -30 -32 34 -36 -38 4 40 -42 44 -46 48 50 52 54 -58 -59 6 0
+24 26 28 -3 -30 32 -34 36 -38 4 -40 -42 -44 46 48 -50 -52 -54 58 -59 6 0
+-24 26 28 -3 -30 32 -34 36 -38 4 -40 42 -44 46 48 -50 -52 54 58 -59 6 0
+24 26 28 3 -30 32 34 -36 38 4 -40 -42 -44 -46 48 50 -52 54 -58 -59 6 0
+24 -26 28 -3 30 -32 34 -36 38 4 -40 42 -44 -46 48 -50 -52 54 58 -59 6 0
+24 -26 28 3 30 -32 -34 -36 38 4 40 -42 -44 46 -48 50 52 54 58 -59 6 0
+24 26 -28 -3 -30 32 -34 -36 -38 4 -40 -42 44 -46 -48 -50 52 54 -58 -59 -6 0
+-24 26 28 3 -30 32 34 36 -38 4 40 -42 -44 -46 -48 50 52 54 58 -59 6 0
+-24 26 28 -3 30 32 34 -36 -38 4 40 -42 44 -46 48 -50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 432 T: 0.00
+c [unig] [    0.24 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 436 deleted: 0 T: 0.00
+24 -26 28 -3 -30 -32 34 36 -38 4 -40 42 44 -46 -48 -50 52 54 -58 -59 -6 0
+-24 -26 -28 -3 30 -32 -34 -36 -38 4 40 -42 -44 -46 -48 50 -52 -54 58 -59 6 0
+-24 26 28 -3 30 32 -34 36 38 4 40 -42 44 -46 48 50 52 54 -58 -59 -6 0
+24 -26 -28 3 -30 32 -34 36 38 4 -40 42 44 -46 -48 50 52 -54 -58 -59 6 0
+24 -26 -28 3 -30 -32 34 36 -38 4 40 -42 44 -46 -48 50 52 54 58 -59 6 0
+-24 26 -28 3 -30 32 -34 36 -38 4 -40 -42 44 -46 48 50 -52 54 -58 -59 6 0
+24 26 28 3 30 32 34 36 38 4 40 42 -44 46 -48 -50 52 -54 -58 -59 6 0
+-24 26 -28 3 30 32 -34 36 38 4 -40 42 44 -46 48 -50 52 54 58 -59 6 0
+24 26 -28 -3 30 -32 -34 36 -38 4 40 42 -44 46 -48 50 52 54 -58 -59 -6 0
+24 -26 -28 3 30 32 -34 36 -38 4 -40 -42 44 -46 -48 -50 -52 -54 58 -59 6 0
+-24 -26 28 3 -30 32 34 36 38 4 40 42 -44 46 48 50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 436 T: 0.00
+c [unig] [    0.25 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 448 deleted: 0 T: 0.00
+-24 -26 -28 3 30 32 34 36 38 4 40 42 -44 -46 -48 50 52 -54 58 -59 6 0
+24 26 28 -3 -30 -32 -34 36 38 4 40 -42 44 -46 -48 50 52 54 -58 -59 -6 0
+-24 -26 -28 3 30 32 -34 36 38 4 40 42 44 46 48 50 -52 -54 58 -59 6 0
+-24 26 28 -3 30 32 34 -36 -38 4 40 -42 -44 -46 -48 -50 52 54 -58 -59 -6 0
+-24 -26 28 3 -30 -32 34 36 -38 4 -40 42 -44 -46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 3 30 32 -34 36 -38 4 -40 42 -44 -46 -48 50 52 54 -58 -59 6 0
+24 -26 28 3 30 32 34 -36 38 4 -40 42 -44 46 48 50 -52 54 58 -59 6 0
+24 -26 -28 3 -30 -32 34 -36 -38 4 40 42 -44 46 48 -50 -52 -54 58 -59 6 0
+24 26 -28 -3 30 32 34 36 -38 4 -40 -42 -44 46 48 -50 -52 -54 -58 -59 -6 0
+-24 26 -28 -3 -30 -32 -34 36 38 4 -40 42 -44 46 48 50 -52 54 58 -59 6 0
+24 26 -28 -3 30 32 -34 36 -38 4 -40 -42 44 -46 -48 -50 52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 448 T: 0.00
+c [unig] [    0.25 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 428 deleted: 0 T: 0.00
+-24 -26 28 -3 30 32 -34 -36 38 4 -40 -42 44 -46 -48 50 52 -54 -58 -59 -6 0
+24 26 -28 3 30 -32 -34 36 38 4 -40 -42 44 46 -48 -50 52 -54 -58 -59 6 0
+-24 26 28 3 -30 -32 -34 -36 38 4 40 42 44 -46 48 -50 52 54 -58 -59 6 0
+-24 26 -28 3 -30 32 -34 -36 -38 4 -40 -42 44 46 48 -50 -52 -54 58 -59 6 0
+-24 -26 28 3 -30 32 34 36 -38 4 40 -42 44 46 -48 -50 -52 54 58 -59 6 0
+-24 -26 -28 3 -30 32 -34 -36 -38 4 40 42 44 -46 -48 -50 -52 54 -58 -59 6 0
+24 -26 28 -3 -30 -32 -34 36 -38 4 40 42 -44 -46 48 -50 52 -54 58 -59 6 0
+-24 -26 -28 -3 30 32 34 36 38 4 40 -42 -44 46 -48 -50 -52 -54 58 -59 6 0
+24 26 -28 -3 -30 -32 34 -36 -38 4 -40 42 -44 -46 -48 -50 52 54 58 -59 6 0
+24 -26 -28 -3 -30 -32 34 -36 -38 4 -40 42 44 46 48 50 -52 -54 -58 -59 -6 0
+-24 -26 -28 3 -30 -32 34 36 38 4 -40 42 44 -46 -48 -50 52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 428 T: 0.00
+c [unig] [    0.25 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 420 deleted: 0 T: 0.00
+24 26 28 -3 -30 32 34 -36 38 4 40 -42 44 46 48 -50 -52 54 58 -59 6 0
+-24 26 28 3 30 -32 34 -36 -38 4 -40 -42 44 46 48 50 52 54 58 -59 6 0
+24 -26 -28 3 30 32 34 -36 38 4 40 -42 44 -46 -48 -50 -52 54 -58 -59 6 0
+24 26 28 3 -30 -32 34 -36 38 4 -40 42 -44 46 48 50 -52 -54 -58 -59 6 0
+-24 26 28 -3 -30 -32 -34 -36 -38 4 -40 42 -44 -46 -48 -50 -52 54 -58 -59 -6 0
+-24 -26 -28 -3 -30 32 34 36 -38 4 40 -42 -44 -46 48 50 -52 54 58 -59 6 0
+24 26 28 -3 30 32 -34 36 38 4 40 -42 -44 -46 48 -50 -52 -54 -58 -59 -6 0
+24 -26 -28 -3 -30 -32 -34 36 38 4 -40 42 44 46 -48 50 -52 54 -58 -59 -6 0
+-24 26 28 3 30 32 34 36 -38 4 40 -42 -44 46 -48 50 -52 54 -58 -59 6 0
+-24 -26 -28 3 -30 32 34 -36 -38 4 40 42 -44 -46 -48 -50 52 -54 58 -59 6 0
+24 -26 -28 -3 30 32 -34 -36 38 4 40 -42 -44 -46 48 -50 52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 420 T: 0.00
+c [unig] [    0.26 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 456 deleted: 0 T: 0.00
+-24 -26 28 -3 30 32 -34 -36 -38 4 40 42 -44 46 -48 -50 52 54 -58 -59 -6 0
+24 -26 -28 -3 30 -32 34 36 -38 4 -40 42 -44 -46 -48 -50 -52 54 58 -59 6 0
+-24 26 28 -3 -30 32 -34 -36 -38 4 -40 -42 44 -46 48 50 52 -54 -58 -59 -6 0
+24 -26 28 3 -30 -32 34 36 38 4 40 -42 44 46 -48 50 52 -54 -58 -59 6 0
+24 -26 -28 -3 30 32 34 36 38 4 -40 42 -44 46 48 50 52 -54 58 -59 6 0
+-24 -26 28 -3 30 -32 -34 -36 -38 4 -40 42 44 -46 48 -50 52 54 58 -59 6 0
+-24 26 28 3 30 32 34 36 -38 4 40 -42 -44 -46 48 -50 -52 -54 58 -59 6 0
+24 26 28 3 30 -32 34 36 38 4 -40 42 -44 -46 48 -50 52 54 -58 -59 6 0
+-24 26 28 -3 -30 32 -34 -36 38 4 40 -42 -44 -46 48 -50 -52 54 58 -59 6 0
+24 26 -28 -3 -30 32 34 36 -38 4 -40 -42 -44 -46 -48 50 -52 -54 -58 -59 -6 0
+24 26 28 3 30 32 34 36 -38 4 -40 42 -44 46 -48 50 -52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 456 T: 0.00
+c [unig] [    0.26 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 428 deleted: 0 T: 0.00
+-24 -26 28 -3 30 32 -34 36 38 4 40 42 -44 46 -48 50 52 -54 -58 -59 -6 0
+-24 -26 -28 3 30 32 34 36 -38 4 40 42 -44 46 48 50 -52 54 58 -59 6 0
+-24 26 -28 3 -30 -32 -34 36 38 4 40 -42 44 -46 -48 -50 52 -54 -58 -59 6 0
+24 -26 28 -3 -30 32 -34 36 -38 4 -40 42 -44 -46 48 50 -52 54 -58 -59 -6 0
+-24 26 28 3 -30 32 34 36 -38 4 40 -42 44 -46 -48 50 52 -54 -58 -59 6 0
+24 -26 28 -3 -30 -32 34 -36 -38 4 40 42 -44 -46 48 -50 -52 54 -58 -59 -6 0
+24 26 -28 3 30 -32 -34 36 -38 4 -40 -42 44 46 48 -50 -52 54 -58 -59 6 0
+-24 -26 -28 -3 30 32 -34 -36 -38 4 -40 42 -44 46 -48 50 52 -54 -58 -59 -6 0
+24 -26 -28 -3 -30 32 34 -36 -38 4 -40 -42 44 -46 48 50 52 54 58 -59 6 0
+24 -26 -28 3 -30 -32 -34 -36 38 4 40 42 -44 -46 -48 -50 52 -54 58 -59 6 0
+24 -26 -28 3 -30 32 34 36 38 4 -40 42 -44 -46 -48 50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 428 T: 0.00
+c [unig] [    0.27 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 408 deleted: 0 T: 0.00
+-24 -26 28 -3 30 -32 34 36 -38 4 40 -42 -44 46 48 -50 -52 54 58 -59 6 0
+24 -26 28 3 -30 32 -34 -36 -38 4 -40 -42 44 46 -48 -50 -52 54 58 -59 6 0
+24 26 28 -3 -30 32 34 36 38 4 -40 -42 44 -46 -48 -50 -52 -54 -58 -59 -6 0
+24 26 -28 3 30 32 34 -36 38 4 -40 -42 44 -46 48 50 -52 54 -58 -59 6 0
+-24 26 28 -3 -30 -32 34 36 38 4 -40 -42 -44 46 48 50 -52 54 58 -59 6 0
+-24 -26 -28 3 -30 -32 34 36 -38 4 40 42 -44 -46 -48 50 52 54 -58 -59 6 0
+-24 26 28 3 -30 -32 -34 -36 38 4 40 42 44 46 -48 50 -52 -54 58 -59 6 0
+24 -26 28 -3 -30 32 34 36 -38 4 40 42 -44 46 48 -50 -52 -54 58 -59 6 0
+-24 -26 28 -3 -30 -32 34 36 -38 4 40 42 44 -46 -48 50 -52 54 -58 -59 -6 0
+24 -26 28 3 30 32 -34 36 -38 4 -40 -42 -44 46 48 50 52 -54 58 -59 6 0
+-24 26 28 -3 30 -32 34 -36 38 4 -40 -42 44 46 -48 -50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 408 T: 0.00
+c [unig] [    0.27 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 428 deleted: 0 T: 0.00
+-24 -26 -28 -3 -30 32 34 -36 -38 4 -40 -42 -44 -46 48 -50 52 -54 58 -59 6 0
+24 -26 28 -3 -30 -32 34 -36 38 4 40 -42 -44 -46 48 -50 52 54 58 -59 6 0
+-24 26 -28 3 30 -32 34 36 38 4 -40 -42 44 46 -48 -50 -52 -54 -58 -59 6 0
+24 -26 -28 3 30 -32 34 36 -38 4 -40 -42 -44 -46 48 50 52 54 -58 -59 6 0
+24 26 -28 -3 -30 32 34 -36 38 4 -40 42 44 -46 48 50 -52 54 -58 -59 -6 0
+24 -26 28 -3 -30 -32 34 -36 38 4 40 42 -44 46 -48 -50 52 54 -58 -59 -6 0
+-24 -26 -28 -3 30 -32 -34 -36 -38 4 40 42 -44 -46 48 -50 -52 -54 58 -59 6 0
+-24 -26 -28 -3 -30 32 34 -36 -38 4 -40 42 -44 46 -48 -50 52 -54 -58 -59 -6 0
+24 26 -28 -3 30 -32 -34 -36 38 4 40 -42 44 -46 48 50 52 54 -58 -59 -6 0
+24 -26 -28 3 30 32 -34 36 -38 4 40 42 -44 46 -48 -50 -52 54 58 -59 6 0
+24 26 -28 -3 30 -32 -34 -36 38 4 40 42 44 46 -48 50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 428 T: 0.00
+c [unig] [    0.27 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 472 deleted: 0 T: 0.00
+24 -26 28 -3 30 32 34 36 38 4 40 -42 44 -46 48 50 -52 54 58 -59 6 0
+-24 -26 -28 -3 30 -32 34 -36 38 4 -40 -42 -44 -46 48 -50 -52 54 -58 -59 -6 0
+-24 26 -28 3 30 32 34 -36 -38 4 40 -42 -44 -46 48 -50 52 54 -58 -59 6 0
+-24 -26 -28 3 30 32 -34 36 -38 4 -40 -42 44 46 -48 50 52 54 58 -59 6 0
+24 26 28 3 -30 32 -34 36 -38 4 -40 -42 44 -46 48 50 52 -54 -58 -59 6 0
+-24 -26 28 -3 -30 32 34 36 -38 4 -40 42 -44 -46 48 50 52 -54 -58 -59 -6 0
+24 26 -28 3 -30 -32 -34 36 -38 4 -40 42 -44 46 -48 -50 -52 54 -58 -59 6 0
+24 -26 28 -3 30 -32 -34 -36 -38 4 40 -42 -44 46 -48 50 -52 -54 -58 -59 -6 0
+24 26 28 3 30 32 -34 -36 38 4 -40 -42 -44 46 -48 50 52 -54 -58 -59 6 0
+24 -26 28 3 -30 32 34 -36 -38 4 40 -42 -44 46 -48 -50 52 -54 58 -59 6 0
+24 -26 -28 -3 -30 -32 34 -36 -38 4 40 42 44 -46 48 -50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 472 T: 0.00
+c [unig] [    0.28 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 444 deleted: 0 T: 0.00
+-24 -26 -28 3 30 -32 34 -36 38 4 40 -42 44 46 -48 -50 52 -54 58 -59 6 0
+24 26 -28 3 30 -32 34 36 38 4 40 42 -44 46 48 50 -52 54 -58 -59 6 0
+-24 -26 -28 -3 30 -32 -34 36 -38 4 -40 -42 -44 46 48 -50 52 54 -58 -59 -6 0
+24 -26 -28 -3 30 32 34 36 38 4 40 42 -44 46 -48 -50 -52 -54 -58 -59 -6 0
+-24 -26 -28 -3 -30 -32 -34 -36 -38 4 -40 -42 -44 -46 -48 50 52 54 -58 -59 -6 0
+24 26 -28 -3 30 32 -34 36 -38 4 40 -42 -44 46 48 50 -52 54 58 -59 6 0
+-24 26 -28 -3 30 -32 34 36 38 4 -40 42 -44 46 -48 50 52 -54 58 -59 6 0
+-24 -26 -28 3 -30 -32 34 36 38 4 40 -42 44 -46 48 50 52 -54 58 -59 6 0
+-24 26 -28 3 -30 32 -34 -36 -38 4 -40 -42 -44 -46 48 -50 52 -54 -58 -59 6 0
+24 -26 28 3 30 -32 34 -36 38 4 40 42 44 -46 -48 -50 52 54 -58 -59 6 0
+-24 -26 28 3 30 32 -34 -36 -38 4 -40 -42 44 -46 48 -50 -52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 444 T: 0.00
+c [unig] [    0.28 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 420 deleted: 0 T: 0.00
+-24 26 28 3 30 32 -34 36 38 4 40 42 44 -46 48 -50 52 54 -58 -59 6 0
+24 -26 28 -3 -30 32 34 -36 38 4 40 42 44 -46 -48 -50 -52 -54 58 -59 6 0
+24 -26 28 -3 -30 -32 -34 -36 38 4 40 -42 44 46 48 -50 52 -54 58 -59 6 0
+24 26 28 -3 30 32 34 -36 38 4 -40 42 44 46 48 -50 52 -54 -58 -59 -6 0
+-24 26 -28 3 -30 -32 -34 36 38 4 40 -42 -44 46 -48 50 -52 54 -58 -59 6 0
+24 -26 28 -3 30 -32 -34 -36 38 4 -40 42 44 46 48 50 52 54 58 -59 6 0
+-24 26 28 3 -30 32 34 36 38 4 -40 42 -44 -46 -48 -50 52 54 58 -59 6 0
+-24 26 28 3 30 32 34 36 38 4 40 -42 -44 -46 -48 50 52 -54 58 -59 6 0
+24 26 -28 -3 -30 32 -34 -36 38 4 -40 42 -44 46 48 50 52 -54 -58 -59 -6 0
+24 -26 -28 -3 30 -32 34 -36 38 4 40 -42 -44 46 48 50 52 -54 58 -59 6 0
+24 -26 28 -3 30 32 34 -36 38 4 -40 -42 44 -46 -48 50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 420 T: 0.00
+c [unig] [    0.28 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 492 deleted: 0 T: 0.00
+-24 26 -28 -3 30 32 -34 36 -38 4 40 -42 -44 -46 -48 -50 52 -54 58 -59 6 0
+24 26 28 3 -30 -32 34 -36 -38 4 40 42 44 -46 48 -50 52 -54 -58 -59 6 0
+-24 26 -28 -3 30 32 -34 36 -38 4 -40 -42 44 46 48 -50 -52 -54 58 -59 6 0
+-24 -26 28 -3 30 32 34 -36 -38 4 40 -42 -44 46 48 -50 -52 -54 58 -59 6 0
+24 -26 -28 3 30 32 34 -36 -38 4 -40 -42 -44 -46 -48 50 52 -54 -58 -59 6 0
+24 26 28 3 30 32 -34 36 -38 4 40 -42 44 -46 -48 50 52 -54 -58 -59 6 0
+-24 -26 28 -3 -30 -32 -34 36 -38 4 40 42 -44 46 -48 50 -52 -54 58 -59 6 0
+-24 26 28 3 -30 32 34 -36 -38 4 -40 42 44 -46 48 -50 52 54 -58 -59 6 0
+-24 26 28 3 30 -32 -34 36 -38 4 -40 -42 44 -46 -48 50 52 54 -58 -59 6 0
+24 -26 -28 3 30 32 34 -36 -38 4 40 -42 44 46 48 50 -52 -54 -58 -59 6 0
+24 26 -28 -3 -30 32 34 -36 -38 4 40 42 44 46 -48 50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 492 T: 0.00
+c [unig] [    0.29 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 404 deleted: 0 T: 0.00
+-24 26 -28 -3 -30 32 -34 36 38 4 40 -42 -44 46 48 50 -52 -54 -58 -59 -6 0
+-24 -26 -28 3 -30 32 -34 -36 -38 4 -40 -42 -44 -46 -48 -50 -52 -54 58 -59 6 0
+24 26 28 -3 30 -32 34 36 38 4 -40 -42 44 46 -48 -50 -52 -54 58 -59 6 0
+-24 26 -28 3 -30 32 -34 36 -38 4 40 42 44 46 48 -50 -52 54 58 -59 6 0
+-24 26 28 3 -30 -32 -34 -36 38 4 -40 42 44 46 48 50 52 54 58 -59 6 0
+-24 26 -28 3 30 32 -34 -36 38 4 -40 42 -44 -46 -48 -50 -52 -54 58 -59 6 0
+24 26 -28 -3 -30 32 34 36 38 4 -40 -42 -44 -46 48 50 52 54 58 -59 6 0
+24 26 28 3 30 -32 34 36 38 4 40 -42 -44 46 48 -50 52 54 -58 -59 6 0
+-24 -26 -28 -3 30 32 -34 36 -38 4 40 42 -44 46 48 50 -52 -54 -58 -59 -6 0
+24 26 28 -3 -30 -32 34 -36 -38 4 40 -42 -44 -46 48 -50 -52 54 58 -59 6 0
+24 -26 28 3 30 -32 34 -36 38 4 -40 42 44 -46 -48 -50 52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 404 T: 0.00
+c [unig] [    0.29 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 460 deleted: 0 T: 0.00
+24 -26 28 3 30 32 34 36 38 4 -40 -42 -44 46 -48 50 52 -54 58 -59 6 0
+-24 -26 28 3 30 -32 -34 36 38 4 40 42 -44 46 48 50 52 54 -58 -59 6 0
+-24 -26 -28 3 30 -32 34 -36 38 4 -40 42 -44 46 -48 50 -52 -54 -58 -59 6 0
+-24 -26 28 3 30 32 -34 36 38 4 -40 -42 -44 -46 48 -50 52 -54 -58 -59 6 0
+24 -26 -28 -3 30 32 -34 -36 38 4 40 42 44 -46 -48 -50 -52 54 58 -59 6 0
+24 26 -28 3 -30 32 -34 -36 -38 4 40 -42 -44 46 -48 -50 52 -54 58 -59 6 0
+-24 26 -28 3 -30 32 34 -36 -38 4 40 -42 -44 -46 48 50 52 -54 -58 -59 6 0
+24 -26 28 -3 30 32 34 36 38 4 -40 42 44 -46 48 -50 52 -54 58 -59 6 0
+24 -26 28 3 30 -32 34 36 38 4 40 42 -44 -46 -48 -50 52 54 58 -59 6 0
+-24 -26 -28 3 30 32 34 -36 38 4 40 -42 -44 -46 -48 -50 -52 54 -58 -59 6 0
+24 26 28 -3 -30 -32 34 36 -38 4 40 -42 44 46 -48 -50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 460 T: 0.00
+c [unig] [    0.30 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 492 deleted: 0 T: 0.00
+24 26 -28 -3 -30 -32 -34 -36 -38 4 40 42 44 46 48 -50 52 -54 58 -59 6 0
+24 26 28 -3 -30 32 -34 36 38 4 40 -42 -44 -46 48 -50 -52 54 58 -59 6 0
+-24 26 28 -3 30 -32 34 -36 38 4 -40 42 -44 -46 -48 -50 -52 54 58 -59 6 0
+24 -26 -28 3 -30 32 -34 36 38 4 -40 -42 44 46 -48 50 -52 54 58 -59 6 0
+-24 26 -28 3 30 -32 -34 -36 -38 4 40 42 44 46 48 50 -52 -54 58 -59 6 0
+-24 26 28 -3 30 32 -34 36 -38 4 40 42 -44 46 48 50 52 -54 58 -59 6 0
+-24 -26 28 3 30 32 34 36 -38 4 40 -42 -44 -46 48 50 52 -54 58 -59 6 0
+24 -26 -28 -3 -30 32 -34 36 -38 4 -40 42 44 -46 -48 50 -52 -54 58 -59 6 0
+-24 -26 -28 3 30 32 -34 36 -38 4 -40 42 44 -46 -48 -50 52 -54 58 -59 6 0
+24 26 -28 3 -30 -32 -34 -36 38 4 40 -42 44 -46 48 -50 52 54 58 -59 6 0
+24 -26 28 3 -30 -32 -34 -36 -38 4 -40 42 -44 -46 -48 50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 492 T: 0.00
+c [unig] [    0.30 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 452 deleted: 0 T: 0.00
+-24 -26 28 3 30 32 -34 -36 -38 4 40 42 -44 -46 -48 50 -52 -54 -58 -59 6 0
+24 -26 28 -3 30 32 -34 -36 38 4 40 42 44 -46 48 -50 -52 -54 58 -59 6 0
+24 -26 28 -3 30 32 -34 -36 38 4 -40 -42 -44 -46 -48 -50 -52 54 -58 -59 -6 0
+-24 26 28 3 30 32 -34 -36 38 4 -40 42 -44 46 -48 50 -52 -54 58 -59 6 0
+-24 26 -28 3 30 32 34 -36 -38 4 40 42 -44 46 -48 50 52 -54 58 -59 6 0
+24 26 -28 -3 30 -32 34 -36 -38 4 -40 42 -44 -46 48 -50 52 -54 58 -59 6 0
+-24 -26 -28 3 30 -32 34 -36 -38 4 40 42 44 46 -48 50 52 -54 58 -59 6 0
+-24 -26 28 3 -30 -32 -34 -36 -38 4 40 -42 -44 -46 48 -50 -52 -54 58 -59 6 0
+24 26 28 -3 30 -32 -34 -36 38 4 -40 -42 44 -46 -48 -50 -52 54 -58 -59 -6 0
+24 26 -28 -3 30 -32 34 -36 -38 4 40 -42 44 -46 -48 -50 52 54 -58 -59 -6 0
+24 26 28 -3 30 -32 -34 -36 38 4 40 42 -44 -46 48 -50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 452 T: 0.00
+c [unig] [    0.30 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 452 deleted: 0 T: 0.00
+24 -26 28 3 30 -32 -34 -36 38 4 40 42 44 46 48 -50 52 -54 58 -59 6 0
+24 26 -28 -3 30 32 34 -36 -38 4 -40 42 -44 -46 -48 -50 -52 54 -58 -59 -6 0
+-24 -26 -28 -3 -30 32 -34 36 -38 4 40 -42 -44 46 48 50 52 -54 -58 -59 -6 0
+24 26 -28 3 -30 32 -34 -36 38 4 40 42 44 46 48 50 -52 -54 58 -59 6 0
+24 26 -28 -3 -30 -32 34 36 -38 4 -40 -42 -44 46 48 -50 -52 54 58 -59 6 0
+-24 -26 28 3 30 32 34 -36 -38 4 40 42 -44 -46 48 -50 -52 -54 58 -59 6 0
+-24 -26 28 -3 30 -32 -34 36 38 4 -40 -42 44 -46 48 50 -52 54 58 -59 6 0
+-24 -26 28 -3 -30 32 -34 -36 38 4 -40 42 44 46 -48 50 -52 54 -58 -59 -6 0
+24 -26 28 -3 -30 -32 34 -36 -38 4 -40 42 -44 -46 -48 50 52 54 -58 -59 -6 0
+-24 -26 -28 3 -30 -32 34 36 -38 4 -40 42 44 46 -48 -50 52 -54 -58 -59 6 0
+24 -26 28 -3 30 32 34 36 -38 4 -40 -42 -44 46 48 50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 452 T: 0.00
+c [unig] [    0.31 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 420 deleted: 0 T: 0.00
+-24 26 -28 -3 30 -32 -34 36 -38 4 40 42 44 -46 48 -50 -52 54 58 -59 6 0
+-24 26 28 -3 -30 32 -34 -36 38 4 40 42 44 46 48 -50 52 -54 58 -59 6 0
+-24 26 -28 -3 30 32 -34 -36 38 4 -40 -42 44 46 -48 50 52 54 -58 -59 -6 0
+-24 26 -28 3 -30 32 34 36 -38 4 40 42 44 46 -48 50 -52 54 -58 -59 6 0
+24 26 28 3 -30 -32 34 -36 -38 4 -40 -42 -44 46 -48 -50 -52 -54 -58 -59 6 0
+-24 -26 -28 -3 30 32 34 36 38 4 -40 -42 -44 -46 48 -50 -52 -54 -58 -59 -6 0
+-24 26 -28 -3 30 -32 -34 -36 -38 4 40 42 -44 46 -48 50 52 -54 -58 -59 -6 0
+-24 -26 28 3 30 32 -34 36 -38 4 -40 -42 44 46 48 -50 -52 -54 -58 -59 6 0
+24 -26 28 -3 30 32 34 36 -38 4 -40 -42 44 46 -48 -50 52 54 58 -59 6 0
+24 26 28 -3 30 32 -34 -36 -38 4 -40 -42 -44 -46 48 50 -52 -54 58 -59 6 0
+24 26 -28 -3 -30 32 -34 36 -38 4 40 42 44 46 48 50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 420 T: 0.00
+c [unig] [    0.31 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 428 deleted: 0 T: 0.00
+24 26 -28 -3 30 32 -34 -36 -38 4 -40 42 -44 -46 48 -50 -52 -54 -58 -59 -6 0
+-24 -26 28 -3 -30 32 -34 -36 38 4 40 42 44 46 48 -50 -52 54 -58 -59 -6 0
+-24 26 -28 -3 -30 -32 34 -36 38 4 40 42 44 46 -48 -50 -52 54 -58 -59 -6 0
+-24 26 28 -3 -30 -32 34 -36 38 4 -40 42 44 -46 -48 -50 52 -54 58 -59 6 0
+-24 -26 28 -3 -30 -32 34 36 -38 4 -40 42 44 46 -48 50 -52 54 -58 -59 -6 0
+-24 -26 28 -3 30 -32 34 36 -38 4 -40 -42 -44 -46 48 -50 -52 -54 -58 -59 -6 0
+24 -26 28 -3 -30 -32 34 -36 -38 4 -40 -42 44 46 48 50 -52 54 -58 -59 -6 0
+-24 -26 28 -3 30 32 -34 -36 38 4 40 -42 -44 -46 -48 50 -52 -54 -58 -59 -6 0
+24 -26 28 -3 30 32 -34 36 38 4 40 42 -44 -46 48 50 -52 -54 -58 -59 -6 0
+24 -26 28 -3 30 -32 34 -36 -38 4 -40 42 -44 -46 -48 -50 -52 -54 -58 -59 -6 0
+-24 26 -28 -3 30 32 -34 36 -38 4 -40 -42 -44 -46 -48 -50 -52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 428 T: 0.00
+c [unig] [    0.32 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 404 deleted: 0 T: 0.00
+24 -26 28 -3 30 -32 -34 -36 38 4 40 -42 44 -46 -48 50 -52 54 58 -59 6 0
+-24 -26 28 -3 30 32 -34 36 38 4 40 -42 44 46 48 -50 52 54 58 -59 6 0
+-24 26 28 3 30 32 34 36 -38 4 -40 42 -44 46 -48 50 52 54 58 -59 6 0
+-24 26 -28 -3 -30 -32 -34 36 38 4 40 -42 -44 46 -48 -50 -52 54 58 -59 6 0
+24 -26 28 3 30 32 34 -36 -38 4 40 42 44 46 -48 50 -52 -54 -58 -59 6 0
+24 26 28 3 30 -32 -34 -36 38 4 40 -42 -44 -46 48 -50 -52 -54 58 -59 6 0
+-24 26 -28 3 -30 32 34 36 -38 4 40 42 -44 -46 -48 -50 -52 -54 -58 -59 6 0
+24 26 -28 -3 -30 32 -34 -36 38 4 40 -42 -44 -46 48 50 52 54 58 -59 6 0
+24 -26 -28 3 -30 32 34 -36 -38 4 -40 42 44 -46 -48 -50 52 54 58 -59 6 0
+-24 -26 -28 3 -30 -32 -34 36 38 4 40 -42 44 46 48 50 -52 -54 58 -59 6 0
+24 -26 -28 -3 30 -32 -34 36 38 4 40 -42 44 46 -48 50 -52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 404 T: 0.00
+c [unig] [    0.32 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 448 deleted: 0 T: 0.00
+-24 -26 -28 -3 30 32 34 -36 38 4 40 42 44 -46 -48 -50 -52 -54 58 -59 6 0
+24 26 -28 3 30 -32 34 -36 -38 4 -40 -42 -44 46 48 -50 -52 54 -58 -59 6 0
+-24 -26 28 3 -30 32 34 -36 38 4 -40 -42 44 46 48 50 52 -54 -58 -59 6 0
+-24 26 28 3 30 -32 -34 36 -38 4 40 42 44 -46 -48 50 -52 -54 58 -59 6 0
+-24 26 28 -3 -30 -32 34 36 38 4 -40 42 -44 -46 -48 -50 -52 54 58 -59 6 0
+24 26 28 3 30 -32 -34 -36 38 4 -40 42 44 -46 -48 -50 52 -54 58 -59 6 0
+24 -26 -28 3 -30 32 -34 36 38 4 40 42 -44 -46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 -3 -30 -32 -34 36 38 4 40 -42 44 -46 -48 50 -52 -54 58 -59 6 0
+-24 -26 -28 3 -30 32 -34 -36 38 4 40 42 -44 46 48 -50 52 54 -58 -59 6 0
+24 -26 28 -3 30 32 -34 36 -38 4 40 -42 -44 -46 -48 -50 52 54 58 -59 6 0
+24 -26 -28 -3 -30 -32 -34 -36 -38 4 -40 -42 -44 46 48 50 -52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 448 T: 0.00
+c [unig] [    0.32 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 420 deleted: 0 T: 0.00
+24 -26 -28 -3 -30 -32 -34 36 -38 4 40 42 -44 -46 -48 -50 -52 54 58 -59 6 0
+-24 -26 -28 -3 30 32 34 36 38 4 -40 42 44 46 -48 50 52 -54 58 -59 6 0
+24 26 28 3 -30 -32 34 -36 -38 4 -40 42 44 46 48 -50 52 54 -58 -59 6 0
+-24 26 -28 -3 30 -32 34 -36 -38 4 -40 -42 44 46 48 -50 52 -54 58 -59 6 0
+24 26 -28 -3 -30 32 -34 -36 38 4 40 -42 -44 -46 48 50 -52 54 58 -59 6 0
+24 26 -28 -3 30 -32 34 36 38 4 40 42 -44 46 -48 -50 -52 -54 58 -59 6 0
+-24 26 28 3 -30 -32 34 36 38 4 40 -42 -44 46 -48 -50 -52 54 -58 -59 6 0
+-24 -26 28 -3 30 32 -34 -36 38 4 -40 -42 -44 46 -48 -50 52 -54 58 -59 6 0
+-24 -26 -28 -3 -30 -32 -34 -36 38 4 -40 -42 44 -46 48 -50 52 54 58 -59 6 0
+-24 26 -28 3 -30 -32 -34 -36 38 4 40 42 44 46 -48 50 -52 54 -58 -59 6 0
+24 -26 -28 -3 30 32 34 -36 -38 4 40 -42 -44 46 48 50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 420 T: 0.00
+c [unig] [    0.33 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 480 deleted: 0 T: 0.00
+-24 26 -28 -3 -30 32 34 36 -38 4 40 -42 44 46 -48 -50 52 -54 -58 -59 -6 0
+24 -26 28 3 -30 -32 -34 -36 38 4 -40 42 44 46 48 -50 -52 -54 58 -59 6 0
+-24 -26 28 -3 30 32 34 -36 -38 4 40 -42 -44 46 -48 -50 -52 54 -58 -59 -6 0
+-24 -26 28 -3 30 -32 -34 36 38 4 40 -42 -44 46 -48 -50 -52 -54 58 -59 6 0
+24 -26 -28 3 -30 32 34 -36 38 4 -40 -42 -44 46 -48 -50 -52 54 58 -59 6 0
+-24 26 28 -3 -30 -32 -34 36 -38 4 40 42 -44 46 48 -50 52 54 -58 -59 -6 0
+-24 26 28 -3 -30 32 34 -36 -38 4 -40 -42 44 46 -48 -50 -52 54 58 -59 6 0
+24 -26 -28 3 -30 32 34 -36 -38 4 40 42 44 46 48 -50 52 -54 58 -59 6 0
+-24 -26 -28 3 30 32 -34 -36 -38 4 40 -42 -44 46 -48 -50 52 -54 -58 -59 6 0
+-24 26 -28 -3 -30 32 34 36 38 4 -40 42 -44 46 48 -50 -52 54 -58 -59 -6 0
+-24 -26 -28 -3 30 -32 -34 -36 -38 4 40 42 44 46 48 -50 -52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 480 T: 0.00
+c [unig] [    0.33 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 452 deleted: 0 T: 0.00
+-24 -26 28 -3 -30 -32 -34 -36 38 4 -40 -42 -44 -46 -48 50 -52 54 -58 -59 -6 0
+24 -26 -28 -3 30 -32 34 -36 38 4 -40 -42 44 46 -48 -50 52 54 58 -59 6 0
+24 -26 -28 3 30 32 34 -36 -38 4 40 42 -44 -46 48 50 -52 -54 -58 -59 6 0
+24 -26 -28 3 -30 32 -34 36 38 4 40 -42 44 46 -48 -50 -52 54 -58 -59 6 0
+-24 26 28 3 30 32 -34 36 -38 4 40 -42 -44 46 48 50 52 54 58 -59 6 0
+24 -26 -28 3 30 -32 34 -36 -38 4 40 42 44 46 -48 -50 -52 -54 -58 -59 6 0
+-24 26 28 -3 30 -32 -34 36 -38 4 -40 42 -44 -46 -48 50 52 54 -58 -59 -6 0
+-24 -26 28 -3 30 32 34 36 -38 4 -40 42 -44 -46 -48 50 -52 -54 -58 -59 -6 0
+24 -26 -28 3 -30 -32 -34 36 38 4 40 -42 -44 -46 48 50 -52 54 -58 -59 6 0
+24 -26 -28 -3 -30 -32 -34 36 -38 4 -40 42 -44 -46 48 50 52 -54 58 -59 6 0
+-24 -26 28 3 -30 -32 -34 -36 38 4 40 42 44 -46 -48 -50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 452 T: 0.00
+c [unig] [    0.34 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 432 deleted: 0 T: 0.00
+-24 26 -28 -3 -30 -32 34 36 38 4 -40 -42 -44 -46 48 -50 52 54 58 -59 6 0
+-24 -26 28 3 30 -32 34 36 38 4 -40 42 -44 -46 48 -50 -52 -54 -58 -59 6 0
+-24 -26 28 3 -30 32 -34 -36 38 4 40 -42 44 46 48 -50 52 -54 -58 -59 6 0
+-24 -26 28 3 30 -32 34 36 38 4 -40 42 -44 -46 -48 50 52 54 -58 -59 6 0
+24 -26 28 -3 30 32 34 36 -38 4 40 42 -44 -46 -48 -50 52 -54 -58 -59 -6 0
+24 -26 28 -3 30 32 34 36 -38 4 40 42 -44 -46 48 50 -52 54 -58 -59 -6 0
+24 -26 28 -3 -30 -32 -34 -36 -38 4 -40 -42 44 46 -48 -50 -52 -54 -58 -59 -6 0
+24 26 28 3 -30 -32 -34 36 38 4 -40 42 44 -46 48 -50 52 54 58 -59 6 0
+-24 26 28 3 -30 -32 -34 36 -38 4 40 42 -44 -46 -48 50 52 54 58 -59 6 0
+-24 26 -28 -3 30 32 -34 -36 38 4 40 42 44 46 48 -50 -52 54 58 -59 6 0
+-24 -26 28 3 -30 32 -34 -36 38 4 40 -42 44 46 -48 50 -52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 432 T: 0.00
+c [unig] [    0.34 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 420 deleted: 0 T: 0.00
+-24 26 -28 -3 30 32 34 36 38 4 40 -42 44 46 48 -50 -52 54 -58 -59 -6 0
+24 -26 28 3 -30 32 34 -36 -38 4 -40 -42 -44 -46 48 50 52 54 -58 -59 6 0
+-24 26 28 -3 -30 -32 34 -36 -38 4 -40 42 -44 -46 48 50 52 54 -58 -59 -6 0
+-24 26 28 3 30 -32 34 -36 -38 4 -40 -42 44 -46 -48 -50 -52 -54 58 -59 6 0
+-24 26 28 -3 -30 -32 34 -36 38 4 40 -42 -44 46 48 50 52 54 58 -59 6 0
+24 -26 -28 3 30 -32 34 -36 -38 4 40 -42 -44 -46 -48 50 52 -54 -58 -59 6 0
+-24 26 -28 3 -30 32 34 -36 -38 4 40 -42 44 -46 48 -50 -52 54 58 -59 6 0
+-24 26 -28 3 -30 32 34 36 38 4 40 42 -44 46 -48 50 52 -54 58 -59 6 0
+-24 26 -28 -3 30 32 -34 36 -38 4 40 42 44 46 -48 50 -52 -54 58 -59 6 0
+-24 26 -28 -3 30 32 34 -36 -38 4 40 42 -44 -46 -48 50 52 -54 -58 -59 -6 0
+-24 26 28 3 30 -32 -34 -36 -38 4 40 -42 44 46 48 50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 420 T: 0.00
+c [unig] [    0.34 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 440 deleted: 0 T: 0.00
+-24 26 28 -3 30 32 -34 -36 38 4 -40 -42 -44 46 -48 50 -52 54 -58 -59 -6 0
+-24 -26 -28 3 -30 -32 -34 36 -38 4 -40 42 44 -46 48 -50 52 -54 58 -59 6 0
+24 26 -28 -3 -30 32 -34 36 -38 4 -40 42 -44 -46 48 -50 52 -54 -58 -59 -6 0
+24 -26 -28 3 -30 32 34 36 38 4 40 42 -44 46 -48 50 -52 54 58 -59 6 0
+24 26 -28 -3 -30 32 34 36 -38 4 40 42 44 46 -48 -50 52 -54 58 -59 6 0
+24 -26 -28 3 -30 32 -34 36 38 4 40 -42 -44 -46 -48 -50 52 -54 -58 -59 6 0
+-24 26 28 -3 -30 32 34 -36 38 4 40 -42 44 -46 -48 50 52 54 -58 -59 -6 0
+-24 -26 -28 3 30 -32 -34 36 -38 4 40 -42 -44 -46 48 50 52 54 -58 -59 6 0
+-24 26 -28 -3 -30 -32 34 36 38 4 40 42 44 46 -48 50 -52 54 -58 -59 -6 0
+-24 26 -28 -3 30 -32 34 36 38 4 40 42 44 46 48 50 52 54 58 -59 6 0
+-24 -26 28 3 -30 32 34 -36 -38 4 -40 42 44 -46 48 50 52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 440 T: 0.00
+c [unig] [    0.35 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 436 deleted: 0 T: 0.00
+-24 -26 28 -3 30 -32 -34 -36 38 4 -40 -42 -44 -46 -48 -50 52 -54 58 -59 6 0
+24 -26 28 -3 -30 -32 -34 36 -38 4 -40 42 -44 46 -48 50 52 -54 -58 -59 -6 0
+24 -26 -28 3 -30 32 -34 -36 38 4 -40 42 -44 46 48 50 52 54 -58 -59 6 0
+-24 26 28 3 -30 32 -34 -36 -38 4 40 42 44 -46 48 50 52 -54 -58 -59 6 0
+24 -26 -28 -3 30 32 -34 -36 38 4 40 -42 44 46 48 50 52 54 58 -59 6 0
+-24 -26 -28 3 30 32 34 36 -38 4 -40 -42 44 -46 -48 50 -52 54 58 -59 6 0
+24 26 28 -3 30 32 34 36 38 4 40 -42 44 -46 -48 -50 52 -54 -58 -59 -6 0
+24 26 -28 3 30 -32 34 -36 -38 4 40 -42 44 -46 48 -50 52 54 -58 -59 6 0
+-24 -26 -28 -3 30 32 34 36 -38 4 -40 -42 -44 46 -48 -50 52 54 -58 -59 -6 0
+24 -26 -28 3 30 32 34 -36 38 4 40 -42 44 -46 -48 50 52 54 -58 -59 6 0
+-24 26 28 3 30 32 34 -36 -38 4 -40 -42 -44 46 -48 50 52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 436 T: 0.00
+c [unig] [    0.35 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 412 deleted: 0 T: 0.00
+24 -26 28 -3 30 32 -34 -36 -38 4 -40 -42 -44 -46 -48 -50 -52 -54 58 -59 6 0
+24 -26 -28 3 30 -32 34 36 38 4 -40 42 44 -46 48 50 52 -54 -58 -59 6 0
+24 26 28 3 30 -32 34 36 -38 4 -40 -42 44 -46 -48 50 52 -54 58 -59 6 0
+-24 -26 -28 -3 30 -32 34 36 -38 4 40 -42 44 46 48 50 52 -54 58 -59 6 0
+-24 26 -28 -3 -30 32 34 36 38 4 -40 42 44 -46 -48 50 -52 -54 -58 -59 -6 0
+-24 -26 28 3 30 32 -34 -36 38 4 40 42 -44 46 -48 -50 -52 -54 -58 -59 6 0
+-24 26 -28 -3 -30 32 -34 36 -38 4 -40 -42 -44 46 48 50 -52 54 58 -59 6 0
+24 26 28 -3 -30 -32 -34 -36 38 4 40 42 -44 46 48 -50 52 -54 -58 -59 -6 0
+24 26 -28 3 -30 32 -34 36 38 4 40 42 -44 -46 48 50 -52 54 -58 -59 6 0
+-24 -26 -28 -3 30 -32 -34 36 38 4 40 42 -44 -46 -48 50 52 54 -58 -59 -6 0
+24 -26 28 3 30 32 34 -36 38 4 -40 42 -44 46 -48 50 -52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 412 T: 0.00
+c [unig] [    0.35 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 448 deleted: 0 T: 0.00
+-24 26 28 3 30 32 -34 -36 -38 4 -40 42 44 -46 48 50 52 -54 58 -59 6 0
+24 26 28 -3 30 -32 -34 36 38 4 40 -42 44 -46 48 -50 52 -54 -58 -59 -6 0
+-24 -26 28 3 30 32 -34 36 -38 4 -40 -42 -44 -46 48 50 -52 54 -58 -59 6 0
+-24 26 -28 3 30 32 -34 -36 -38 4 40 42 44 -46 -48 -50 -52 -54 58 -59 6 0
+24 26 -28 3 30 -32 34 36 -38 4 40 42 44 46 -48 -50 -52 54 58 -59 6 0
+24 -26 28 3 30 32 34 -36 38 4 40 -42 44 46 48 50 -52 -54 -58 -59 6 0
+-24 26 -28 -3 30 -32 34 -36 -38 4 40 -42 -44 46 -48 50 -52 54 -58 -59 -6 0
+24 26 28 -3 30 32 -34 36 -38 4 -40 -42 -44 -46 48 -50 52 -54 -58 -59 -6 0
+-24 26 -28 -3 30 32 -34 -36 38 4 40 42 44 46 48 -50 52 54 58 -59 6 0
+24 26 28 -3 30 -32 34 36 38 4 -40 42 44 -46 -48 50 -52 -54 58 -59 6 0
+-24 26 28 -3 30 32 34 -36 38 4 40 -42 44 46 48 -50 52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 448 T: 0.00
+c [unig] [    0.36 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 432 deleted: 0 T: 0.00
+-24 26 -28 3 30 32 34 36 38 4 40 -42 44 46 -48 50 -52 54 58 -59 6 0
+-24 -26 28 -3 30 32 -34 36 38 4 40 -42 -44 46 -48 50 52 54 -58 -59 -6 0
+24 26 28 3 30 32 -34 36 -38 4 -40 -42 -44 -46 -48 -50 -52 54 -58 -59 6 0
+24 26 -28 -3 -30 -32 34 36 38 4 40 42 44 46 -48 -50 -52 54 58 -59 6 0
+24 -26 28 -3 -30 -32 -34 36 -38 4 40 42 -44 -46 -48 50 -52 -54 -58 -59 -6 0
+24 -26 -28 -3 30 32 -34 36 38 4 40 -42 44 -46 -48 -50 -52 54 -58 -59 -6 0
+-24 26 28 3 30 32 -34 -36 38 4 40 -42 -44 -46 -48 -50 52 -54 -58 -59 6 0
+24 -26 28 -3 30 32 -34 -36 -38 4 -40 -42 -44 46 -48 50 -52 -54 -58 -59 -6 0
+24 26 28 3 -30 -32 -34 -36 -38 4 40 42 -44 46 -48 -50 -52 54 -58 -59 6 0
+24 26 -28 3 -30 -32 -34 36 38 4 -40 42 44 -46 -48 50 -52 -54 -58 -59 6 0
+24 -26 -28 -3 -30 -32 -34 -36 38 4 -40 42 44 46 -48 -50 -52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 432 T: 0.00
+c [unig] [    0.36 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 416 deleted: 0 T: 0.00
+-24 26 -28 -3 30 32 34 -36 38 4 -40 42 44 -46 -48 -50 -52 -54 58 -59 6 0
+-24 26 28 3 -30 -32 34 36 -38 4 40 -42 44 46 -48 -50 52 -54 58 -59 6 0
+-24 26 -28 -3 -30 32 34 -36 38 4 -40 42 -44 -46 48 -50 52 54 58 -59 6 0
+24 -26 28 3 30 -32 -34 -36 38 4 40 -42 -44 -46 48 -50 52 54 -58 -59 6 0
+24 -26 -28 -3 -30 32 -34 36 38 4 -40 -42 44 -46 -48 50 52 54 58 -59 6 0
+24 26 -28 -3 30 -32 34 36 -38 4 -40 -42 44 46 -48 -50 52 -54 -58 -59 -6 0
+24 -26 -28 3 -30 -32 -34 36 -38 4 -40 -42 44 -46 -48 -50 -52 54 -58 -59 6 0
+-24 26 -28 3 -30 -32 34 -36 38 4 -40 -42 44 46 -48 -50 52 54 58 -59 6 0
+-24 -26 -28 -3 30 -32 -34 -36 -38 4 -40 42 -44 46 48 50 52 -54 -58 -59 -6 0
+-24 26 28 -3 30 32 34 36 -38 4 40 42 44 -46 -48 -50 -52 54 58 -59 6 0
+-24 -26 28 -3 30 -32 -34 36 38 4 40 42 -44 46 48 50 52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 416 T: 0.00
+c [unig] [    0.36 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 384 deleted: 0 T: 0.00
+-24 -26 28 3 30 -32 -34 36 38 4 40 -42 44 46 48 50 52 54 58 -59 6 0
+-24 26 -28 -3 -30 -32 -34 36 -38 4 40 -42 -44 46 48 -50 -52 -54 58 -59 6 0
+-24 26 -28 3 30 32 34 -36 38 4 40 42 -44 -46 48 50 -52 -54 58 -59 6 0
+24 26 28 -3 30 32 34 36 38 4 -40 -42 44 -46 48 -50 52 -54 -58 -59 -6 0
+-24 26 -28 3 -30 32 34 -36 -38 4 -40 -42 -44 46 48 50 52 54 -58 -59 6 0
+-24 26 28 -3 -30 32 -34 36 38 4 -40 42 -44 -46 -48 -50 -52 54 -58 -59 -6 0
+24 26 -28 -3 30 -32 34 -36 38 4 -40 -42 44 46 48 50 52 54 -58 -59 -6 0
+24 -26 28 -3 30 32 -34 36 38 4 -40 42 -44 -46 48 50 -52 -54 -58 -59 -6 0
+-24 -26 28 3 -30 -32 -34 36 -38 4 -40 42 44 -46 48 50 -52 -54 -58 -59 6 0
+24 -26 -28 3 -30 32 34 -36 38 4 40 42 -44 -46 -48 -50 -52 54 58 -59 6 0
+24 26 28 3 -30 -32 -34 36 38 4 40 -42 44 46 -48 -50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 384 T: 0.00
+c [unig] [    0.37 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 476 deleted: 0 T: 0.00
+24 -26 -28 -3 30 -32 34 36 -38 4 40 -42 44 -46 -48 50 -52 54 58 -59 6 0
+-24 -26 28 3 -30 32 -34 -36 -38 4 -40 42 -44 -46 48 -50 -52 54 58 -59 6 0
+24 26 28 3 30 32 -34 -36 -38 4 -40 42 -44 46 48 -50 -52 54 58 -59 6 0
+-24 26 -28 -3 -30 32 -34 36 -38 4 40 -42 -44 -46 -48 50 -52 54 58 -59 6 0
+24 -26 28 -3 30 -32 -34 -36 -38 4 40 42 -44 46 48 50 -52 54 58 -59 6 0
+24 -26 28 3 -30 32 -34 36 38 4 -40 -42 -44 46 -48 50 -52 -54 -58 -59 6 0
+-24 -26 28 -3 -30 -32 34 -36 -38 4 -40 42 -44 -46 -48 50 -52 -54 -58 -59 -6 0
+-24 26 28 -3 -30 32 34 -36 -38 4 40 42 44 46 48 50 -52 54 58 -59 6 0
+24 -26 -28 3 -30 32 34 -36 38 4 -40 42 44 -46 48 50 -52 -54 -58 -59 6 0
+24 26 -28 -3 30 32 34 36 -38 4 -40 -42 -44 46 48 50 -52 -54 -58 -59 -6 0
+-24 -26 -28 3 -30 -32 -34 36 -38 4 -40 -42 -44 -46 -48 -50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 476 T: 0.00
+c [unig] [    0.37 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 412 deleted: 0 T: 0.00
+-24 -26 28 -3 30 32 34 36 -38 4 -40 42 -44 -46 48 -50 52 54 -58 -59 -6 0
+-24 26 -28 -3 -30 -32 -34 36 38 4 40 -42 44 -46 -48 -50 52 -54 58 -59 6 0
+24 26 -28 -3 30 -32 34 36 38 4 -40 -42 44 -46 48 -50 52 54 58 -59 6 0
+-24 26 -28 -3 -30 -32 -34 36 -38 4 -40 -42 -44 46 48 -50 -52 54 -58 -59 -6 0
+24 26 -28 3 30 -32 34 -36 -38 4 40 42 44 -46 48 50 -52 -54 -58 -59 6 0
+24 -26 28 3 -30 32 -34 -36 -38 4 40 -42 44 46 48 50 52 -54 -58 -59 6 0
+-24 -26 -28 3 -30 32 34 36 38 4 -40 -42 44 -46 -48 50 52 54 58 -59 6 0
+-24 -26 28 3 -30 -32 34 36 -38 4 40 -42 -44 46 -48 50 -52 -54 58 -59 6 0
+-24 -26 -28 -3 30 -32 34 36 -38 4 -40 42 -44 -46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 3 30 32 -34 36 -38 4 40 42 -44 -46 -48 50 52 -54 58 -59 6 0
+24 26 28 -3 30 32 34 36 -38 4 40 -42 -44 46 48 -50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 412 T: 0.00
+c [unig] [    0.38 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 460 deleted: 0 T: 0.00
+-24 -26 28 -3 30 32 -34 -36 -38 4 40 -42 -44 -46 -48 -50 -52 54 -58 -59 -6 0
+24 -26 -28 3 -30 -32 34 36 -38 4 -40 42 44 46 -48 -50 52 54 58 -59 6 0
+24 -26 -28 -3 -30 32 -34 -36 38 4 40 42 -44 46 48 50 52 -54 -58 -59 -6 0
+24 26 -28 -3 -30 -32 -34 -36 -38 4 40 42 -44 46 48 -50 -52 -54 58 -59 6 0
+-24 -26 28 3 30 -32 34 36 38 4 -40 -42 44 -46 48 50 -52 -54 58 -59 6 0
+-24 -26 -28 -3 -30 -32 -34 -36 -38 4 40 42 -44 -46 -48 -50 52 54 58 -59 6 0
+24 26 28 3 30 32 34 -36 -38 4 -40 -42 44 46 48 50 -52 54 58 -59 6 0
+24 -26 -28 3 -30 32 34 -36 38 4 -40 42 44 46 48 -50 -52 54 58 -59 6 0
+-24 -26 -28 3 30 32 -34 -36 -38 4 40 42 44 46 -48 50 52 -54 -58 -59 6 0
+24 26 -28 3 30 32 -34 -36 -38 4 40 42 44 -46 48 50 -52 54 -58 -59 6 0
+24 26 -28 3 30 -32 -34 36 38 4 40 42 44 -46 -48 50 52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 460 T: 0.00
+c [unig] [    0.38 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 392 deleted: 0 T: 0.00
+-24 26 28 3 30 32 34 36 38 4 -40 42 44 46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 3 -30 32 34 -36 38 4 40 -42 -44 46 -48 -50 -52 54 58 -59 6 0
+-24 -26 -28 -3 30 32 34 36 -38 4 -40 42 44 -46 -48 50 52 54 58 -59 6 0
+-24 -26 28 -3 -30 -32 34 36 38 4 40 -42 -44 46 48 50 52 -54 58 -59 6 0
+-24 -26 -28 3 -30 32 34 36 -38 4 -40 -42 -44 -46 48 -50 -52 54 58 -59 6 0
+-24 -26 28 3 -30 32 -34 36 38 4 -40 -42 44 46 48 50 -52 -54 -58 -59 6 0
+-24 26 28 -3 -30 32 34 36 38 4 -40 -42 -44 46 48 50 -52 54 58 -59 6 0
+-24 -26 28 3 30 32 34 -36 -38 4 40 42 44 -46 48 -50 52 54 58 -59 6 0
+24 26 -28 -3 30 32 -34 -36 -38 4 40 -42 -44 -46 -48 -50 -52 -54 -58 -59 -6 0
+-24 26 28 3 -30 32 -34 -36 -38 4 40 -42 44 -46 -48 50 -52 -54 -58 -59 6 0
+24 -26 28 -3 -30 32 -34 -36 38 4 40 42 44 46 48 -50 52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 392 T: 0.00
+c [unig] [    0.38 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 412 deleted: 0 T: 0.00
+24 -26 -28 3 30 32 34 -36 38 4 -40 -42 -44 46 -48 50 52 -54 58 -59 6 0
+-24 26 -28 -3 -30 -32 -34 -36 -38 4 -40 -42 -44 -46 -48 -50 52 54 58 -59 6 0
+-24 -26 28 -3 30 32 -34 36 -38 4 40 42 -44 -46 -48 -50 52 -54 -58 -59 -6 0
+24 -26 28 3 -30 32 34 36 -38 4 -40 -42 44 46 -48 50 -52 54 -58 -59 6 0
+-24 -26 28 3 30 -32 -34 -36 38 4 -40 -42 44 46 -48 50 52 -54 -58 -59 6 0
+-24 -26 28 3 30 32 -34 36 -38 4 40 42 44 46 -48 -50 -52 54 58 -59 6 0
+24 -26 28 -3 30 32 -34 -36 38 4 -40 -42 44 -46 -48 -50 52 -54 -58 -59 -6 0
+24 -26 28 3 30 -32 -34 36 -38 4 40 42 -44 46 -48 50 52 -54 -58 -59 6 0
+-24 -26 -28 -3 -30 -32 -34 36 -38 4 -40 -42 44 -46 -48 50 52 -54 -58 -59 -6 0
+24 -26 28 3 -30 -32 34 -36 38 4 40 42 44 46 -48 -50 52 -54 58 -59 6 0
+24 26 28 -3 -30 -32 34 36 38 4 40 42 44 -46 -48 50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 412 T: 0.00
+c [unig] [    0.39 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 500 deleted: 0 T: 0.00
+24 26 28 -3 30 -32 34 36 -38 4 -40 -42 44 46 48 50 52 54 58 -59 6 0
+24 26 28 -3 30 32 -34 36 -38 4 40 -42 44 -46 48 50 52 54 58 -59 6 0
+-24 26 28 3 -30 -32 -34 -36 38 4 40 -42 44 46 48 50 -52 -54 58 -59 6 0
+24 26 28 3 -30 -32 34 36 -38 4 -40 -42 44 46 48 -50 52 -54 -58 -59 6 0
+-24 -26 -28 -3 -30 32 -34 -36 -38 4 40 42 -44 46 -48 50 -52 -54 -58 -59 -6 0
+-24 26 28 3 -30 32 34 -36 38 4 -40 -42 44 -46 48 50 -52 -54 58 -59 6 0
+-24 26 -28 -3 30 -32 34 36 38 4 -40 -42 44 -46 48 50 52 -54 -58 -59 -6 0
+24 26 28 -3 -30 -32 -34 -36 -38 4 -40 -42 -44 -46 48 50 -52 -54 -58 -59 -6 0
+-24 26 -28 -3 -30 32 34 -36 38 4 40 -42 -44 -46 48 50 -52 54 58 -59 6 0
+24 -26 28 -3 -30 32 -34 -36 38 4 40 42 -44 -46 -48 50 -52 54 58 -59 6 0
+24 -26 -28 3 -30 32 -34 -36 38 4 -40 42 44 -46 -48 50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 500 T: 0.00
+c [unig] [    0.39 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 448 deleted: 0 T: 0.00
+24 26 -28 3 30 32 34 -36 38 4 40 -42 44 -46 48 -50 -52 -54 58 -59 6 0
+-24 26 28 -3 -30 -32 34 -36 38 4 -40 42 -44 -46 48 50 -52 -54 58 -59 6 0
+-24 -26 28 -3 30 32 -34 -36 38 4 -40 42 44 46 48 50 -52 -54 58 -59 6 0
+-24 26 -28 -3 -30 32 34 -36 -38 4 -40 -42 -44 -46 -48 -50 52 -54 58 -59 6 0
+24 -26 28 3 -30 32 -34 -36 -38 4 40 42 -44 46 -48 50 52 -54 58 -59 6 0
+-24 26 -28 -3 30 32 -34 -36 -38 4 40 42 44 -46 48 -50 -52 54 -58 -59 -6 0
+-24 26 28 -3 30 -32 -34 36 38 4 -40 42 -44 46 -48 50 -52 54 -58 -59 -6 0
+24 26 28 3 30 -32 34 -36 -38 4 40 42 44 -46 -48 50 52 -54 58 -59 6 0
+24 -26 28 3 30 32 -34 -36 38 4 -40 42 -44 46 48 -50 -52 54 -58 -59 6 0
+-24 26 28 -3 -30 -32 34 36 38 4 40 -42 44 46 48 50 52 -54 58 -59 6 0
+-24 -26 28 -3 -30 32 34 36 38 4 -40 42 44 -46 -48 50 -52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 448 T: 0.00
+c [unig] [    0.40 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 416 deleted: 0 T: 0.00
+24 26 -28 3 30 -32 -34 -36 -38 4 40 -42 -44 -46 -48 -50 -52 -54 58 -59 6 0
+-24 -26 28 3 30 32 -34 -36 38 4 40 -42 44 46 48 50 52 -54 -58 -59 6 0
+-24 26 28 3 -30 32 -34 36 -38 4 40 42 -44 -46 48 50 -52 54 -58 -59 6 0
+-24 26 -28 -3 -30 32 -34 36 38 4 40 -42 -44 46 48 50 -52 54 -58 -59 -6 0
+24 -26 -28 3 -30 -32 34 -36 38 4 40 42 44 -46 -48 -50 -52 54 58 -59 6 0
+24 26 -28 -3 -30 32 34 -36 38 4 40 -42 44 46 -48 -50 52 54 -58 -59 -6 0
+-24 -26 -28 -3 30 32 34 36 -38 4 40 42 44 46 48 50 -52 -54 -58 -59 -6 0
+24 26 28 3 -30 32 34 -36 -38 4 40 42 44 -46 -48 -50 52 54 -58 -59 6 0
+24 -26 -28 3 -30 -32 -34 36 38 4 40 42 44 46 -48 -50 52 54 58 -59 6 0
+24 -26 28 3 30 32 -34 -36 38 4 40 -42 -44 -46 -48 -50 52 -54 -58 -59 6 0
+-24 -26 -28 3 -30 -32 -34 36 38 4 40 42 -44 -46 48 50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 416 T: 0.00
+c [unig] [    0.40 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 524 deleted: 0 T: 0.00
+24 -26 28 -3 -30 -32 -34 -36 38 4 40 42 -44 -46 48 -50 -52 -54 58 -59 6 0
+24 -26 28 -3 30 -32 -34 36 38 4 -40 42 -44 46 48 -50 -52 -54 58 -59 6 0
+24 26 28 3 30 32 34 -36 -38 4 -40 42 44 -46 48 -50 52 54 58 -59 6 0
+24 -26 -28 3 -30 -32 -34 -36 -38 4 40 -42 -44 -46 -48 -50 -52 54 58 -59 6 0
+-24 -26 -28 3 -30 -32 -34 36 -38 4 40 42 44 -46 -48 -50 52 -54 58 -59 6 0
+24 -26 -28 -3 30 32 -34 36 38 4 40 -42 44 46 48 50 52 -54 58 -59 6 0
+24 26 28 -3 -30 -32 34 36 38 4 -40 42 -44 46 -48 50 -52 -54 58 -59 6 0
+24 26 28 -3 30 -32 34 -36 38 4 40 42 -44 -46 -48 50 -52 -54 58 -59 6 0
+-24 -26 28 -3 -30 32 -34 36 -38 4 -40 42 -44 46 48 -50 52 -54 -58 -59 -6 0
+24 -26 -28 3 30 -32 -34 36 -38 4 -40 -42 -44 46 -48 -50 -52 54 58 -59 6 0
+-24 26 -28 3 30 -32 34 36 -38 4 40 42 44 -46 48 50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 524 T: 0.00
+c [unig] [    0.41 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 508 deleted: 0 T: 0.00
+-24 -26 -28 3 -30 -32 -34 36 38 4 -40 42 -44 -46 -48 -50 52 -54 58 -59 6 0
+-24 -26 -28 -3 -30 -32 34 -36 -38 4 40 -42 44 -46 48 -50 52 54 -58 -59 -6 0
+24 -26 28 -3 30 32 -34 36 -38 4 40 42 -44 -46 48 -50 -52 54 -58 -59 -6 0
+24 -26 -28 3 30 32 34 -36 -38 4 -40 42 -44 46 48 50 -52 -54 58 -59 6 0
+24 -26 -28 -3 30 32 -34 36 38 4 40 -42 44 46 -48 50 -52 54 -58 -59 -6 0
+24 26 -28 -3 -30 -32 34 36 -38 4 -40 42 44 46 48 50 52 54 -58 -59 -6 0
+-24 26 -28 3 -30 32 -34 -36 -38 4 40 -42 -44 -46 -48 -50 52 -54 58 -59 6 0
+-24 26 -28 -3 -30 32 34 36 38 4 -40 42 44 -46 48 -50 52 54 -58 -59 -6 0
+-24 -26 28 3 -30 -32 -34 36 -38 4 -40 -42 44 46 48 50 52 -54 58 -59 6 0
+24 -26 28 3 30 32 34 -36 38 4 -40 -42 44 -46 -48 -50 -52 -54 58 -59 6 0
+24 26 -28 3 -30 -32 -34 -36 38 4 40 -42 -44 46 -48 50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 508 T: 0.00
+c [unig] [    0.41 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 404 deleted: 0 T: 0.00
+-24 26 28 -3 30 -32 34 36 -38 4 -40 42 44 46 -48 50 52 54 58 -59 6 0
+24 26 -28 -3 30 -32 34 36 -38 4 40 -42 44 -46 48 -50 -52 -54 58 -59 6 0
+-24 -26 -28 -3 30 32 -34 -36 38 4 -40 -42 -44 46 -48 -50 -52 -54 -58 -59 -6 0
+24 -26 -28 3 -30 32 -34 -36 -38 4 40 -42 44 -46 48 -50 -52 54 -58 -59 6 0
+24 -26 28 3 -30 32 -34 36 -38 4 -40 -42 -44 -46 -48 50 52 -54 -58 -59 6 0
+24 -26 28 3 30 -32 34 36 -38 4 -40 42 -44 46 -48 -50 52 54 58 -59 6 0
+-24 -26 28 -3 -30 32 -34 36 -38 4 40 -42 44 46 -48 -50 52 54 58 -59 6 0
+24 26 28 3 -30 32 -34 36 -38 4 40 -42 -44 46 -48 50 52 54 58 -59 6 0
+-24 -26 28 3 30 -32 34 -36 -38 4 -40 -42 44 -46 -48 -50 52 54 58 -59 6 0
+-24 26 28 3 30 -32 34 -36 -38 4 40 -42 44 46 -48 -50 52 -54 -58 -59 6 0
+-24 26 -28 3 -30 32 -34 36 -38 4 -40 42 -44 -46 48 -50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 404 T: 0.00
+c [unig] [    0.42 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 420 deleted: 0 T: 0.00
+-24 -26 28 3 30 -32 -34 -36 -38 4 40 -42 -44 -46 -48 50 52 -54 58 -59 6 0
+24 -26 28 3 -30 32 -34 36 -38 4 40 -42 44 46 48 50 -52 -54 -58 -59 6 0
+-24 -26 28 3 30 32 34 36 38 4 40 -42 -44 -46 48 50 -52 54 -58 -59 6 0
+24 26 28 -3 -30 32 -34 36 -38 4 -40 42 44 -46 48 -50 52 54 -58 -59 -6 0
+24 26 -28 -3 -30 -32 34 -36 38 4 -40 42 44 -46 48 -50 52 -54 58 -59 6 0
+-24 26 -28 -3 30 -32 34 36 -38 4 40 -42 44 46 -48 -50 -52 -54 58 -59 6 0
+24 -26 28 3 -30 -32 34 -36 38 4 40 -42 44 46 -48 50 52 54 58 -59 6 0
+-24 26 28 -3 30 32 34 36 38 4 -40 42 -44 46 48 -50 52 -54 -58 -59 -6 0
+24 -26 28 -3 -30 -32 -34 -36 -38 4 -40 -42 -44 46 48 50 -52 54 58 -59 6 0
+-24 26 -28 3 30 32 -34 36 -38 4 40 42 44 46 48 -50 52 -54 -58 -59 6 0
+24 -26 -28 -3 -30 32 34 36 38 4 -40 -42 -44 46 48 50 -52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 420 T: 0.00
+c [unig] [    0.42 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 452 deleted: 0 T: 0.00
+24 26 -28 -3 30 32 34 36 -38 4 40 -42 -44 -46 -48 -50 52 54 58 -59 6 0
+24 26 -28 -3 -30 -32 -34 -36 -38 4 -40 -42 44 46 48 50 -52 -54 58 -59 6 0
+24 26 -28 -3 -30 32 34 -36 38 4 -40 42 -44 -46 48 50 -52 54 -58 -59 -6 0
+24 -26 -28 3 30 32 -34 36 -38 4 -40 42 44 -46 -48 50 -52 -54 58 -59 6 0
+-24 26 -28 -3 -30 32 -34 36 38 4 40 42 -44 46 48 -50 52 54 -58 -59 -6 0
+-24 26 -28 -3 30 32 -34 -36 -38 4 40 42 44 -46 48 50 52 -54 58 -59 6 0
+-24 26 -28 -3 -30 -32 34 36 -38 4 -40 42 -44 46 -48 -50 -52 54 58 -59 6 0
+-24 -26 -28 3 -30 -32 -34 36 -38 4 -40 42 -44 -46 48 50 -52 54 58 -59 6 0
+-24 -26 -28 3 -30 -32 -34 36 -38 4 40 -42 44 46 -48 50 52 -54 58 -59 6 0
+-24 26 28 3 -30 32 -34 36 38 4 40 42 44 -46 48 -50 52 54 -58 -59 6 0
+-24 26 -28 -3 30 -32 34 -36 38 4 40 -42 -44 46 48 50 52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 452 T: 0.00
+c [unig] [    0.43 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 432 deleted: 0 T: 0.00
+-24 -26 28 -3 -30 32 34 36 -38 4 -40 -42 -44 46 -48 50 -52 -54 -58 -59 -6 0
+-24 -26 -28 -3 -30 -32 -34 36 -38 4 40 42 44 46 -48 50 -52 -54 58 -59 6 0
+24 26 28 -3 -30 32 34 -36 38 4 40 42 44 46 -48 -50 52 54 -58 -59 -6 0
+24 -26 -28 -3 30 -32 -34 36 38 4 40 -42 -44 46 48 50 -52 54 -58 -59 -6 0
+24 26 28 -3 30 -32 34 -36 38 4 -40 42 -44 -46 -48 50 -52 54 -58 -59 -6 0
+-24 -26 -28 -3 30 32 -34 36 -38 4 -40 42 -44 -46 -48 -50 52 -54 58 -59 6 0
+24 26 28 -3 -30 32 34 36 38 4 40 42 44 46 48 -50 -52 54 58 -59 6 0
+24 -26 28 -3 30 32 34 36 38 4 -40 42 44 46 48 50 -52 54 58 -59 6 0
+-24 -26 28 -3 -30 32 34 -36 -38 4 -40 -42 -44 46 48 50 52 -54 58 -59 6 0
+24 -26 -28 -3 -30 32 -34 36 38 4 -40 -42 44 -46 48 -50 52 54 -58 -59 -6 0
+-24 26 28 -3 -30 -32 34 36 -38 4 -40 -42 44 -46 -48 50 52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 432 T: 0.00
+c [unig] [    0.43 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 488 deleted: 0 T: 0.00
+-24 -26 28 3 30 32 -34 36 -38 4 40 -42 44 46 48 -50 -52 -54 58 -59 6 0
+-24 -26 28 3 30 32 34 -36 38 4 -40 -42 -44 46 -48 -50 -52 -54 -58 -59 6 0
+-24 -26 -28 -3 30 32 34 36 38 4 -40 -42 -44 -46 -48 -50 52 54 -58 -59 -6 0
+24 -26 -28 -3 -30 32 -34 -36 -38 4 -40 42 -44 -46 48 -50 52 54 -58 -59 -6 0
+24 26 28 -3 30 -32 -34 36 -38 4 40 42 -44 -46 48 50 -52 -54 58 -59 6 0
+24 26 -28 -3 -30 32 -34 36 -38 4 40 42 44 46 48 50 52 -54 58 -59 6 0
+-24 26 28 3 30 -32 34 -36 -38 4 -40 42 44 46 -48 -50 52 -54 58 -59 6 0
+24 26 -28 3 30 32 34 -36 -38 4 40 -42 44 -46 -48 -50 -52 -54 -58 -59 6 0
+24 -26 -28 3 30 -32 34 -36 38 4 40 42 -44 -46 -48 -50 52 -54 58 -59 6 0
+-24 -26 -28 3 -30 -32 34 -36 38 4 -40 -42 44 -46 -48 -50 52 -54 -58 -59 6 0
+24 26 28 3 -30 -32 34 -36 -38 4 40 -42 -44 46 -48 -50 52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 488 T: 0.00
+c [unig] [    0.44 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 452 deleted: 0 T: 0.00
+-24 -26 -28 3 30 32 34 -36 -38 4 -40 -42 44 46 -48 50 -52 -54 -58 -59 6 0
+-24 26 -28 3 -30 32 34 36 -38 4 -40 -42 -44 46 -48 50 -52 -54 -58 -59 6 0
+-24 26 -28 3 -30 -32 -34 36 -38 4 -40 -42 44 -46 48 -50 -52 -54 58 -59 6 0
+24 26 -28 3 30 32 34 -36 38 4 40 42 44 46 -48 50 52 -54 -58 -59 6 0
+-24 26 -28 -3 -30 32 -34 36 -38 4 40 -42 -44 -46 -48 -50 -52 54 -58 -59 -6 0
+-24 26 -28 -3 -30 -32 -34 36 -38 4 -40 42 -44 -46 -48 -50 -52 54 58 -59 6 0
+-24 26 28 -3 -30 -32 34 -36 -38 4 -40 42 -44 46 -48 50 52 54 58 -59 6 0
+24 -26 -28 3 -30 32 34 36 38 4 40 42 -44 46 -48 50 52 -54 -58 -59 6 0
+-24 26 28 3 -30 32 -34 -36 -38 4 -40 -42 -44 -46 -48 -50 52 -54 -58 -59 6 0
+-24 -26 -28 -3 30 -32 -34 -36 -38 4 -40 42 44 -46 -48 -50 -52 54 58 -59 6 0
+24 26 28 3 30 -32 34 36 38 4 40 42 -44 46 48 50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 452 T: 0.00
+c [unig] [    0.44 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 424 deleted: 0 T: 0.00
+24 -26 -28 3 -30 32 34 36 -38 4 40 42 -44 46 -48 50 52 -54 58 -59 6 0
+-24 26 -28 -3 30 -32 -34 -36 38 4 40 -42 44 -46 48 50 52 -54 58 -59 6 0
+24 26 -28 3 30 32 -34 -36 38 4 40 42 44 -46 -48 -50 52 54 58 -59 6 0
+24 -26 28 -3 -30 32 34 -36 38 4 -40 -42 -44 -46 48 50 52 -54 58 -59 6 0
+24 -26 28 3 -30 32 -34 -36 -38 4 40 42 44 46 48 50 52 54 58 -59 6 0
+-24 26 -28 3 30 -32 34 -36 38 4 40 42 44 -46 48 50 -52 -54 58 -59 6 0
+24 26 -28 -3 30 32 34 -36 -38 4 -40 -42 -44 46 -48 -50 52 -54 58 -59 6 0
+24 26 -28 3 30 32 -34 -36 -38 4 -40 42 -44 46 -48 -50 -52 -54 58 -59 6 0
+-24 -26 28 -3 -30 -32 -34 -36 -38 4 40 -42 44 46 -48 -50 52 -54 58 -59 6 0
+-24 26 -28 3 30 -32 34 -36 -38 4 -40 42 -44 46 48 50 52 54 58 -59 6 0
+24 -26 28 3 -30 32 -34 -36 38 4 -40 42 -44 -46 48 50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 424 T: 0.00
+c [unig] [    0.44 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 376 deleted: 0 T: 0.00
+-24 26 -28 -3 -30 -32 34 36 -38 4 40 -42 -44 46 48 50 52 -54 58 -59 6 0
+24 26 28 3 -30 32 34 36 -38 4 40 -42 -44 -46 -48 -50 -52 -54 58 -59 6 0
+24 26 28 3 -30 -32 -34 -36 38 4 -40 -42 -44 46 -48 50 -52 -54 58 -59 6 0
+24 -26 28 3 30 -32 34 -36 -38 4 -40 42 -44 -46 48 50 52 -54 -58 -59 6 0
+24 -26 28 3 30 32 -34 36 38 4 -40 42 -44 -46 -48 -50 52 54 -58 -59 6 0
+24 -26 28 3 30 32 -34 36 38 4 40 42 -44 46 48 -50 52 -54 -58 -59 6 0
+24 26 28 3 -30 32 34 36 -38 4 -40 -42 -44 46 48 -50 -52 54 58 -59 6 0
+-24 26 -28 3 -30 32 34 36 -38 4 -40 -42 44 -46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 3 -30 -32 -34 -36 38 4 40 -42 44 46 -48 50 52 54 58 -59 6 0
+-24 -26 -28 3 30 32 -34 36 38 4 -40 42 44 46 48 -50 -52 54 -58 -59 6 0
+-24 26 -28 -3 -30 -32 34 36 -38 4 -40 -42 -44 -46 -48 50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 376 T: 0.00
+c [unig] [    0.45 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 404 deleted: 0 T: 0.00
+-24 26 -28 -3 -30 32 34 36 -38 4 -40 42 -44 -46 48 -50 -52 -54 -58 -59 -6 0
+24 -26 28 3 30 -32 34 -36 38 4 -40 -42 44 46 -48 50 -52 -54 58 -59 6 0
+24 26 -28 -3 30 -32 -34 -36 -38 4 40 42 44 -46 48 50 -52 54 -58 -59 -6 0
+-24 -26 -28 -3 -30 32 34 36 -38 4 40 -42 -44 -46 48 -50 -52 -54 -58 -59 -6 0
+24 26 -28 -3 30 32 34 -36 -38 4 -40 42 -44 46 -48 -50 -52 54 58 -59 6 0
+24 -26 -28 -3 30 -32 -34 -36 -38 4 -40 -42 44 -46 48 50 -52 54 -58 -59 -6 0
+24 -26 28 3 -30 32 34 36 -38 4 -40 42 -44 46 -48 -50 52 54 -58 -59 6 0
+-24 -26 -28 3 -30 32 34 36 38 4 -40 42 -44 -46 -48 -50 52 54 -58 -59 6 0
+-24 26 28 -3 30 -32 -34 -36 38 4 40 42 44 46 48 50 -52 54 -58 -59 -6 0
+-24 -26 28 -3 30 -32 -34 -36 38 4 -40 -42 44 46 48 50 -52 54 -58 -59 -6 0
+-24 26 28 -3 30 32 34 -36 38 4 -40 42 -44 -46 -48 -50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 404 T: 0.00
+c [unig] [    0.45 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 440 deleted: 0 T: 0.00
+24 26 28 3 -30 32 -34 -36 -38 4 -40 -42 -44 -46 48 50 -52 54 -58 -59 6 0
+-24 26 28 -3 -30 32 34 36 38 4 40 42 -44 -46 -48 50 -52 54 -58 -59 -6 0
+24 26 28 3 30 -32 -34 -36 38 4 40 -42 -44 -46 -48 50 52 -54 -58 -59 6 0
+24 -26 28 3 30 32 -34 -36 -38 4 -40 42 44 46 48 -50 -52 -54 58 -59 6 0
+-24 26 -28 3 -30 32 -34 -36 -38 4 40 42 44 -46 -48 -50 52 54 -58 -59 6 0
+24 -26 28 -3 -30 -32 -34 36 -38 4 40 42 -44 -46 -48 50 52 -54 58 -59 6 0
+-24 -26 -28 -3 -30 -32 -34 36 -38 4 -40 -42 44 -46 48 -50 -52 -54 58 -59 6 0
+24 -26 -28 3 -30 32 34 -36 38 4 -40 42 -44 -46 48 50 -52 -54 -58 -59 6 0
+24 -26 -28 3 30 -32 34 -36 -38 4 40 42 -44 -46 -48 50 52 54 -58 -59 6 0
+24 26 -28 3 -30 -32 34 -36 -38 4 40 -42 44 46 -48 -50 52 -54 58 -59 6 0
+-24 -26 -28 3 -30 -32 -34 -36 38 4 -40 -42 -44 46 48 50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 440 T: 0.00
+c [unig] [    0.46 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 452 deleted: 0 T: 0.00
+24 -26 -28 -3 30 32 -34 36 -38 4 40 -42 -44 -46 -48 -50 -52 -54 -58 -59 -6 0
+-24 26 28 -3 30 32 34 36 38 4 40 -42 -44 46 -48 50 -52 -54 58 -59 6 0
+-24 26 -28 3 -30 32 -34 36 38 4 -40 42 -44 -46 48 50 -52 54 58 -59 6 0
+24 -26 -28 -3 -30 32 34 36 38 4 -40 -42 -44 46 48 -50 52 -54 -58 -59 -6 0
+24 26 28 3 -30 -32 -34 36 -38 4 40 42 -44 -46 48 -50 -52 -54 58 -59 6 0
+-24 26 -28 3 30 -32 -34 36 -38 4 40 -42 -44 -46 48 -50 -52 54 58 -59 6 0
+24 -26 -28 -3 30 -32 34 36 -38 4 40 42 -44 46 48 50 52 -54 -58 -59 -6 0
+24 26 28 3 30 -32 34 36 38 4 -40 42 -44 46 -48 -50 52 -54 58 -59 6 0
+-24 -26 28 -3 30 32 34 36 38 4 -40 42 -44 46 48 -50 52 54 -58 -59 -6 0
+24 -26 28 3 30 32 34 36 -38 4 40 42 44 46 -48 50 52 54 -58 -59 6 0
+24 26 -28 -3 30 -32 34 36 -38 4 -40 -42 -44 46 -48 -50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 452 T: 0.00
+c [unig] [    0.46 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 480 deleted: 0 T: 0.00
+24 26 28 3 30 32 34 36 -38 4 40 42 44 -46 48 50 52 54 -58 -59 6 0
+-24 -26 -28 -3 30 32 -34 36 38 4 -40 42 44 -46 -48 -50 -52 -54 58 -59 6 0
+-24 -26 -28 -3 -30 -32 -34 -36 -38 4 -40 -42 -44 46 -48 -50 -52 -54 58 -59 6 0
+24 -26 28 3 30 32 -34 -36 -38 4 -40 42 44 46 48 50 52 -54 -58 -59 6 0
+-24 26 28 3 -30 -32 -34 36 -38 4 40 -42 -44 -46 -48 -50 52 -54 58 -59 6 0
+-24 26 -28 -3 30 32 -34 -36 -38 4 -40 42 44 46 -48 50 -52 54 -58 -59 -6 0
+24 -26 28 3 30 -32 34 -36 -38 4 -40 42 44 46 -48 50 -52 -54 -58 -59 6 0
+-24 26 28 3 30 32 -34 -36 38 4 40 42 44 46 -48 -50 52 -54 58 -59 6 0
+-24 26 28 3 30 -32 34 -36 38 4 40 42 44 46 48 -50 -52 -54 58 -59 6 0
+-24 26 -28 -3 30 -32 -34 -36 38 4 40 42 44 46 48 -50 52 54 58 -59 6 0
+-24 26 -28 -3 30 32 34 -36 38 4 40 42 44 46 -48 -50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 480 T: 0.00
+c [unig] [    0.47 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 432 deleted: 0 T: 0.00
+24 26 28 3 30 32 -34 -36 -38 4 40 -42 44 46 -48 50 52 54 58 -59 6 0
+-24 26 28 3 -30 32 34 36 -38 4 -40 42 -44 46 -48 50 52 -54 58 -59 6 0
+24 -26 28 3 -30 32 -34 -36 38 4 -40 -42 44 46 -48 50 52 54 -58 -59 6 0
+24 26 -28 3 30 -32 34 36 38 4 -40 42 44 46 48 50 52 54 -58 -59 6 0
+-24 26 -28 3 30 32 -34 -36 -38 4 40 42 -44 46 48 -50 52 -54 -58 -59 6 0
+24 26 28 -3 -30 -32 34 -36 38 4 40 -42 44 -46 -48 -50 -52 -54 58 -59 6 0
+24 26 -28 -3 -30 -32 34 36 38 4 40 42 44 -46 48 -50 52 54 -58 -59 -6 0
+-24 -26 -28 -3 30 -32 34 -36 -38 4 -40 42 -44 -46 48 50 -52 54 58 -59 6 0
+-24 -26 -28 3 30 -32 -34 -36 -38 4 -40 -42 -44 46 48 50 52 -54 58 -59 6 0
+-24 -26 28 -3 -30 32 34 36 38 4 -40 42 -44 -46 -48 -50 52 -54 -58 -59 -6 0
+-24 26 -28 3 -30 -32 -34 -36 38 4 40 -42 -44 46 48 50 52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 432 T: 0.00
+c [unig] [    0.47 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 468 deleted: 0 T: 0.00
+24 26 28 -3 -30 -32 34 -36 -38 4 -40 42 44 -46 48 -50 52 -54 -58 -59 -6 0
+24 26 -28 -3 -30 32 -34 -36 -38 4 40 -42 -44 -46 -48 50 -52 54 58 -59 6 0
+-24 26 28 3 30 32 34 36 38 4 40 42 -44 -46 -48 50 52 54 -58 -59 6 0
+-24 26 28 3 -30 32 34 36 38 4 40 -42 44 -46 48 -50 52 54 -58 -59 6 0
+24 26 -28 -3 -30 32 34 36 -38 4 40 -42 44 46 -48 50 52 -54 58 -59 6 0
+24 26 28 -3 30 -32 -34 36 -38 4 -40 -42 44 46 -48 50 -52 54 -58 -59 -6 0
+-24 -26 28 3 -30 -32 34 36 -38 4 -40 42 44 46 -48 -50 -52 54 -58 -59 6 0
+24 -26 28 -3 -30 32 -34 36 38 4 40 -42 -44 -46 -48 -50 52 54 -58 -59 -6 0
+24 -26 28 -3 30 32 -34 36 38 4 40 42 44 -46 48 50 52 54 -58 -59 -6 0
+24 26 -28 3 -30 32 -34 36 38 4 40 -42 44 46 -48 -50 -52 54 58 -59 6 0
+-24 -26 28 3 30 -32 -34 -36 -38 4 -40 -42 44 -46 48 50 52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 468 T: 0.00
+c [unig] [    0.48 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 432 deleted: 0 T: 0.00
+24 -26 28 3 30 32 34 -36 38 4 -40 42 -44 -46 48 50 52 -54 -58 -59 6 0
+-24 26 28 3 30 32 34 36 38 4 40 -42 44 -46 -48 -50 -52 -54 58 -59 6 0
+24 -26 28 3 -30 32 -34 36 38 4 -40 42 44 -46 -48 -50 -52 54 58 -59 6 0
+-24 26 28 -3 -30 32 -34 36 38 4 40 -42 44 -46 48 50 52 54 -58 -59 -6 0
+-24 -26 -28 -3 -30 -32 -34 36 -38 4 40 42 44 46 48 50 -52 54 58 -59 6 0
+24 26 -28 -3 -30 32 34 -36 38 4 -40 -42 -44 -46 48 50 52 54 58 -59 6 0
+-24 26 28 3 30 -32 -34 36 -38 4 40 -42 44 46 48 50 -52 -54 -58 -59 6 0
+24 -26 28 -3 30 32 34 36 38 4 -40 42 44 -46 48 50 52 -54 -58 -59 -6 0
+24 26 28 3 -30 -32 -34 36 -38 4 -40 -42 44 46 48 -50 -52 54 -58 -59 6 0
+-24 -26 28 3 30 -32 34 36 -38 4 40 42 44 46 48 -50 -52 -54 -58 -59 6 0
+-24 26 28 -3 30 -32 -34 -36 -38 4 40 -42 -44 46 48 50 -52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 432 T: 0.00
+c [unig] [    0.48 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 472 deleted: 0 T: 0.00
+24 -26 -28 3 -30 -32 -34 36 38 4 40 42 -44 46 -48 -50 -52 54 58 -59 6 0
+24 -26 28 -3 -30 32 34 -36 38 4 -40 -42 44 46 48 50 52 -54 58 -59 6 0
+24 26 -28 3 30 32 -34 36 38 4 -40 42 -44 -46 -48 50 52 54 -58 -59 6 0
+24 26 28 3 -30 32 34 36 38 4 -40 42 44 -46 48 -50 52 -54 -58 -59 6 0
+24 26 28 3 -30 -32 -34 -36 -38 4 40 42 44 -46 -48 -50 52 54 58 -59 6 0
+-24 26 28 -3 30 -32 -34 36 -38 4 40 42 44 -46 48 -50 -52 -54 -58 -59 -6 0
+-24 26 28 -3 30 -32 34 -36 38 4 -40 -42 44 46 48 50 -52 -54 58 -59 6 0
+-24 -26 28 -3 -30 -32 -34 36 -38 4 -40 -42 44 -46 -48 -50 52 54 58 -59 6 0
+-24 -26 -28 -3 30 -32 34 36 -38 4 -40 -42 -44 -46 48 50 52 -54 58 -59 6 0
+-24 -26 28 3 30 -32 34 36 38 4 -40 42 44 -46 48 -50 -52 -54 -58 -59 6 0
+-24 26 -28 3 30 -32 34 -36 -38 4 -40 42 -44 46 48 -50 52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 472 T: 0.00
+c [unig] [    0.49 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 452 deleted: 0 T: 0.00
+24 26 -28 -3 30 32 -34 36 -38 4 40 42 -44 46 48 -50 52 -54 58 -59 6 0
+24 -26 28 3 -30 -32 34 -36 -38 4 40 -42 44 46 -48 50 52 -54 -58 -59 6 0
+-24 26 -28 -3 30 -32 -34 -36 38 4 40 -42 44 -46 48 50 52 54 -58 -59 -6 0
+24 26 -28 3 30 -32 -34 -36 -38 4 40 42 -44 46 48 50 52 -54 58 -59 6 0
+-24 26 28 -3 -30 -32 34 -36 38 4 40 42 -44 46 48 50 -52 54 58 -59 6 0
+24 26 -28 -3 -30 32 34 -36 -38 4 40 -42 44 46 -48 50 -52 54 -58 -59 -6 0
+24 26 28 -3 30 32 -34 -36 -38 4 40 42 -44 -46 -48 50 52 54 58 -59 6 0
+-24 -26 -28 3 30 32 -34 36 38 4 40 -42 44 46 -48 -50 -52 54 -58 -59 6 0
+-24 -26 -28 -3 30 32 -34 36 38 4 40 -42 -44 46 -48 50 -52 -54 58 -59 6 0
+24 -26 28 -3 -30 -32 34 -36 -38 4 40 -42 -44 46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 3 -30 -32 34 36 38 4 40 42 44 -46 -48 50 -52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 452 T: 0.00
+c [unig] [    0.49 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 424 deleted: 0 T: 0.00
+-24 -26 -28 3 -30 32 -34 36 38 4 -40 42 -44 -46 48 -50 -52 -54 58 -59 6 0
+-24 -26 -28 3 30 -32 -34 -36 -38 4 -40 42 -44 -46 48 50 -52 54 58 -59 6 0
+24 26 -28 -3 -30 32 34 36 -38 4 40 -42 -44 46 -48 -50 52 -54 58 -59 6 0
+24 -26 -28 3 30 32 34 -36 38 4 -40 -42 -44 -46 -48 50 52 54 -58 -59 6 0
+24 26 28 3 30 -32 34 -36 -38 4 40 42 44 46 -48 -50 52 -54 -58 -59 6 0
+-24 -26 28 3 30 32 34 -36 38 4 40 -42 44 -46 -48 -50 -52 54 58 -59 6 0
+-24 26 28 3 30 32 -34 -36 38 4 40 -42 44 46 48 -50 -52 -54 58 -59 6 0
+24 -26 28 -3 30 32 34 -36 -38 4 -40 42 44 -46 -48 -50 52 -54 58 -59 6 0
+-24 26 28 3 -30 -32 -34 36 -38 4 40 -42 44 46 48 50 -52 54 58 -59 6 0
+-24 26 28 -3 -30 -32 34 -36 38 4 40 -42 44 -46 48 50 52 54 -58 -59 -6 0
+-24 -26 -28 -3 -30 32 34 -36 -38 4 -40 42 -44 46 48 -50 52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 424 T: 0.00
+c [unig] [    0.50 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 428 deleted: 0 T: 0.00
+24 -26 28 3 30 32 34 -36 38 4 40 42 44 46 48 50 -52 54 -58 -59 6 0
+-24 26 28 3 -30 -32 34 -36 -38 4 40 -42 -44 46 48 -50 52 -54 -58 -59 6 0
+24 26 -28 3 30 -32 -34 -36 -38 4 -40 42 -44 -46 48 50 -52 -54 -58 -59 6 0
+24 26 28 3 -30 32 -34 36 -38 4 -40 42 44 -46 48 -50 -52 -54 -58 -59 6 0
+-24 -26 -28 -3 -30 -32 34 -36 38 4 40 -42 44 46 -48 -50 52 -54 58 -59 6 0
+-24 -26 28 3 30 -32 -34 36 38 4 -40 -42 -44 -46 48 50 52 54 -58 -59 6 0
+24 -26 28 3 30 32 34 36 38 4 -40 42 -44 46 -48 -50 52 54 58 -59 6 0
+-24 -26 -28 3 -30 32 -34 36 38 4 40 -42 -44 -46 -48 50 -52 54 58 -59 6 0
+24 26 28 -3 30 -32 -34 -36 38 4 40 -42 -44 46 -48 -50 52 54 -58 -59 -6 0
+-24 -26 -28 3 -30 32 -34 -36 38 4 -40 -42 44 -46 48 -50 52 54 -58 -59 6 0
+24 -26 -28 3 -30 -32 34 -36 38 4 -40 42 44 46 -48 50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 428 T: 0.00
+c [unig] [    0.50 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 472 deleted: 0 T: 0.00
+-24 -26 -28 -3 30 32 34 36 -38 4 40 -42 -44 46 -48 50 52 54 -58 -59 -6 0
+24 26 -28 -3 -30 -32 34 36 38 4 -40 42 44 46 48 50 52 -54 58 -59 6 0
+24 26 -28 3 -30 -32 -34 36 38 4 40 -42 44 -46 48 50 52 54 -58 -59 6 0
+-24 26 28 3 30 32 -34 -36 38 4 -40 42 -44 46 48 -50 52 54 -58 -59 6 0
+-24 -26 28 -3 30 32 34 36 -38 4 -40 -42 44 -46 -48 50 -52 -54 58 -59 6 0
+-24 26 28 3 30 32 -34 36 38 4 -40 -42 44 -46 48 50 52 -54 -58 -59 6 0
+-24 -26 28 -3 30 32 34 -36 -38 4 -40 42 -44 46 -48 -50 -52 54 58 -59 6 0
+24 26 -28 -3 -30 -32 34 -36 38 4 -40 -42 -44 -46 48 -50 52 54 58 -59 6 0
+24 26 28 -3 -30 -32 34 -36 38 4 40 -42 44 46 48 -50 -52 -54 -58 -59 -6 0
+24 -26 -28 3 30 32 34 -36 38 4 40 -42 44 46 48 -50 -52 54 58 -59 6 0
+24 26 -28 3 30 32 34 36 -38 4 -40 -42 -44 46 -48 50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 472 T: 0.00
+c [unig] [    0.51 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 436 deleted: 0 T: 0.00
+-24 -26 28 -3 -30 -32 -34 36 38 4 -40 -42 -44 46 -48 50 -52 -54 58 -59 6 0
+-24 26 -28 3 30 -32 -34 36 38 4 -40 -42 44 -46 -48 -50 52 -54 58 -59 6 0
+-24 -26 -28 3 30 32 34 -36 38 4 40 -42 44 -46 48 50 -52 54 -58 -59 6 0
+-24 26 -28 3 30 32 34 -36 -38 4 40 42 44 -46 -48 50 -52 -54 58 -59 6 0
+24 -26 28 -3 -30 -32 34 -36 38 4 40 -42 44 46 48 -50 -52 54 58 -59 6 0
+-24 26 28 -3 -30 -32 -34 36 -38 4 40 -42 -44 46 48 -50 -52 54 -58 -59 -6 0
+24 26 -28 3 30 32 -34 36 -38 4 -40 42 -44 -46 48 -50 -52 54 58 -59 6 0
+-24 26 28 -3 -30 -32 34 -36 38 4 40 -42 -44 46 -48 50 -52 54 58 -59 6 0
+-24 -26 28 -3 -30 32 -34 36 38 4 40 42 -44 46 48 50 52 -54 -58 -59 -6 0
+24 26 28 -3 -30 32 -34 36 38 4 40 42 44 46 -48 -50 52 -54 -58 -59 -6 0
+24 -26 -28 3 30 -32 -34 36 38 4 -40 -42 -44 -46 48 50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 436 T: 0.00
+c [unig] [    0.51 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 392 deleted: 0 T: 0.00
+-24 -26 -28 -3 30 32 -34 -36 38 4 40 42 -44 46 -48 50 52 54 58 -59 6 0
+24 -26 -28 -3 -30 32 -34 -36 38 4 -40 -42 -44 46 48 50 -52 -54 -58 -59 -6 0
+24 -26 28 -3 30 -32 -34 36 38 4 -40 -42 -44 -46 48 -50 52 -54 58 -59 6 0
+24 -26 28 3 -30 -32 34 -36 38 4 40 42 44 -46 48 -50 52 54 -58 -59 6 0
+-24 -26 28 3 30 32 -34 36 -38 4 40 -42 44 46 -48 50 -52 -54 -58 -59 6 0
+24 -26 -28 -3 -30 -32 34 36 -38 4 -40 42 -44 46 48 50 52 54 -58 -59 -6 0
+24 -26 -28 3 30 32 34 36 38 4 -40 -42 44 -46 48 -50 52 -54 -58 -59 6 0
+-24 -26 -28 3 -30 -32 -34 -36 -38 4 -40 -42 -44 46 48 50 52 -54 58 -59 6 0
+-24 -26 -28 -3 30 -32 34 36 -38 4 -40 42 -44 -46 -48 -50 52 54 -58 -59 -6 0
+-24 -26 -28 -3 30 -32 34 36 -38 4 40 -42 -44 46 -48 50 -52 -54 58 -59 6 0
+24 -26 28 3 -30 32 -34 36 -38 4 40 42 -44 -46 -48 -50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 392 T: 0.00
+c [unig] [    0.52 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 440 deleted: 0 T: 0.00
+-24 -26 -28 3 -30 -32 34 36 -38 4 40 -42 44 -46 -48 -50 52 54 58 -59 6 0
+24 26 -28 3 -30 32 -34 36 38 4 -40 42 44 -46 48 50 52 -54 -58 -59 6 0
+24 26 -28 3 -30 -32 34 -36 -38 4 40 -42 44 -46 -48 50 -52 54 58 -59 6 0
+24 -26 -28 -3 30 32 -34 -36 38 4 40 42 44 46 48 -50 52 -54 58 -59 6 0
+24 -26 -28 -3 -30 -32 34 36 -38 4 40 -42 44 -46 -48 50 -52 -54 58 -59 6 0
+-24 26 -28 -3 -30 -32 34 -36 -38 4 40 -42 44 -46 -48 -50 52 -54 58 -59 6 0
+-24 -26 28 -3 30 -32 -34 -36 -38 4 40 42 44 -46 48 50 -52 -54 58 -59 6 0
+24 26 28 -3 -30 32 -34 -36 -38 4 40 42 -44 -46 -48 50 52 -54 -58 -59 -6 0
+-24 26 28 3 30 -32 -34 36 -38 4 40 42 44 -46 48 50 -52 54 58 -59 6 0
+24 26 28 -3 -30 32 34 -36 38 4 40 -42 44 46 -48 50 -52 -54 58 -59 6 0
+-24 -26 28 -3 -30 32 34 36 38 4 40 -42 44 46 -48 -50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 440 T: 0.00
+c [unig] [    0.52 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 424 deleted: 0 T: 0.00
+24 26 -28 -3 30 32 34 36 38 4 40 -42 44 46 -48 50 -52 -54 -58 -59 -6 0
+24 26 28 3 -30 -32 34 36 -38 4 -40 42 44 -46 48 -50 -52 -54 58 -59 6 0
+24 -26 -28 -3 -30 32 34 -36 38 4 40 -42 -44 -46 -48 -50 52 54 58 -59 6 0
+24 26 28 3 -30 32 34 -36 -38 4 40 -42 -44 46 48 50 52 54 -58 -59 6 0
+-24 -26 28 3 30 -32 34 36 -38 4 -40 -42 -44 -46 -48 50 -52 54 -58 -59 6 0
+24 -26 -28 -3 30 32 34 -36 38 4 -40 -42 44 -46 48 50 -52 -54 -58 -59 -6 0
+24 26 -28 -3 -30 32 34 36 38 4 -40 -42 -44 46 48 -50 52 54 58 -59 6 0
+24 26 28 -3 -30 -32 34 36 -38 4 40 42 44 46 48 50 52 54 -58 -59 -6 0
+-24 -26 28 -3 30 32 34 -36 -38 4 -40 42 44 -46 -48 50 -52 54 -58 -59 -6 0
+24 26 28 -3 30 -32 34 36 -38 4 -40 42 -44 46 -48 -50 -52 -54 58 -59 6 0
+-24 26 -28 3 -30 32 34 -36 38 4 40 42 -44 46 -48 50 52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 424 T: 0.00
+c [unig] [    0.53 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 456 deleted: 0 T: 0.00
+24 26 28 -3 30 32 34 -36 38 4 -40 42 -44 -46 48 -50 52 54 58 -59 6 0
+-24 26 28 3 30 -32 -34 -36 -38 4 -40 42 -44 46 -48 -50 -52 -54 -58 -59 6 0
+-24 26 -28 -3 -30 -32 -34 -36 38 4 40 42 -44 -46 -48 -50 52 -54 58 -59 6 0
+24 26 28 3 30 32 -34 36 -38 4 -40 -42 44 46 48 -50 -52 54 -58 -59 6 0
+-24 26 -28 3 -30 -32 -34 36 38 4 40 42 44 46 -48 -50 52 54 -58 -59 6 0
+24 26 28 -3 30 32 -34 36 38 4 40 -42 -44 46 48 -50 52 -54 -58 -59 -6 0
+24 26 -28 -3 -30 32 -34 36 38 4 40 -42 44 -46 48 -50 52 54 58 -59 6 0
+-24 -26 28 3 30 32 -34 36 -38 4 -40 -42 -44 46 48 50 -52 54 58 -59 6 0
+24 26 28 -3 30 32 34 36 -38 4 40 42 -44 46 48 -50 -52 54 -58 -59 -6 0
+-24 26 28 -3 30 -32 34 -36 -38 4 40 -42 44 46 -48 -50 -52 -54 -58 -59 -6 0
+24 -26 -28 3 -30 -32 34 36 -38 4 40 -42 -44 46 -48 50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 456 T: 0.00
+c [unig] [    0.53 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 416 deleted: 0 T: 0.00
+24 -26 28 -3 -30 32 34 36 -38 4 40 42 44 -46 48 50 52 -54 58 -59 6 0
+24 26 -28 -3 30 32 34 36 38 4 -40 42 44 -46 -48 -50 -52 54 -58 -59 -6 0
+24 26 28 3 -30 32 -34 36 -38 4 40 -42 44 -46 -48 -50 52 54 58 -59 6 0
+24 26 -28 3 30 32 -34 36 -38 4 40 -42 -44 46 48 -50 -52 54 58 -59 6 0
+-24 26 28 3 30 -32 -34 36 38 4 -40 -42 -44 -46 -48 -50 -52 -54 58 -59 6 0
+24 -26 -28 -3 -30 32 -34 -36 -38 4 40 42 44 -46 48 -50 52 54 -58 -59 -6 0
+-24 26 -28 3 30 32 -34 36 38 4 40 42 -44 46 48 50 52 54 -58 -59 6 0
+24 26 28 -3 30 32 -34 -36 38 4 -40 42 44 -46 -48 50 -52 -54 58 -59 6 0
+-24 -26 -28 3 30 -32 34 -36 -38 4 40 -42 44 46 -48 -50 -52 -54 58 -59 6 0
+24 -26 28 3 -30 -32 34 -36 38 4 40 42 -44 -46 48 50 -52 -54 -58 -59 6 0
+24 26 -28 3 -30 -32 -34 36 -38 4 -40 42 44 46 48 50 -52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 416 T: 0.00
+c [unig] [    0.54 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 456 deleted: 0 T: 0.00
+24 26 28 -3 -30 -32 -34 36 38 4 -40 42 44 46 -48 -50 -52 -54 58 -59 6 0
+-24 26 -28 3 -30 32 -34 -36 38 4 40 -42 44 -46 -48 -50 -52 -54 -58 -59 6 0
+-24 26 -28 3 -30 -32 -34 -36 -38 4 -40 -42 -44 -46 -48 50 52 -54 -58 -59 6 0
+-24 26 28 -3 30 32 34 -36 38 4 40 42 44 46 48 -50 -52 -54 58 -59 6 0
+-24 26 -28 -3 30 32 34 36 -38 4 40 42 -44 46 -48 50 -52 -54 58 -59 6 0
+24 26 -28 -3 30 32 -34 36 38 4 -40 -42 -44 46 -48 -50 52 54 58 -59 6 0
+24 26 -28 -3 -30 32 -34 -36 38 4 40 42 44 46 48 -50 52 -54 58 -59 6 0
+-24 -26 -28 -3 -30 32 -34 36 -38 4 -40 42 44 46 48 50 -52 -54 -58 -59 -6 0
+24 -26 28 -3 30 -32 34 36 38 4 40 42 -44 46 48 -50 -52 -54 -58 -59 -6 0
+24 26 -28 3 -30 -32 34 -36 38 4 40 42 -44 -46 -48 -50 -52 54 -58 -59 6 0
+-24 26 28 3 30 -32 -34 -36 38 4 40 42 -44 -46 -48 -50 52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 456 T: 0.00
+c [unig] [    0.54 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 480 deleted: 0 T: 0.00
+-24 -26 -28 3 30 32 34 36 38 4 40 42 -44 46 -48 -50 52 54 -58 -59 6 0
+-24 26 28 3 -30 -32 -34 -36 38 4 40 42 44 46 -48 50 -52 -54 58 -59 6 0
+-24 26 -28 -3 30 -32 -34 36 -38 4 40 -42 -44 46 48 50 -52 -54 -58 -59 -6 0
+24 26 -28 3 -30 -32 -34 -36 38 4 -40 42 44 -46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 -3 30 -32 -34 -36 -38 4 40 42 -44 46 48 -50 -52 -54 58 -59 6 0
+24 -26 -28 -3 -30 -32 34 -36 38 4 40 42 -44 46 48 50 -52 -54 58 -59 6 0
+-24 26 28 3 30 -32 34 36 -38 4 -40 -42 44 -46 48 -50 52 54 -58 -59 6 0
+24 26 28 -3 30 -32 -34 -36 -38 4 -40 42 -44 -46 48 50 52 54 58 -59 6 0
+-24 26 -28 -3 -30 32 34 -36 -38 4 40 -42 44 46 -48 -50 52 54 58 -59 6 0
+-24 -26 28 -3 -30 -32 34 36 38 4 -40 -42 -44 -46 48 50 52 54 -58 -59 -6 0
+24 26 28 -3 -30 32 34 36 -38 4 -40 42 44 -46 -48 -50 -52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 480 T: 0.00
+c [unig] [    0.55 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 444 deleted: 0 T: 0.00
+-24 26 -28 -3 -30 32 -34 -36 38 4 -40 42 44 46 -48 50 -52 -54 58 -59 6 0
+-24 -26 28 3 -30 32 -34 36 38 4 -40 -42 -44 46 -48 50 52 -54 -58 -59 6 0
+24 -26 -28 -3 30 -32 34 36 38 4 -40 -42 44 -46 48 -50 -52 54 58 -59 6 0
+24 26 28 3 -30 32 34 36 -38 4 40 -42 -44 -46 48 50 52 -54 -58 -59 6 0
+24 26 28 -3 -30 -32 34 36 -38 4 -40 -42 -44 -46 48 -50 -52 -54 -58 -59 -6 0
+24 26 -28 3 -30 32 34 36 -38 4 -40 42 44 46 48 -50 -52 54 58 -59 6 0
+24 -26 28 3 -30 32 -34 -36 -38 4 -40 42 -44 -46 48 -50 -52 54 58 -59 6 0
+-24 -26 28 -3 30 32 -34 -36 -38 4 -40 42 -44 46 -48 50 -52 54 -58 -59 -6 0
+24 -26 -28 -3 -30 32 34 -36 -38 4 40 42 44 -46 48 50 -52 -54 58 -59 6 0
+24 -26 -28 -3 30 32 -34 36 38 4 40 42 44 46 48 50 -52 54 -58 -59 -6 0
+24 26 28 -3 30 32 34 -36 38 4 40 42 -44 -46 48 50 -52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 444 T: 0.00
+c [unig] [    0.55 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 404 deleted: 0 T: 0.00
+24 26 28 3 -30 32 34 36 -38 4 -40 42 -44 -46 48 50 -52 -54 -58 -59 6 0
+-24 -26 28 -3 -30 32 34 -36 38 4 -40 42 -44 -46 48 50 -52 54 58 -59 6 0
+-24 26 -28 3 -30 -32 -34 -36 38 4 -40 -42 -44 46 48 -50 52 -54 -58 -59 6 0
+-24 26 28 3 -30 32 -34 36 38 4 -40 42 -44 -46 48 -50 -52 54 58 -59 6 0
+24 -26 28 -3 30 32 34 36 -38 4 40 -42 44 -46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 -3 -30 -32 -34 36 38 4 -40 42 -44 -46 48 -50 52 -54 58 -59 6 0
+24 -26 -28 -3 30 32 34 -36 38 4 40 42 -44 46 48 50 52 -54 -58 -59 -6 0
+-24 -26 28 3 30 32 -34 -36 38 4 40 42 44 46 -48 50 52 -54 58 -59 6 0
+24 26 -28 3 -30 -32 34 -36 -38 4 -40 -42 -44 46 48 50 52 54 58 -59 6 0
+-24 -26 -28 -3 -30 32 34 36 -38 4 -40 -42 44 46 -48 -50 -52 -54 -58 -59 -6 0
+24 -26 -28 3 -30 -32 -34 -36 -38 4 -40 42 -44 -46 48 -50 52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 404 T: 0.00
+c [unig] [    0.56 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 472 deleted: 0 T: 0.00
+-24 -26 -28 3 -30 -32 34 -36 -38 4 40 42 44 -46 -48 -50 52 54 -58 -59 6 0
+24 26 28 -3 30 32 -34 -36 -38 4 -40 -42 -44 -46 48 -50 -52 -54 -58 -59 -6 0
+-24 -26 -28 -3 30 32 -34 -36 -38 4 -40 -42 -44 46 48 -50 52 -54 -58 -59 -6 0
+-24 26 -28 -3 -30 32 34 -36 -38 4 -40 42 44 46 -48 -50 52 -54 -58 -59 -6 0
+-24 -26 -28 3 -30 32 -34 -36 -38 4 -40 42 44 46 -48 -50 -52 54 58 -59 6 0
+-24 26 28 -3 30 32 34 -36 -38 4 40 42 -44 46 48 50 -52 54 58 -59 6 0
+24 -26 28 -3 -30 32 34 -36 -38 4 -40 42 44 -46 -48 -50 -52 -54 -58 -59 -6 0
+24 -26 28 3 30 32 34 -36 -38 4 -40 -42 -44 -46 48 -50 52 54 58 -59 6 0
+24 -26 -28 3 30 -32 -34 36 -38 4 40 42 -44 -46 48 50 52 -54 58 -59 6 0
+24 -26 28 3 30 -32 -34 -36 -38 4 40 -42 -44 46 48 -50 -52 54 -58 -59 6 0
+-24 26 -28 3 30 32 34 -36 -38 4 -40 -42 -44 46 48 -50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 472 T: 0.00
+c [unig] [    0.57 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 488 deleted: 0 T: 0.00
+c [unig] [    0.57 ] bounded_sol_count looking for   64 solutions -- hashes active: 12
+c [unig] [    0.57 ] bounded_sol_count looking for   64 solutions -- hashes active: 14
+c [gauss] XOR-encoding clauses detached: 44 deleted: 0 T: 0.00
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 532 T: 0.00
+c [unig] [    0.57 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 468 deleted: 0 T: 0.00
+-24 26 -28 -3 30 32 -34 36 -38 4 40 42 -44 46 -48 -50 52 54 58 -59 6 0
+24 26 28 3 30 -32 34 -36 38 4 40 -42 -44 46 48 50 -52 -54 58 -59 6 0
+24 26 28 -3 -30 32 -34 36 -38 4 40 -42 44 -46 48 50 52 54 -58 -59 -6 0
+24 26 -28 3 -30 -32 34 36 38 4 40 -42 -44 46 48 50 -52 -54 58 -59 6 0
+-24 26 -28 -3 30 -32 -34 -36 38 4 40 -42 -44 -46 -48 50 -52 54 58 -59 6 0
+-24 26 -28 -3 30 -32 34 -36 -38 4 40 42 44 -46 -48 50 -52 -54 -58 -59 -6 0
+-24 26 28 3 -30 32 34 36 38 4 40 42 -44 46 -48 -50 -52 54 -58 -59 6 0
+-24 26 -28 3 -30 32 -34 36 38 4 40 42 -44 46 -48 50 52 54 58 -59 6 0
+-24 26 28 3 30 32 -34 -36 38 4 40 42 -44 46 -48 50 52 54 58 -59 6 0
+-24 26 28 3 -30 -32 34 -36 -38 4 40 -42 -44 -46 -48 50 52 54 -58 -59 6 0
+-24 26 -28 3 30 32 34 -36 38 4 40 42 -44 46 -48 -50 -52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 468 T: 0.00
+c [unig] [    0.58 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 472 deleted: 0 T: 0.00
+-24 26 -28 -3 -30 32 -34 -36 -38 4 40 -42 -44 46 -48 -50 -52 54 -58 -59 -6 0
+24 -26 -28 -3 -30 32 -34 36 38 4 -40 42 -44 46 48 -50 52 -54 -58 -59 -6 0
+24 -26 28 3 30 32 34 -36 38 4 40 42 -44 -46 -48 50 -52 -54 58 -59 6 0
+24 -26 -28 -3 30 32 34 -36 38 4 40 42 -44 -46 -48 -50 52 -54 58 -59 6 0
+24 -26 28 -3 -30 -32 -34 36 -38 4 40 42 44 46 -48 50 -52 54 58 -59 6 0
+-24 26 -28 3 -30 -32 -34 36 38 4 40 -42 44 -46 48 -50 -52 -54 58 -59 6 0
+-24 26 28 3 30 32 34 36 -38 4 -40 -42 -44 -46 48 50 52 54 58 -59 6 0
+24 -26 -28 3 -30 -32 -34 -36 -38 4 -40 42 44 -46 -48 -50 52 54 58 -59 6 0
+24 -26 -28 3 -30 -32 -34 36 -38 4 40 42 44 46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 -3 30 32 34 -36 -38 4 40 -42 -44 46 48 -50 -52 54 58 -59 6 0
+-24 26 -28 3 -30 32 34 -36 -38 4 -40 42 -44 -46 48 -50 52 54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 472 T: 0.00
+c [unig] [    0.58 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 420 deleted: 0 T: 0.00
+-24 -26 -28 3 -30 32 -34 -36 38 4 40 -42 -44 46 -48 -50 -52 -54 -58 -59 6 0
+-24 -26 -28 -3 30 -32 34 -36 38 4 40 -42 -44 -46 48 50 52 54 -58 -59 -6 0
+-24 -26 -28 3 30 32 34 36 38 4 40 -42 -44 -46 48 -50 52 -54 -58 -59 6 0
+24 26 28 -3 30 -32 34 36 38 4 -40 42 -44 46 48 50 -52 54 58 -59 6 0
+24 26 28 -3 30 -32 34 -36 -38 4 -40 -42 44 46 48 -50 52 54 58 -59 6 0
+-24 -26 28 -3 30 32 34 -36 -38 4 -40 -42 -44 -46 48 50 -52 54 -58 -59 -6 0
+-24 -26 -28 -3 -30 -32 -34 36 38 4 40 -42 -44 46 -48 50 -52 54 -58 -59 -6 0
+24 -26 -28 3 30 32 34 -36 -38 4 -40 -42 -44 -46 -48 -50 52 54 58 -59 6 0
+24 -26 28 3 -30 -32 -34 36 38 4 40 -42 -44 46 48 -50 52 54 58 -59 6 0
+-24 -26 28 -3 -30 32 -34 -36 38 4 -40 42 44 46 -48 -50 -52 54 -58 -59 -6 0
+24 -26 -28 3 -30 32 -34 36 -38 4 -40 -42 -44 46 48 -50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 420 T: 0.00
+c [unig] [    0.59 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 388 deleted: 0 T: 0.00
+24 -26 -28 3 -30 32 -34 36 -38 4 -40 -42 -44 -46 -48 -50 -52 -54 -58 -59 6 0
+24 -26 -28 -3 -30 -32 -34 -36 -38 4 -40 42 -44 46 -48 -50 -52 54 58 -59 6 0
+24 26 -28 3 30 -32 -34 -36 -38 4 40 42 44 46 48 -50 -52 54 -58 -59 6 0
+-24 26 -28 -3 -30 32 34 36 -38 4 40 -42 -44 46 -48 50 -52 54 -58 -59 -6 0
+24 26 -28 -3 -30 32 -34 -36 -38 4 40 42 44 46 48 50 -52 54 -58 -59 -6 0
+-24 -26 -28 3 -30 32 34 -36 -38 4 -40 42 44 -46 48 -50 -52 -54 -58 -59 6 0
+24 -26 -28 3 -30 32 -34 36 -38 4 -40 42 44 46 48 50 52 -54 58 -59 6 0
+-24 -26 -28 3 -30 32 34 -36 -38 4 -40 -42 -44 46 -48 50 52 -54 58 -59 6 0
+24 26 -28 -3 -30 -32 -34 -36 38 4 -40 42 44 -46 48 50 -52 54 -58 -59 -6 0
+-24 -26 -28 3 -30 -32 34 -36 38 4 40 42 44 46 48 -50 -52 -54 -58 -59 6 0
+-24 -26 -28 -3 30 32 34 -36 38 4 40 42 44 46 48 50 -52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 388 T: 0.00
+c [unig] [    0.59 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 444 deleted: 0 T: 0.00
+-24 26 -28 3 -30 -32 34 36 38 4 -40 -42 -44 46 48 50 -52 -54 58 -59 6 0
+-24 26 -28 -3 30 -32 34 36 38 4 -40 -42 44 -46 48 -50 52 54 58 -59 6 0
+-24 -26 28 -3 30 32 -34 -36 38 4 -40 -42 -44 -46 48 50 -52 54 58 -59 6 0
+24 26 -28 3 30 32 34 36 -38 4 -40 42 44 -46 -48 50 -52 54 -58 -59 6 0
+-24 -26 28 3 30 -32 34 36 -38 4 -40 -42 44 46 48 50 52 -54 -58 -59 6 0
+-24 26 -28 3 30 32 -34 -36 -38 4 -40 -42 -44 46 48 -50 -52 -54 -58 -59 6 0
+24 26 28 -3 30 -32 34 -36 38 4 -40 -42 44 46 -48 50 -52 -54 -58 -59 -6 0
+-24 26 28 -3 30 -32 -34 36 38 4 -40 42 -44 -46 48 -50 -52 54 -58 -59 -6 0
+24 26 -28 -3 -30 -32 34 36 -38 4 -40 42 44 46 48 50 52 -54 58 -59 6 0
+-24 -26 28 3 30 32 34 36 -38 4 -40 -42 -44 46 -48 -50 52 -54 58 -59 6 0
+24 -26 28 -3 30 32 34 36 38 4 -40 42 44 46 -48 -50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 444 T: 0.00
+c [unig] [    0.60 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 484 deleted: 0 T: 0.00
+24 -26 28 3 -30 -32 34 36 38 4 40 -42 -44 -46 -48 50 -52 -54 58 -59 6 0
+-24 26 28 3 30 -32 34 -36 -38 4 -40 42 44 -46 -48 50 52 -54 58 -59 6 0
+-24 26 28 3 30 32 34 -36 -38 4 40 42 44 46 48 -50 52 54 58 -59 6 0
+-24 -26 28 3 -30 -32 34 36 38 4 -40 -42 -44 46 48 50 52 54 58 -59 6 0
+24 -26 28 3 -30 32 34 36 38 4 -40 -42 -44 46 48 -50 -52 54 58 -59 6 0
+-24 -26 28 -3 30 32 -34 -36 -38 4 -40 -42 44 46 -48 50 52 -54 -58 -59 -6 0
+24 -26 -28 3 30 -32 -34 36 -38 4 -40 -42 -44 -46 -48 50 -52 54 -58 -59 6 0
+-24 -26 -28 3 30 -32 -34 36 -38 4 40 -42 -44 46 48 50 52 -54 -58 -59 6 0
+24 -26 -28 3 30 32 -34 36 -38 4 40 -42 -44 46 48 -50 -52 -54 -58 -59 6 0
+-24 26 -28 3 -30 32 -34 -36 38 4 -40 42 44 46 48 -50 52 -54 -58 -59 6 0
+24 -26 -28 -3 30 -32 -34 -36 -38 4 -40 -42 44 -46 -48 -50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 484 T: 0.00
+c [unig] [    0.60 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 460 deleted: 0 T: 0.00
+-24 -26 28 3 30 32 34 36 -38 4 40 42 44 -46 48 -50 -52 -54 -58 -59 6 0
+-24 -26 28 -3 30 -32 -34 36 38 4 -40 -42 -44 -46 -48 50 -52 54 58 -59 6 0
+24 -26 -28 -3 -30 32 -34 -36 -38 4 -40 42 44 -46 -48 50 -52 54 58 -59 6 0
+-24 26 28 3 30 32 -34 -36 -38 4 -40 -42 44 -46 48 -50 52 -54 -58 -59 6 0
+-24 26 28 -3 30 -32 34 -36 38 4 40 42 -44 -46 -48 50 52 54 58 -59 6 0
+24 26 28 -3 -30 -32 34 -36 38 4 40 -42 44 -46 -48 50 -52 54 -58 -59 -6 0
+24 -26 28 3 -30 -32 34 36 38 4 40 42 44 46 48 50 52 -54 -58 -59 6 0
+24 -26 -28 3 -30 -32 34 -36 38 4 40 -42 -44 -46 48 -50 -52 -54 -58 -59 6 0
+-24 -26 -28 -3 30 -32 -34 -36 38 4 -40 42 44 46 -48 -50 52 54 58 -59 6 0
+24 26 -28 3 -30 -32 -34 -36 38 4 40 -42 44 -46 -48 50 -52 -54 58 -59 6 0
+24 -26 28 3 -30 -32 34 -36 38 4 -40 -42 -44 46 -48 -50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 460 T: 0.00
+c [unig] [    0.61 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 412 deleted: 0 T: 0.00
+24 26 28 3 30 32 -34 36 38 4 -40 -42 -44 -46 -48 -50 52 -54 58 -59 6 0
+24 26 -28 3 -30 32 34 -36 -38 4 -40 42 44 -46 48 -50 -52 -54 58 -59 6 0
+24 26 28 3 -30 -32 -34 36 38 4 40 42 44 -46 -48 -50 52 54 -58 -59 6 0
+-24 26 -28 3 30 -32 -34 -36 38 4 -40 -42 -44 46 -48 -50 52 -54 58 -59 6 0
+24 -26 -28 -3 -30 -32 34 -36 38 4 -40 -42 -44 -46 48 -50 -52 -54 58 -59 6 0
+-24 26 28 3 30 -32 34 36 38 4 40 -42 44 46 48 50 -52 -54 -58 -59 6 0
+-24 26 -28 3 -30 -32 -34 -36 -38 4 40 42 -44 46 -48 50 52 -54 -58 -59 6 0
+-24 26 28 3 -30 -32 34 36 -38 4 -40 42 44 46 48 -50 -52 -54 58 -59 6 0
+24 -26 28 -3 -30 -32 34 -36 38 4 -40 42 -44 -46 -48 -50 -52 -54 -58 -59 -6 0
+-24 -26 28 -3 -30 32 34 36 38 4 -40 -42 -44 46 48 -50 -52 -54 58 -59 6 0
+-24 -26 -28 -3 -30 -32 34 36 -38 4 -40 42 44 46 -48 50 -52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 412 T: 0.00
+c [unig] [    0.61 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 448 deleted: 0 T: 0.00
+24 -26 28 3 -30 -32 -34 -36 -38 4 -40 -42 44 46 48 -50 52 54 58 -59 6 0
+-24 -26 28 3 30 -32 -34 36 38 4 40 42 -44 46 -48 50 -52 -54 58 -59 6 0
+-24 26 -28 -3 30 32 34 -36 38 4 -40 -42 -44 46 -48 50 52 54 -58 -59 -6 0
+-24 -26 28 -3 -30 -32 -34 36 38 4 40 42 -44 46 48 50 -52 54 58 -59 6 0
+24 -26 -28 3 30 -32 -34 -36 38 4 -40 42 44 46 48 -50 52 -54 58 -59 6 0
+24 26 28 -3 30 32 34 36 38 4 40 -42 44 46 48 -50 -52 54 -58 -59 -6 0
+24 26 -28 3 -30 -32 34 -36 38 4 -40 42 -44 46 -48 -50 -52 54 58 -59 6 0
+-24 -26 28 -3 30 32 -34 -36 -38 4 -40 42 44 46 48 50 -52 54 -58 -59 -6 0
+24 26 -28 -3 30 -32 34 -36 38 4 -40 42 -44 46 48 -50 -52 -54 58 -59 6 0
+-24 -26 -28 -3 30 -32 -34 36 -38 4 40 -42 -44 46 48 50 -52 -54 58 -59 6 0
+24 -26 -28 -3 -30 -32 -34 -36 38 4 -40 42 44 46 -48 -50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 448 T: 0.00
+c [unig] [    0.62 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 492 deleted: 0 T: 0.00
+24 -26 28 3 30 32 34 36 -38 4 40 -42 44 -46 -48 50 52 -54 -58 -59 6 0
+-24 26 28 3 -30 32 -34 36 -38 4 -40 42 -44 46 48 50 -52 54 -58 -59 6 0
+-24 26 28 3 30 -32 -34 -36 38 4 -40 42 44 -46 48 50 -52 -54 -58 -59 6 0
+-24 26 -28 3 30 32 -34 -36 38 4 40 42 44 46 48 -50 52 -54 -58 -59 6 0
+-24 26 -28 3 -30 -32 -34 36 -38 4 40 42 -44 -46 48 -50 52 54 -58 -59 6 0
+-24 26 28 3 -30 -32 34 -36 -38 4 -40 -42 -44 -46 -48 -50 -52 54 -58 -59 6 0
+24 -26 -28 3 -30 32 34 -36 38 4 -40 -42 -44 -46 -48 -50 -52 54 -58 -59 6 0
+24 -26 -28 3 -30 -32 -34 36 38 4 -40 42 -44 46 48 50 -52 54 -58 -59 6 0
+24 -26 28 3 -30 32 -34 36 38 4 40 42 -44 -46 48 -50 52 54 -58 -59 6 0
+24 -26 -28 3 30 -32 34 36 -38 4 -40 -42 44 46 -48 -50 -52 -54 -58 -59 6 0
+-24 26 28 3 30 32 34 36 38 4 -40 -42 44 46 -48 -50 -52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 492 T: 0.00
+c [unig] [    0.62 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 424 deleted: 0 T: 0.00
+-24 26 28 3 30 -32 34 36 38 4 -40 -42 -44 -46 48 -50 -52 54 58 -59 6 0
+-24 26 28 -3 30 32 -34 -36 38 4 -40 42 -44 46 -48 50 52 -54 58 -59 6 0
+24 -26 -28 -3 -30 -32 -34 36 38 4 -40 -42 44 -46 48 -50 -52 -54 -58 -59 -6 0
+24 26 -28 -3 30 -32 -34 -36 38 4 -40 42 -44 46 48 -50 52 54 -58 -59 -6 0
+24 -26 28 -3 -30 32 -34 -36 -38 4 -40 -42 44 46 48 -50 52 54 58 -59 6 0
+-24 -26 28 3 -30 32 34 36 -38 4 40 -42 -44 46 48 50 -52 -54 58 -59 6 0
+-24 26 -28 -3 30 -32 -34 36 -38 4 -40 42 -44 -46 -48 50 -52 54 -58 -59 -6 0
+24 -26 28 3 -30 32 34 -36 38 4 40 -42 -44 -46 -48 -50 52 -54 58 -59 6 0
+24 26 28 3 30 32 34 36 -38 4 -40 42 -44 46 48 -50 52 -54 -58 -59 6 0
+24 26 28 -3 30 -32 -34 -36 38 4 40 -42 44 -46 48 50 52 -54 58 -59 6 0
+-24 -26 28 3 -30 -32 34 -36 38 4 -40 42 44 46 48 -50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 424 T: 0.00
+c [unig] [    0.63 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 396 deleted: 0 T: 0.00
+-24 -26 28 3 -30 -32 -34 36 38 4 -40 -42 -44 -46 48 -50 -52 54 -58 -59 6 0
+-24 -26 -28 3 30 32 34 -36 -38 4 -40 42 44 46 48 -50 -52 -54 -58 -59 6 0
+24 -26 -28 -3 -30 -32 -34 36 38 4 -40 42 44 46 48 50 -52 -54 58 -59 6 0
+24 -26 -28 -3 -30 32 34 -36 38 4 40 42 -44 -46 48 -50 52 54 -58 -59 -6 0
+-24 -26 -28 -3 30 32 34 -36 38 4 -40 42 -44 -46 48 50 52 54 58 -59 6 0
+-24 -26 28 -3 -30 32 34 -36 -38 4 40 -42 -44 -46 48 -50 -52 54 -58 -59 -6 0
+-24 -26 -28 -3 30 -32 -34 -36 -38 4 -40 -42 44 -46 48 50 52 54 -58 -59 -6 0
+-24 26 28 3 -30 -32 -34 36 38 4 40 42 -44 -46 -48 50 -52 54 58 -59 6 0
+24 26 28 3 30 32 34 -36 38 4 40 42 44 46 -48 50 52 -54 58 -59 6 0
+-24 -26 28 3 -30 -32 -34 -36 -38 4 40 42 -44 46 48 50 52 -54 -58 -59 6 0
+24 26 28 3 30 32 34 36 -38 4 -40 -42 44 -46 -48 -50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 396 T: 0.00
+c [unig] [    0.63 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 476 deleted: 0 T: 0.00
+-24 -26 -28 -3 30 32 34 -36 38 4 40 42 -44 -46 -48 50 -52 54 -58 -59 -6 0
+-24 -26 28 3 -30 32 -34 -36 -38 4 -40 -42 -44 46 48 -50 52 54 -58 -59 6 0
+-24 26 -28 3 -30 32 34 -36 -38 4 40 42 -44 46 -48 50 -52 54 -58 -59 6 0
+24 -26 -28 -3 -30 -32 34 -36 -38 4 40 42 -44 -46 48 -50 52 -54 58 -59 6 0
+-24 26 -28 3 30 32 34 36 38 4 -40 -42 -44 46 48 -50 52 54 -58 -59 6 0
+-24 26 -28 3 30 32 34 -36 -38 4 -40 -42 44 -46 48 -50 -52 54 -58 -59 6 0
+24 26 28 -3 -30 -32 -34 36 38 4 -40 -42 44 46 -48 50 52 -54 58 -59 6 0
+24 -26 -28 -3 30 -32 34 36 38 4 -40 -42 -44 -46 -48 50 -52 -54 58 -59 6 0
+-24 -26 28 3 30 32 -34 36 38 4 40 42 -44 46 -48 50 -52 54 -58 -59 6 0
+24 26 28 -3 30 -32 -34 -36 -38 4 40 42 44 46 48 -50 -52 -54 58 -59 6 0
+-24 26 -28 3 30 32 -34 36 38 4 40 -42 44 46 -48 -50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 476 T: 0.00
+c [unig] [    0.63 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 460 deleted: 0 T: 0.00
+24 -26 28 3 30 32 -34 36 38 4 -40 42 -44 46 -48 50 52 54 58 -59 6 0
+24 26 -28 -3 30 32 34 -36 -38 4 -40 42 44 46 -48 50 -52 54 -58 -59 -6 0
+24 -26 28 -3 -30 -32 -34 36 38 4 -40 -42 44 -46 -48 -50 -52 -54 58 -59 6 0
+24 -26 -28 -3 30 -32 34 36 -38 4 -40 -42 44 -46 48 50 52 54 58 -59 6 0
+24 -26 28 -3 30 -32 -34 36 38 4 -40 -42 -44 -46 48 50 52 54 -58 -59 -6 0
+-24 -26 28 -3 30 -32 -34 36 -38 4 40 -42 -44 -46 -48 50 -52 -54 58 -59 6 0
+-24 -26 -28 -3 -30 -32 34 36 38 4 40 -42 -44 -46 48 -50 52 54 58 -59 6 0
+-24 26 28 -3 30 32 -34 -36 -38 4 40 42 -44 46 48 50 52 -54 -58 -59 -6 0
+-24 -26 28 3 -30 32 -34 36 -38 4 40 42 44 46 -48 -50 52 54 58 -59 6 0
+-24 26 -28 3 -30 32 34 -36 38 4 -40 -42 44 46 -48 -50 -52 54 -58 -59 6 0
+24 26 28 3 -30 32 -34 -36 38 4 40 -42 -44 46 48 -50 52 -54 -58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 460 T: 0.00
+c [unig] [    0.64 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 380 deleted: 0 T: 0.00
+24 26 -28 3 -30 -32 34 36 38 4 -40 -42 -44 46 48 50 52 -54 -58 -59 6 0
+24 26 -28 -3 30 32 34 -36 -38 4 40 -42 44 46 -48 50 -52 -54 -58 -59 -6 0
+24 26 -28 3 -30 32 -34 -36 38 4 40 42 -44 46 -48 50 52 54 58 -59 6 0
+24 -26 -28 -3 -30 -32 34 -36 38 4 40 -42 -44 -46 -48 50 52 54 58 -59 6 0
+24 -26 28 3 -30 32 -34 36 38 4 -40 -42 44 -46 -48 50 -52 54 58 -59 6 0
+24 26 28 -3 -30 -32 34 36 38 4 -40 42 44 46 -48 50 -52 54 58 -59 6 0
+-24 26 28 -3 30 -32 34 36 -38 4 -40 42 -44 -46 -48 50 -52 -54 -58 -59 -6 0
+-24 -26 -28 3 -30 32 34 36 38 4 -40 -42 -44 46 48 50 -52 -54 -58 -59 6 0
+-24 -26 28 -3 -30 32 34 36 38 4 -40 42 44 46 -48 50 52 54 58 -59 6 0
+24 -26 28 3 -30 -32 34 -36 38 4 40 42 44 -46 48 50 -52 -54 -58 -59 6 0
+-24 26 28 3 -30 -32 -34 36 38 4 -40 -42 44 -46 -48 50 52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 380 T: 0.00
+c [unig] [    0.64 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 440 deleted: 0 T: 0.00
+24 -26 -28 -3 30 32 34 -36 38 4 40 42 44 -46 48 -50 52 -54 -58 -59 -6 0
+24 26 -28 -3 -30 32 34 -36 -38 4 -40 42 -44 -46 -48 -50 -52 54 58 -59 6 0
+-24 -26 28 3 -30 -32 34 36 38 4 40 -42 44 -46 -48 -50 52 54 -58 -59 6 0
+-24 -26 -28 -3 -30 -32 -34 -36 38 4 -40 42 -44 -46 48 -50 -52 -54 58 -59 6 0
+-24 -26 -28 -3 -30 32 -34 36 38 4 -40 -42 -44 46 -48 50 -52 -54 -58 -59 -6 0
+-24 26 28 -3 -30 32 34 -36 38 4 40 42 -44 46 48 -50 -52 -54 58 -59 6 0
+-24 26 28 -3 -30 -32 34 36 38 4 40 -42 -44 -46 -48 50 -52 -54 -58 -59 -6 0
+24 26 -28 3 30 -32 -34 -36 -38 4 -40 42 -44 46 -48 50 52 -54 58 -59 6 0
+24 26 28 3 -30 32 -34 36 -38 4 40 -42 44 -46 48 -50 52 -54 -58 -59 6 0
+24 -26 28 -3 -30 32 -34 36 -38 4 40 -42 -44 -46 48 50 -52 54 -58 -59 -6 0
+-24 26 -28 -3 30 -32 -34 -36 -38 4 40 42 44 -46 -48 -50 52 54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 440 T: 0.00
+c [unig] [    0.65 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 440 deleted: 0 T: 0.00
+24 -26 -28 -3 30 -32 -34 -36 -38 4 -40 -42 44 46 48 50 -52 54 -58 -59 -6 0
+-24 26 -28 -3 30 32 34 36 38 4 -40 -42 -44 46 48 -50 -52 -54 58 -59 6 0
+24 -26 28 3 -30 -32 34 -36 -38 4 40 -42 -44 46 -48 -50 -52 -54 -58 -59 6 0
+-24 -26 28 -3 -30 -32 34 36 38 4 40 -42 44 -46 48 -50 -52 54 58 -59 6 0
+-24 -26 -28 3 -30 32 -34 36 -38 4 40 42 -44 46 48 50 52 -54 -58 -59 6 0
+24 -26 28 3 30 32 -34 36 38 4 -40 42 44 -46 -48 -50 -52 54 -58 -59 6 0
+-24 26 28 3 -30 32 34 -36 38 4 40 -42 -44 46 48 50 52 -54 -58 -59 6 0
+-24 26 -28 -3 -30 -32 -34 -36 -38 4 40 42 44 -46 48 -50 -52 54 58 -59 6 0
+-24 -26 -28 3 30 32 -34 -36 38 4 -40 42 44 -46 48 50 -52 -54 -58 -59 6 0
+-24 26 28 3 30 -32 -34 36 -38 4 -40 42 44 -46 48 50 52 54 -58 -59 6 0
+24 -26 -28 -3 -30 32 34 36 38 4 40 42 -44 -46 48 50 -52 -54 -58 -59 -6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 440 T: 0.00
+c [unig] [    0.66 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 420 deleted: 0 T: 0.00
+-24 -26 -28 -3 -30 32 -34 -36 -38 4 -40 -42 -44 46 48 -50 52 54 58 -59 6 0
+24 26 28 3 -30 32 34 -36 -38 4 -40 -42 -44 -46 48 50 52 54 -58 -59 6 0
+24 26 -28 -3 -30 -32 -34 -36 38 4 -40 -42 -44 46 -48 -50 52 54 -58 -59 -6 0
+-24 -26 28 -3 30 -32 -34 -36 -38 4 -40 -42 -44 -46 48 -50 -52 -54 58 -59 6 0
+-24 -26 -28 3 30 -32 -34 36 -38 4 40 -42 44 46 -48 -50 52 -54 58 -59 6 0
+24 -26 28 3 30 -32 34 -36 38 4 -40 42 44 46 -48 50 52 54 58 -59 6 0
+-24 26 28 -3 -30 32 -34 -36 38 4 40 42 44 46 48 -50 52 -54 -58 -59 -6 0
+-24 -26 28 3 -30 -32 34 -36 38 4 40 -42 -44 -46 48 50 -52 54 58 -59 6 0
+-24 26 28 3 30 -32 -34 36 38 4 40 42 -44 46 48 -50 -52 54 -58 -59 6 0
+24 26 -28 3 30 -32 34 -36 -38 4 -40 -42 -44 46 48 50 -52 -54 -58 -59 6 0
+24 -26 28 -3 -30 32 34 36 38 4 40 42 -44 46 48 50 52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 420 T: 0.00
+c [unig] [    0.66 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 468 deleted: 0 T: 0.00
+24 -26 -28 3 -30 32 34 -36 -38 4 -40 -42 44 46 48 50 -52 54 -58 -59 6 0
+-24 26 -28 3 30 32 -34 36 -38 4 -40 -42 -44 -46 48 50 -52 -54 -58 -59 6 0
+24 26 28 -3 30 32 -34 -36 -38 4 -40 -42 -44 -46 -48 50 52 -54 58 -59 6 0
+-24 26 28 -3 -30 32 -34 36 -38 4 -40 -42 -44 -46 48 -50 52 54 -58 -59 -6 0
+24 26 -28 -3 -30 -32 -34 -36 -38 4 -40 42 -44 -46 48 -50 -52 -54 58 -59 6 0
+-24 -26 28 3 -30 32 34 36 -38 4 40 42 44 46 48 -50 52 54 58 -59 6 0
+24 -26 28 3 30 -32 34 -36 -38 4 -40 42 44 46 -48 -50 52 54 -58 -59 6 0
+24 26 28 -3 -30 -32 -34 -36 38 4 -40 42 -44 -46 48 -50 -52 54 58 -59 6 0
+24 26 -28 -3 30 32 -34 -36 38 4 -40 -42 -44 -46 -48 50 52 54 58 -59 6 0
+-24 26 28 -3 30 -32 -34 36 38 4 -40 42 -44 -46 -48 50 -52 -54 -58 -59 -6 0
+-24 -26 -28 -3 30 -32 34 36 -38 4 -40 42 44 46 48 -50 -52 54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 468 T: 0.00
+c [unig] [    0.67 ] bounded_sol_count looking for   64 solutions -- hashes active: 13
+c [gauss] XOR-encoding clauses detached: 428 deleted: 0 T: 0.00
+24 -26 -28 3 30 32 -34 36 38 4 -40 -42 -44 -46 -48 50 -52 -54 -58 -59 6 0
+24 26 -28 3 -30 32 -34 -36 -38 4 -40 42 -44 46 -48 50 52 54 -58 -59 6 0
+24 -26 28 -3 -30 32 -34 -36 38 4 -40 42 44 46 -48 50 52 54 58 -59 6 0
+-24 26 -28 -3 30 32 34 -36 -38 4 -40 -42 -44 46 -48 -50 -52 54 -58 -59 -6 0
+-24 -26 -28 -3 -30 -32 -34 -36 38 4 40 -42 -44 -46 48 50 -52 -54 58 -59 6 0
+-24 26 -28 3 30 -32 -34 36 -38 4 -40 42 44 46 48 50 -52 -54 58 -59 6 0
+24 26 28 3 30 32 -34 36 -38 4 40 -42 -44 -46 -48 50 52 54 58 -59 6 0
+-24 -26 -28 3 -30 -32 -34 -36 38 4 -40 -42 44 -46 48 50 52 54 58 -59 6 0
+-24 -26 -28 3 30 32 34 36 -38 4 -40 -42 -44 -46 48 50 52 -54 -58 -59 6 0
+24 26 -28 -3 30 32 -34 -36 38 4 -40 -42 -44 46 48 -50 52 54 -58 -59 -6 0
+24 -26 28 3 -30 32 -34 -36 38 4 40 42 -44 46 -48 50 -52 -54 58 -59 6 0
+c [unig] simplifying
+c [gauss] XOR-encoding clauses reattached: 428 T: 0.00
+c [unig] Time to sample: 0.67 s -- Time count+samples: 0.74 s
+c [unig] Samples generated: 2002
